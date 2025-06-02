@@ -17,7 +17,7 @@ export default function Hero() {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&h=1080')`
+          backgroundImage: `url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><defs><linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:%23E8F4F8"/><stop offset="100%" style="stop-color:%23B8D4DA"/></linearGradient></defs><rect width="1200" height="800" fill="url(%23sky)"/><g><rect x="0" y="600" width="1200" height="200" fill="%2398B8A3"/><ellipse cx="100" cy="580" rx="60" ry="80" fill="%23567A5C"/><ellipse cx="300" cy="590" rx="80" ry="70" fill="%23567A5C"/><ellipse cx="500" cy="585" rx="70" ry="75" fill="%23567A5C"/><ellipse cx="700" cy="590" rx="90" ry="80" fill="%23567A5C"/><ellipse cx="900" cy="580" rx="75" ry="85" fill="%23567A5C"/><ellipse cx="1100" cy="585" rx="65" ry="70" fill="%23567A5C"/></g><g><rect x="400" y="300" width="400" height="200" fill="%23B8BCC8" stroke="%23464646" stroke-width="2"/><rect x="410" y="310" width="380" height="180" fill="%23E0E0E0"/><rect x="470" y="320" width="80" height="160" fill="%23FF6B35" stroke="%23464646" stroke-width="2"/><rect x="650" y="320" width="80" height="160" fill="%23464646"/><polygon points="380,300 600,200 820,300" fill="%238A8A8A" stroke="%23464646" stroke-width="2"/><rect x="580" y="240" width="40" height="40" fill="%23464646"/></g></svg>')`
         }}
       />
       <div className="absolute inset-0 bg-black bg-opacity-40" />
