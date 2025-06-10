@@ -1,44 +1,91 @@
-import { Building, Layout, CheckCircle } from "lucide-react";
+import { Shield, Zap, Settings, Home, Users } from "lucide-react";
 
 export default function FeaturesPreview() {
-  const features = [
-    {
-      icon: Building,
-      title: "Durable Construction",
-      description: "Built with premium materials for decades of reliable service"
-    },
-    {
-      icon: Layout,
-      title: "Custom Design", 
-      description: "Tailored solutions to meet your specific storage needs"
-    },
-    {
-      icon: CheckCircle,
-      title: "Quality Guarantee",
-      description: "Backed by comprehensive warranties and expert support"
-    }
-  ];
-
   return (
-    <section className="py-16 bg-light-gray">
+    <section className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {features.map((feature, index) => {
-            const IconComponent = feature.icon;
-            return (
-              <div key={index} className="text-center">
-                <div className="w-16 h-16 bg-brand-orange rounded-full flex items-center justify-center mx-auto mb-4">
-                  <IconComponent className="w-8 h-8 text-white" />
-                </div>
-                <h3 className="text-xl font-semibold text-dark-gray mb-2">
-                  {feature.title}
-                </h3>
-                <p className="text-gray-600">
-                  {feature.description}
-                </p>
+        
+        {/* Top Section - Split Layout */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+          
+          {/* Left - Weather Resistant Feature Box */}
+          <div className="bg-white p-8 rounded-lg border border-gray-200 shadow-sm">
+            <div className="mb-6">
+              <Shield className="w-12 h-12 text-gray-700 mb-4" />
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Weather Resistant Strength</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Our galvanized steel sheds and garages stand strong in snow, rain, wind, and sun.
+              </p>
+            </div>
+          </div>
+
+          {/* Right - Why Choose InstaShed Heading */}
+          <div className="flex flex-col justify-center">
+            <div className="relative">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+                <span className="text-gray-600">Why Choose ?</span><br />
+                <span className="text-gray-900">InstaShed</span>
+              </h2>
+              
+              {/* Orange Arrows */}
+              <div className="absolute -right-4 top-4 flex flex-col space-y-2">
+                <div className="w-8 h-0.5 bg-brand-orange transform rotate-45 origin-left"></div>
+                <div className="w-8 h-0.5 bg-brand-orange transform -rotate-45 origin-left"></div>
               </div>
-            );
-          })}
+              <div className="absolute -right-4 bottom-4 flex flex-col space-y-2">
+                <div className="w-8 h-0.5 bg-brand-orange transform rotate-45 origin-left"></div>
+                <div className="w-8 h-0.5 bg-brand-orange transform -rotate-45 origin-left"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Section - 4 Equal Feature Boxes */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          {/* Fast, Professional Setup */}
+          <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+            <div className="mb-4">
+              <Zap className="w-8 h-8 text-brand-orange mb-3" />
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Fast, Professional Setup</h3>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                Our galvanized steel sheds and garages stand strong in snow, rain, wind, and sun.
+              </p>
+            </div>
+          </div>
+
+          {/* Fully Customizable */}
+          <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+            <div className="mb-4">
+              <Settings className="w-8 h-8 text-teal-600 mb-3" />
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Fully Customizable</h3>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                Our galvanized steel sheds and garages stand strong in snow, rain, wind, and sun.
+              </p>
+            </div>
+          </div>
+
+          {/* More Value Than Wood */}
+          <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+            <div className="mb-4">
+              <Home className="w-8 h-8 text-gray-700 mb-3" />
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">More Value Than Wood</h3>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                Our galvanized steel sheds and garages stand strong in snow, rain, wind, and sun.
+              </p>
+            </div>
+          </div>
+
+          {/* Local & Trusted by Thousands */}
+          <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+            <div className="mb-4">
+              <Users className="w-8 h-8 text-gray-700 mb-3" />
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Local & Trusted by Thousands</h3>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                Our galvanized steel sheds and garages stand strong in snow, rain, wind, and sun.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
