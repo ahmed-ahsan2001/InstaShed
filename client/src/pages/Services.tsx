@@ -101,7 +101,15 @@ export default function Services() {
       {/* Page Header */}
       <section className="py-12 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 text-center mb-8">
+          <h1 
+            className="text-4xl sm:text-5xl font-bold text-center mb-8"
+            style={{
+              background: 'linear-gradient(90deg, rgba(0, 55, 58, 1) 0%, rgba(0, 55, 58, 0.4) 100%)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text'
+            }}
+          >
             SERVICES
           </h1>
         </div>
@@ -201,6 +209,167 @@ export default function Services() {
                 )}
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Services Timeline Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="space-y-16">
+            
+            {/* Service 1 - Residential Metal Sheds */}
+            <div className="flex items-start space-x-8">
+              <div className="flex-shrink-0">
+                <div className="w-12 h-12 bg-white rounded-full border-2 border-gray-300 flex items-center justify-center">
+                  <span className="text-gray-600 font-semibold">01</span>
+                </div>
+              </div>
+              <div className="flex-1 grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Residential Metal Sheds</h3>
+                  <p className="text-gray-600 mb-6">
+                    Our <span className="text-brand-orange">metal sheds for backyard storage</span> are built to protect your tools, supplies, and hobbies. Custom design options include windows, double doors, shelving, and lofts — all made from weather-resistant steel.
+                  </p>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-2">Perfect for:</h4>
+                      <ul className="text-sm text-gray-600 space-y-1">
+                        <li>Backyard tool shed, garden shed, DIY workshop</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-2">Example use:</h4>
+                      <ul className="text-sm text-gray-600 space-y-1">
+                        <li>A family in <span className="text-brand-orange">Dedham MA</span> built a custom shed for woodworking with double doors and a windowed loft.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <img 
+                    src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 250'%3E%3Crect width='400' height='250' fill='%23e8f4f7'/%3E%3Cg%3E%3Crect x='80' y='80' width='240' height='120' fill='%23E0E0E0' stroke='%23666' stroke-width='2'/%3E%3Cpolygon points='80,80 200,40 320,80' fill='%23B0B0B0'/%3E%3Crect x='130' y='120' width='40' height='70' fill='%23FF6B35'/%3E%3Crect x='230' y='120' width='40' height='70' fill='%23444'/%3E%3Cpath d='M0 200 Q200 180 400 200 L400 250 L0 250 Z' fill='%2398B8A3'/%3E%3C/g%3E%3C/svg%3E" 
+                    alt="Residential Metal Shed" 
+                    className="w-full h-48 object-cover rounded-lg shadow-sm"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Service 2 - Agricultural Pole Barns */}
+            <div className="flex items-start space-x-8">
+              <div className="flex-shrink-0">
+                <div className="w-12 h-12 bg-white rounded-full border-2 border-gray-300 flex items-center justify-center">
+                  <span className="text-gray-600 font-semibold">02</span>
+                </div>
+              </div>
+              <div className="flex-1 grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div>
+                  <img 
+                    src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 250'%3E%3Crect width='400' height='250' fill='%23e8f4f7'/%3E%3Cg%3E%3Crect x='50' y='60' width='300' height='140' fill='%23D8BCC8' stroke='%23666' stroke-width='2'/%3E%3Cpolygon points='50,60 200,20 350,60' fill='%23A8A8A8'/%3E%3Crect x='100' y='100' width='50' height='90' fill='%23654321'/%3E%3Crect x='150' y='100' width='50' height='90' fill='%23654321'/%3E%3Crect x='200' y='100' width='50' height='90' fill='%23654321'/%3E%3Crect x='250' y='100' width='50' height='90' fill='%23654321'/%3E%3Cpath d='M0 200 Q200 180 400 200 L400 250 L0 250 Z' fill='%2398B8A3'/%3E%3C/g%3E%3C/svg%3E" 
+                    alt="Agricultural Pole Barn" 
+                    className="w-full h-48 object-cover rounded-lg shadow-sm"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Agricultural Pole Barns</h3>
+                  <p className="text-gray-600 mb-6">
+                    Protect your vehicles and equipment with a custom-built <span className="text-brand-orange">prefab steel garage</span>. Available in single, double, or triple-car formats, our garages feature reinforced walls, high-load roof panels, and optional ventilation or insulation.
+                  </p>
+                  <div className="grid grid-cols-1 gap-6">
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-2">Perfect for:</h4>
+                      <ul className="text-sm text-gray-600 space-y-1">
+                        <li>Car garage, ATV/motorcycle storage, hobby garage</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-2">Example use:</h4>
+                      <ul className="text-sm text-gray-600 space-y-1">
+                        <li>In Great Barrington, MA, a two-car prefab garage now houses vintage motorcycles and gear.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Service 3 - Prefab Steel Garages */}
+            <div className="flex items-start space-x-8">
+              <div className="flex-shrink-0">
+                <div className="w-12 h-12 bg-white rounded-full border-2 border-gray-300 flex items-center justify-center">
+                  <span className="text-gray-600 font-semibold">03</span>
+                </div>
+              </div>
+              <div className="flex-1 grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Prefab Steel Garages</h3>
+                  <p className="text-gray-600 mb-6">
+                    Premium prefab garages designed for superior security and commercial applications. High quality steel construction, enhanced security features, professional grade hardware, and commercial grade finishes.
+                  </p>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-2">Perfect for:</h4>
+                      <ul className="text-sm text-gray-600 space-y-1">
+                        <li>Vehicle protection, workshop space</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-2">Example use:</h4>
+                      <ul className="text-sm text-gray-600 space-y-1">
+                        <li>Professional workshop for automotive repairs and secure tool storage.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <img 
+                    src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 250'%3E%3Crect width='400' height='250' fill='%23e8f4f7'/%3E%3Cg%3E%3Crect x='60' y='70' width='280' height='110' fill='%23C8C8C8' stroke='%23666' stroke-width='2'/%3E%3Cpolygon points='60,70 200,30 340,70' fill='%23A0A0A0'/%3E%3Crect x='110' y='110' width='60' height='60' fill='%23444'/%3E%3Crect x='170' y='110' width='60' height='60' fill='%23444'/%3E%3Crect x='230' y='110' width='60' height='60' fill='%23444'/%3E%3Cpath d='M0 200 Q200 180 400 200 L400 250 L0 250 Z' fill='%2398B8A3'/%3E%3C/g%3E%3C/svg%3E" 
+                    alt="Prefab Steel Garage" 
+                    className="w-full h-48 object-cover rounded-lg shadow-sm"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Service 4 - Commercial Steel Buildings */}
+            <div className="flex items-start space-x-8">
+              <div className="flex-shrink-0">
+                <div className="w-12 h-12 bg-white rounded-full border-2 border-gray-300 flex items-center justify-center">
+                  <span className="text-gray-600 font-semibold">04</span>
+                </div>
+              </div>
+              <div className="flex-1 grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div>
+                  <img 
+                    src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 250'%3E%3Crect width='400' height='250' fill='%23e8f4f7'/%3E%3Cg%3E%3Crect x='40' y='50' width='320' height='130' fill='%23B8BCC8' stroke='%23666' stroke-width='2'/%3E%3Cpolygon points='40,50 200,10 360,50' fill='%23888888'/%3E%3Crect x='80' y='90' width='50' height='80' fill='%23333'/%3E%3Crect x='140' y='90' width='50' height='80' fill='%23333'/%3E%3Crect x='200' y='90' width='50' height='80' fill='%23333'/%3E%3Crect x='260' y='90' width='50' height='80' fill='%23333'/%3E%3Crect x='320' y='90' width='30' height='80' fill='%23FF6B35'/%3E%3Cpath d='M0 200 Q200 180 400 200 L400 250 L0 250 Z' fill='%2398B8A3'/%3E%3C/g%3E%3C/svg%3E" 
+                    alt="Commercial Steel Building" 
+                    className="w-full h-48 object-cover rounded-lg shadow-sm"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Commercial Steel Buildings</h3>
+                  <p className="text-gray-600 mb-6">
+                    Designed for growing businesses. Commercial steel buildings that are ideal for warehouses, workshops, and commercial storage. Wide open design, multiple bay configurations, office space integration, and loading dock compatibility.
+                  </p>
+                  <div className="grid grid-cols-1 gap-6">
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-2">Perfect for:</h4>
+                      <ul className="text-sm text-gray-600 space-y-1">
+                        <li>Warehouse operations, manufacturing facilities</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-2">Example use:</h4>
+                      <ul className="text-sm text-gray-600 space-y-1">
+                        <li>Large-scale commercial storage and distribution operations.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>

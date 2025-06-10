@@ -20,7 +20,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/">
             <div className="flex items-center space-x-2 cursor-pointer">
-              <img src={logoSvg} alt="INSTA-SHED Logo" className="w-8 h-8" />
+              <img src={logoSvg} alt="INSTA-SHED Logo" className="w-10 h-10" />
               <span className="text-xl font-bold text-dark-gray">
                 INSTA-SHED
               </span>
