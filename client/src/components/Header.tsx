@@ -20,9 +20,11 @@ export default function Header() {
           <Link href="/">
             <div className="flex items-center space-x-2 cursor-pointer">
               <div className="w-8 h-8 bg-brand-orange rounded-sm flex items-center justify-center">
-                <span className="text-white font-bold text-sm">IS</span>
+                <Logo className="w-6 h-6 text-white" />
               </div>
-              <span className="text-xl font-bold text-dark-gray">INSTA-SHED</span>
+              <span className="text-xl font-bold text-dark-gray">
+                INSTA-SHED
+              </span>
             </div>
           </Link>
 
@@ -38,7 +40,7 @@ export default function Header() {
                 About us
               </span>
             </Link>
-            <div 
+            <div
               className="relative group"
               onMouseEnter={() => setServicesDropdownOpen(true)}
               onMouseLeave={() => setServicesDropdownOpen(false)}
@@ -49,7 +51,7 @@ export default function Header() {
                   <ChevronDown className="w-4 h-4 ml-1" />
                 </span>
               </Link>
-              
+
               {/* Services Dropdown */}
               {servicesDropdownOpen && (
                 <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50">
@@ -107,7 +109,7 @@ export default function Header() {
                 Contact Us
               </Button>
             </Link>
-            
+
             {/* Mobile menu button */}
             <Button
               variant="ghost"
@@ -126,12 +128,16 @@ export default function Header() {
         <div className="lg:hidden">
           <div className="px-4 pt-2 pb-4 space-y-2 bg-white border-t">
             <Link href="/">
-              <span className="block px-3 py-2 text-brand-orange font-medium cursor-pointer">Home</span>
+              <span className="block px-3 py-2 text-brand-orange font-medium cursor-pointer">
+                Home
+              </span>
             </Link>
             <Link href="/about">
-              <span className="block px-3 py-2 text-gray-700 hover:text-brand-orange cursor-pointer">About us</span>
+              <span className="block px-3 py-2 text-gray-700 hover:text-brand-orange cursor-pointer">
+                About us
+              </span>
             </Link>
-            
+
             {/* Mobile Services Dropdown */}
             <div>
               <button
@@ -139,37 +145,55 @@ export default function Header() {
                 className="flex items-center justify-between w-full px-3 py-2 text-gray-700 hover:text-brand-orange cursor-pointer"
               >
                 <span>Services</span>
-                <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${mobileServicesOpen ? 'rotate-180' : ''}`} />
+                <ChevronDown
+                  className={`w-4 h-4 transition-transform duration-200 ${mobileServicesOpen ? "rotate-180" : ""}`}
+                />
               </button>
               {mobileServicesOpen && (
                 <div className="pl-6 space-y-1">
                   <Link href="/services">
-                    <span className="block px-3 py-2 text-sm text-gray-600 hover:text-brand-orange cursor-pointer">All Services</span>
+                    <span className="block px-3 py-2 text-sm text-gray-600 hover:text-brand-orange cursor-pointer">
+                      All Services
+                    </span>
                   </Link>
                   <Link href="/services/residential-sheds">
-                    <span className="block px-3 py-2 text-sm text-gray-600 hover:text-brand-orange cursor-pointer">Residential Metal Sheds</span>
+                    <span className="block px-3 py-2 text-sm text-gray-600 hover:text-brand-orange cursor-pointer">
+                      Residential Metal Sheds
+                    </span>
                   </Link>
                   <Link href="/services/agricultural-barns">
-                    <span className="block px-3 py-2 text-sm text-gray-600 hover:text-brand-orange cursor-pointer">Agricultural Pole Barns</span>
+                    <span className="block px-3 py-2 text-sm text-gray-600 hover:text-brand-orange cursor-pointer">
+                      Agricultural Pole Barns
+                    </span>
                   </Link>
                   <Link href="/services/prefab-garages">
-                    <span className="block px-3 py-2 text-sm text-gray-600 hover:text-brand-orange cursor-pointer">Prefab Steel Garages</span>
+                    <span className="block px-3 py-2 text-sm text-gray-600 hover:text-brand-orange cursor-pointer">
+                      Prefab Steel Garages
+                    </span>
                   </Link>
                   <Link href="/services/commercial-buildings">
-                    <span className="block px-3 py-2 text-sm text-gray-600 hover:text-brand-orange cursor-pointer">Commercial Steel Buildings</span>
+                    <span className="block px-3 py-2 text-sm text-gray-600 hover:text-brand-orange cursor-pointer">
+                      Commercial Steel Buildings
+                    </span>
                   </Link>
                 </div>
               )}
             </div>
-            
+
             <Link href="/gallery">
-              <span className="block px-3 py-2 text-gray-700 hover:text-brand-orange cursor-pointer">Gallery</span>
+              <span className="block px-3 py-2 text-gray-700 hover:text-brand-orange cursor-pointer">
+                Gallery
+              </span>
             </Link>
             <Link href="/quote">
-              <span className="block px-3 py-2 text-gray-700 hover:text-brand-orange cursor-pointer">Request a Quote</span>
+              <span className="block px-3 py-2 text-gray-700 hover:text-brand-orange cursor-pointer">
+                Request a Quote
+              </span>
             </Link>
             <Link href="/blog">
-              <span className="block px-3 py-2 text-gray-700 hover:text-brand-orange cursor-pointer">Blog & Resources</span>
+              <span className="block px-3 py-2 text-gray-700 hover:text-brand-orange cursor-pointer">
+                Blog & Resources
+              </span>
             </Link>
           </div>
         </div>
