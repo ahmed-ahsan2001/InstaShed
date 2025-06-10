@@ -18,11 +18,25 @@ export default function Services() {
   const services = [
     {
       title: "Residential Metal Sheds",
-      isExpanded: false
+      content: {
+        description: "Premium metal sheds ideal for homeowners. High-quality steel construction with customizable features for your backyard storage needs.",
+        perfectFor: [
+          "Backyard storage",
+          "Garden tool storage",
+          "Seasonal equipment",
+          "Hobby workspace"
+        ],
+        exampleUse: [
+          "Store lawn equipment",
+          "Workshop for projects",
+          "Seasonal decoration storage",
+          "Bicycle and sports gear"
+        ],
+        image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 300'%3E%3Crect width='600' height='300' fill='%23e8f4f7'/%3E%3Cg%3E%3Crect x='150' y='120' width='300' height='100' fill='%23B8BCC8' stroke='%23464646' stroke-width='2'/%3E%3Cpolygon points='150,120 300,80 450,120' fill='%238A8A8A'/%3E%3Crect x='200' y='150' width='40' height='60' fill='%23333'/%3E%3Crect x='260' y='150' width='40' height='60' fill='%23333'/%3E%3Crect x='320' y='150' width='40' height='60' fill='%23333'/%3E%3Cpath d='M0 250 Q300 200 600 250 L600 300 L0 300 Z' fill='%2398B8A3'/%3E%3C/g%3E%3C/svg%3E"
+      }
     },
     {
       title: "Agricultural Pole Barns",
-      isExpanded: true,
       content: {
         description: "Premium metal structures ideal for equipment and livestock. All models include multiple access options, durable metal structure, interior shelving, security and ATV, and air-vent for weather resistance.",
         perfectFor: [
@@ -42,7 +56,6 @@ export default function Services() {
     },
     {
       title: "Prefab Steel Garages",
-      isExpanded: true,
       content: {
         description: "Premium prefab garages designed for superior security and commercial applications. High quality steel construction, enhanced security features, professional grade hardware, and commercial grade finishes.",
         perfectFor: [
@@ -62,7 +75,6 @@ export default function Services() {
     },
     {
       title: "Commercial Steel Buildings",
-      isExpanded: true,
       content: {
         description: "Designed for growing businesses. Commercial steel buildings that are ideal for warehouses, workshops, and commercial storage. Wide open design, multiple bay configurations, office space integration, and loading dock compatibility.",
         perfectFor: [
@@ -124,7 +136,7 @@ export default function Services() {
                 </button>
 
                 {/* Expanded Content */}
-                {(expandedSections.includes(index) || service.isExpanded) && service.content && (
+                {expandedSections.includes(index) && service.content && (
                   <div className="px-6 pb-8 border-t border-gray-100">
                     <div className="pt-6">
                       {/* Featured Image */}
