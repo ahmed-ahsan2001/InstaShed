@@ -42,15 +42,15 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="py-8 bg-gray-100">
+    <section className="py-8 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Slider Container */}
         <div className="relative w-full max-w-[1240px] h-[818px] mx-auto">
-          {/* Slider with rounded corners and diagonal cut */}
+          {/* Slider with rounded corners and wave cut */}
           <div 
             className="relative w-full h-full overflow-hidden rounded-3xl"
             style={{
-              clipPath: "polygon(0 0, 100% 0, 100% calc(100% - 60px), calc(100% - 60px) 100%, 0 100%)"
+              clipPath: "polygon(0 0, 100% 0, 100% 80%, 95% 85%, 90% 90%, 85% 95%, 80% 100%, 0 100%)"
             }}
           >
             {/* Current Slide */}
@@ -95,20 +95,7 @@ export default function Hero() {
               </div>
             </div>
 
-            {/* Navigation Arrows */}
-            <button
-              onClick={prevSlide}
-              className="absolute left-6 top-1/2 -translate-y-1/2 w-12 h-12 bg-white bg-opacity-20 hover:bg-opacity-30 rounded-full flex items-center justify-center transition-all duration-200 z-20"
-            >
-              <ChevronLeft className="w-6 h-6 text-white" />
-            </button>
 
-            <button
-              onClick={nextSlide}
-              className="absolute right-6 top-1/2 -translate-y-1/2 w-12 h-12 bg-white bg-opacity-20 hover:bg-opacity-30 rounded-full flex items-center justify-center transition-all duration-200 z-20"
-            >
-              <ChevronRight className="w-6 h-6 text-white" />
-            </button>
 
             {/* Slide Indicators */}
             <div className="absolute bottom-8 right-8 flex space-x-2 z-20">
