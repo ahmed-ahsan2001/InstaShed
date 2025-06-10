@@ -1,3 +1,4 @@
+
 export default function AboutSection() {
   const stats = [
     { number: "20", label: "Years Experience", suffix: "+" },
