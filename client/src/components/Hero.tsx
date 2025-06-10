@@ -46,11 +46,11 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Slider Container */}
         <div className="relative w-full max-w-[1240px] h-[818px] mx-auto">
-          {/* Slider with rounded corners and wave cut */}
+          {/* Slider with rounded corners and curved notch cut */}
           <div 
             className="relative w-full h-full overflow-hidden rounded-3xl"
             style={{
-              clipPath: "polygon(0 0, 100% 0, 100% 80%, 95% 85%, 90% 90%, 85% 95%, 80% 100%, 0 100%)"
+              clipPath: "polygon(0 0, 100% 0, 100% 85%, 95% 90%, 90% 95%, 85% 98%, 75% 100%, 0 100%)"
             }}
           >
             {/* Current Slide */}
@@ -97,18 +97,19 @@ export default function Hero() {
 
 
 
-            {/* Slide Indicators */}
-            <div className="absolute bottom-8 right-8 flex space-x-2 z-20">
-              {slides.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setCurrentSlide(index)}
-                  className={`w-3 h-3 rounded-full transition-all duration-200 ${
-                    index === currentSlide ? 'bg-brand-orange' : 'bg-white bg-opacity-50 hover:bg-opacity-75'
-                  }`}
-                />
-              ))}
-            </div>
+          </div>
+          
+          {/* Slide Indicators - positioned in the cut-out area */}
+          <div className="absolute bottom-4 right-4 flex space-x-2 z-30">
+            {slides.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentSlide(index)}
+                className={`w-3 h-3 rounded-full transition-all duration-200 ${
+                  index === currentSlide ? 'bg-brand-orange' : 'bg-gray-400 hover:bg-gray-500'
+                }`}
+              />
+            ))}
           </div>
         </div>
       </div>
