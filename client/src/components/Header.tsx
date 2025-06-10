@@ -6,6 +6,7 @@ import { Menu, ChevronDown } from "lucide-react";
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
@@ -130,9 +131,37 @@ export default function Header() {
             <Link href="/about">
               <span className="block px-3 py-2 text-gray-700 hover:text-brand-orange cursor-pointer">About us</span>
             </Link>
-            <Link href="/services">
-              <span className="block px-3 py-2 text-gray-700 hover:text-brand-orange cursor-pointer">Services</span>
-            </Link>
+            
+            {/* Mobile Services Dropdown */}
+            <div>
+              <button
+                onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+                className="flex items-center justify-between w-full px-3 py-2 text-gray-700 hover:text-brand-orange cursor-pointer"
+              >
+                <span>Services</span>
+                <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${mobileServicesOpen ? 'rotate-180' : ''}`} />
+              </button>
+              {mobileServicesOpen && (
+                <div className="pl-6 space-y-1">
+                  <Link href="/services">
+                    <span className="block px-3 py-2 text-sm text-gray-600 hover:text-brand-orange cursor-pointer">All Services</span>
+                  </Link>
+                  <Link href="/services/residential-sheds">
+                    <span className="block px-3 py-2 text-sm text-gray-600 hover:text-brand-orange cursor-pointer">Residential Metal Sheds</span>
+                  </Link>
+                  <Link href="/services/agricultural-barns">
+                    <span className="block px-3 py-2 text-sm text-gray-600 hover:text-brand-orange cursor-pointer">Agricultural Pole Barns</span>
+                  </Link>
+                  <Link href="/services/prefab-garages">
+                    <span className="block px-3 py-2 text-sm text-gray-600 hover:text-brand-orange cursor-pointer">Prefab Steel Garages</span>
+                  </Link>
+                  <Link href="/services/commercial-buildings">
+                    <span className="block px-3 py-2 text-sm text-gray-600 hover:text-brand-orange cursor-pointer">Commercial Steel Buildings</span>
+                  </Link>
+                </div>
+              )}
+            </div>
+            
             <Link href="/gallery">
               <span className="block px-3 py-2 text-gray-700 hover:text-brand-orange cursor-pointer">Gallery</span>
             </Link>
