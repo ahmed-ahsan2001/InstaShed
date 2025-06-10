@@ -1,16 +1,7 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "wouter";
 
 export default function Hero() {
-  const handleGetQuote = () => {
-    console.log("Get a Free Quote clicked");
-    // Future implementation: navigate to quote form or open modal
-  };
-
-  const handleExploreStructures = () => {
-    console.log("Explore Structures clicked");
-    // Future implementation: navigate to gallery or structures page
-  };
-
   return (
     <section className="relative min-h-screen flex items-center">
       {/* Background Image with Overlay */}
@@ -37,19 +28,19 @@ export default function Hero() {
             
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button
-                onClick={handleGetQuote}
-                className="bg-brand-orange text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-brand-orange-hover transform hover:scale-105 transition-all duration-200 shadow-lg h-auto"
-              >
-                Get a Free Quote
-              </Button>
-              <Button
-                onClick={handleExploreStructures}
-                variant="outline"
-                className="bg-gray-800 bg-opacity-80 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-opacity-100 transition-all duration-200 border border-gray-600 h-auto"
-              >
-                Explore Structures
-              </Button>
+              <Link href="/quote">
+                <Button className="bg-brand-orange text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-brand-orange-hover transform hover:scale-105 transition-all duration-200 shadow-lg h-auto">
+                  Get a Free Quote
+                </Button>
+              </Link>
+              <Link href="/services">
+                <Button
+                  variant="outline"
+                  className="bg-gray-800 bg-opacity-80 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-opacity-100 transition-all duration-200 border border-gray-600 h-auto"
+                >
+                  Explore Structures
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
