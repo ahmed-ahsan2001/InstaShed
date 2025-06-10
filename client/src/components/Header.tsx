@@ -63,9 +63,11 @@ export default function Header() {
 
           {/* CTA Button and Mobile Menu */}
           <div className="flex items-center space-x-4">
-            <Button className="bg-brand-orange text-white px-6 py-2 rounded-lg font-medium hover:bg-brand-orange-hover transition-colors duration-200">
-              Contact Us
-            </Button>
+            <Link href="/contact">
+              <Button className="bg-brand-orange text-white px-6 py-2 rounded-lg font-medium hover:bg-brand-orange-hover transition-colors duration-200">
+                Contact Us
+              </Button>
+            </Link>
             
             {/* Mobile menu button */}
             <Button
