@@ -5,6 +5,7 @@ import { Menu, ChevronDown } from "lucide-react";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
@@ -36,13 +37,50 @@ export default function Header() {
                 About us
               </span>
             </Link>
-            <div className="relative group">
+            <div 
+              className="relative group"
+              onMouseEnter={() => setServicesDropdownOpen(true)}
+              onMouseLeave={() => setServicesDropdownOpen(false)}
+            >
               <Link href="/services">
                 <span className="text-gray-700 hover:text-brand-orange transition-colors duration-200 flex items-center cursor-pointer">
                   Services
                   <ChevronDown className="w-4 h-4 ml-1" />
                 </span>
               </Link>
+              
+              {/* Services Dropdown */}
+              {servicesDropdownOpen && (
+                <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50">
+                  <Link href="/services/residential-sheds">
+                    <span className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-brand-orange transition-colors duration-200 cursor-pointer">
+                      Residential Metal Sheds
+                    </span>
+                  </Link>
+                  <Link href="/services/agricultural-barns">
+                    <span className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-brand-orange transition-colors duration-200 cursor-pointer">
+                      Agricultural Pole Barns
+                    </span>
+                  </Link>
+                  <Link href="/services/prefab-garages">
+                    <span className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-brand-orange transition-colors duration-200 cursor-pointer">
+                      Prefab Steel Garages
+                    </span>
+                  </Link>
+                  <Link href="/services/commercial-buildings">
+                    <span className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-brand-orange transition-colors duration-200 cursor-pointer">
+                      Commercial Steel Buildings
+                    </span>
+                  </Link>
+                  <div className="border-t border-gray-100 mt-2 pt-2">
+                    <Link href="/services">
+                      <span className="block px-4 py-2 text-brand-orange font-medium hover:bg-gray-50 transition-colors duration-200 cursor-pointer">
+                        View All Services
+                      </span>
+                    </Link>
+                  </div>
+                </div>
+              )}
             </div>
             <Link href="/gallery">
               <span className="text-gray-700 hover:text-brand-orange transition-colors duration-200 cursor-pointer">
