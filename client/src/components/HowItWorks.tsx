@@ -1,74 +1,97 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "wouter";
 
 export default function HowItWorks() {
-  const steps = [
-    {
-      number: "01",
-      title: "Choose Your Style",
-      description: "Browse our extensive catalog of metal sheds and storage buildings to find the perfect fit for your needs.",
-      image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23f0f4f7'/%3E%3Cg%3E%3Crect x='50' y='100' width='120' height='80' fill='%23FF6B35' stroke='%23333' stroke-width='2'/%3E%3Crect x='230' y='100' width='120' height='80' fill='%23666' stroke='%23333' stroke-width='2'/%3E%3Cpolygon points='50,100 110,60 170,100' fill='%23888'/%3E%3Cpolygon points='230,100 290,60 350,100' fill='%23888'/%3E%3C/g%3E%3C/svg%3E"
-    },
-    {
-      number: "02", 
-      title: "Get A Quote",
-      description: "Our experts will provide you with a detailed quote based on your specific requirements and site conditions.",
-      image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23f0f4f7'/%3E%3Cg%3E%3Crect x='100' y='80' width='200' height='140' fill='%23fff' stroke='%23333' stroke-width='2'/%3E%3Cline x1='120' y1='110' x2='280' y2='110' stroke='%23FF6B35' stroke-width='3'/%3E%3Cline x1='120' y1='130' x2='250' y2='130' stroke='%23666' stroke-width='2'/%3E%3Cline x1='120' y1='150' x2='270' y2='150' stroke='%23666' stroke-width='2'/%3E%3Cline x1='120' y1='170' x2='230' y2='170' stroke='%23666' stroke-width='2'/%3E%3Cline x1='120' y1='190' x2='260' y2='190' stroke='%23FF6B35' stroke-width='3'/%3E%3C/g%3E%3C/svg%3E"
-    },
-    {
-      number: "03",
-      title: "We Build & Install", 
-      description: "Our skilled team handles everything from permits to final installation, ensuring your shed is built to last.",
-      image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23f0f4f7'/%3E%3Cg%3E%3Crect x='150' y='120' width='100' height='60' fill='%23FF6B35' stroke='%23333' stroke-width='2'/%3E%3Cpolygon points='150,120 200,90 250,120' fill='%23888'/%3E%3Crect x='180' y='140' width='15' height='30' fill='%23333'/%3E%3Ccircle cx='120' cy='200' r='15' fill='%23666'/%3E%3Cline x1='105' y1='190' x2='280' y2='160' stroke='%23333' stroke-width='3'/%3E%3Cpolygon points='275,155 285,160 275,165' fill='%23333'/%3E%3C/g%3E%3C/svg%3E"
-    }
-  ];
-
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-teal-800 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-            How It Works ?
-          </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Our streamlined process makes getting your perfect storage solution simple and stress-free.
-          </p>
-        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Left side - Title and CTA */}
+          <div className="text-white">
+            <h2 className="text-4xl sm:text-5xl font-bold mb-8 leading-tight">
+              How<br />
+              It Works ?
+            </h2>
+            
+            <Link href="/quote">
+              <Button className="bg-brand-orange hover:bg-brand-orange-hover text-white px-8 py-3 rounded-lg font-semibold text-lg transition-all duration-200">
+                Get Free Consultation
+              </Button>
+            </Link>
+          </div>
 
-        {/* Steps Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
-          {steps.map((step, index) => (
-            <div key={index} className="text-center">
-              {/* Step Image */}
-              <div className="mb-6">
-                <img 
-                  src={step.image} 
-                  alt={step.title}
-                  className="w-full h-48 object-cover rounded-lg shadow-md"
-                />
+          {/* Right side - Overlapping image cards */}
+          <div className="relative h-96 lg:h-[500px]">
+            {/* Card 1 - Free Consultation (Top Right) */}
+            <div className="absolute top-0 right-0 w-72 bg-white rounded-2xl shadow-lg overflow-hidden z-30">
+              <div className="h-40 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center">
+                <div className="bg-white rounded-lg p-6 shadow-sm">
+                  <div className="flex items-center space-x-3">
+                    <div className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center">
+                      <div className="w-4 h-4 bg-white rounded-full"></div>
+                    </div>
+                    <div className="w-10 h-10 bg-gray-400 rounded-full flex items-center justify-center">
+                      <div className="w-4 h-4 bg-white rounded-full"></div>
+                    </div>
+                  </div>
+                  <div className="mt-3 h-2 bg-gray-200 rounded w-20"></div>
+                  <div className="mt-2 h-2 bg-gray-200 rounded w-16"></div>
+                </div>
               </div>
-              
-              {/* Step Number */}
-              <div className="text-4xl font-bold text-brand-orange mb-4">
-                {step.number}
+              <div className="p-4">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                  <span className="text-brand-orange">Free</span> Consultation
+                </h3>
+                <p className="text-sm text-gray-600">
+                  We help you plan the right metal storage shed, garage, or pole barn based on your space and needs.
+                </p>
               </div>
-              
-              {/* Step Content */}
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                {step.title}
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                {step.description}
-              </p>
             </div>
-          ))}
-        </div>
 
-        {/* CTA Button */}
-        <div className="text-center">
-          <Button className="bg-brand-orange text-white px-8 py-3 rounded-lg font-semibold hover:bg-brand-orange-hover transition-colors duration-200">
-            Get Started Today
-          </Button>
+            {/* Card 2 - Custom Build (Middle Left) */}
+            <div className="absolute top-16 left-0 w-72 bg-white rounded-2xl shadow-lg overflow-hidden z-20">
+              <div className="h-40 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
+                <div className="relative">
+                  <div className="grid grid-cols-3 gap-2">
+                    <div className="w-12 h-8 bg-yellow-400 rounded"></div>
+                    <div className="w-12 h-8 bg-red-400 rounded"></div>
+                    <div className="w-12 h-8 bg-green-400 rounded"></div>
+                    <div className="w-12 h-8 bg-blue-400 rounded"></div>
+                    <div className="w-12 h-8 bg-purple-400 rounded"></div>
+                    <div className="w-12 h-8 bg-pink-400 rounded"></div>
+                  </div>
+                  <div className="absolute -top-2 -left-2 w-4 h-4 bg-orange-500 rounded-full"></div>
+                  <div className="absolute -bottom-2 -right-2 w-4 h-4 bg-gray-600 rounded-full"></div>
+                </div>
+              </div>
+              <div className="p-4">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Custom Build</h3>
+                <p className="text-sm text-gray-600">
+                  We help you plan the right metal storage shed, garage, or pole barn based on your space and needs.
+                </p>
+              </div>
+            </div>
+
+            {/* Card 3 - Delivery & Installation (Bottom Right) */}
+            <div className="absolute bottom-0 right-8 w-72 bg-white rounded-2xl shadow-lg overflow-hidden z-10">
+              <div className="h-40 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
+                <div className="relative">
+                  <div className="w-20 h-12 bg-gray-600 rounded-lg"></div>
+                  <div className="absolute top-2 left-2 w-16 h-3 bg-orange-500 rounded"></div>
+                  <div className="absolute top-6 left-2 w-16 h-3 bg-yellow-400 rounded"></div>
+                  <div className="absolute -top-3 -left-3 w-6 h-6 bg-orange-500 rounded-full"></div>
+                  <div className="absolute -top-3 right-6 w-5 h-5 bg-gray-600 rounded-full"></div>
+                  <div className="absolute bottom-2 left-8 w-4 h-8 bg-blue-400 rounded"></div>
+                </div>
+              </div>
+              <div className="p-4">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Delivery & Installation</h3>
+                <p className="text-sm text-gray-600">
+                  Our team handles delivery and professional steel building installation with precise leveling and anchoring.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
