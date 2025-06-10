@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Menu, ChevronDown } from "lucide-react";
+import logoSvg from "../../../intashedlogo.svg";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -19,9 +20,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/">
             <div className="flex items-center space-x-2 cursor-pointer">
-              <div className="w-8 h-8 bg-brand-orange rounded-sm flex items-center justify-center">
-                <Logo className="w-6 h-6 text-white" />
-              </div>
+              <img src={logoSvg} alt="INSTA-SHED Logo" className="w-8 h-8" />
               <span className="text-xl font-bold text-dark-gray">
                 INSTA-SHED
               </span>
