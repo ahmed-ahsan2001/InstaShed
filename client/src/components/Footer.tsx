@@ -68,19 +68,29 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
               <li>
-                <span className="text-gray-400 hover:text-brand-orange transition-colors duration-200 cursor-pointer">Metal Sheds</span>
+                <Link href="/services/residential-sheds">
+                  <span className="text-gray-400 hover:text-brand-orange transition-colors duration-200 cursor-pointer">Metal Sheds</span>
+                </Link>
               </li>
               <li>
-                <span className="text-gray-400 hover:text-brand-orange transition-colors duration-200 cursor-pointer">Steel Garages</span>
+                <Link href="/services/prefab-garages">
+                  <span className="text-gray-400 hover:text-brand-orange transition-colors duration-200 cursor-pointer">Steel Garages</span>
+                </Link>
               </li>
               <li>
-                <span className="text-gray-400 hover:text-brand-orange transition-colors duration-200 cursor-pointer">Workshop Buildings</span>
+                <Link href="/services/commercial-buildings">
+                  <span className="text-gray-400 hover:text-brand-orange transition-colors duration-200 cursor-pointer">Workshop Buildings</span>
+                </Link>
               </li>
               <li>
-                <span className="text-gray-400 hover:text-brand-orange transition-colors duration-200 cursor-pointer">Agricultural Storage</span>
+                <Link href="/services/agricultural-barns">
+                  <span className="text-gray-400 hover:text-brand-orange transition-colors duration-200 cursor-pointer">Agricultural Storage</span>
+                </Link>
               </li>
               <li>
-                <span className="text-gray-400 hover:text-brand-orange transition-colors duration-200 cursor-pointer">Custom Buildings</span>
+                <Link href="/services">
+                  <span className="text-gray-400 hover:text-brand-orange transition-colors duration-200 cursor-pointer">Custom Buildings</span>
+                </Link>
               </li>
             </ul>
           </div>
@@ -122,9 +132,15 @@ export default function Footer() {
               © 2024 INSTA-SHED. All rights reserved.
             </div>
             <div className="flex space-x-6 text-sm">
-              <span className="text-gray-400 hover:text-brand-orange transition-colors duration-200 cursor-pointer">Privacy Policy</span>
-              <span className="text-gray-400 hover:text-brand-orange transition-colors duration-200 cursor-pointer">Terms of Service</span>
-              <span className="text-gray-400 hover:text-brand-orange transition-colors duration-200 cursor-pointer">Cookie Policy</span>
+              <Link href="/privacy">
+                <span className="text-gray-400 hover:text-brand-orange transition-colors duration-200 cursor-pointer">Privacy Policy</span>
+              </Link>
+              <Link href="/terms">
+                <span className="text-gray-400 hover:text-brand-orange transition-colors duration-200 cursor-pointer">Terms of Service</span>
+              </Link>
+              <Link href="/cookies">
+                <span className="text-gray-400 hover:text-brand-orange transition-colors duration-200 cursor-pointer">Cookie Policy</span>
+              </Link>
             </div>
           </div>
         </div>

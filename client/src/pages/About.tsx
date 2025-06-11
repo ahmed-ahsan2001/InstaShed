@@ -8,70 +8,79 @@ export default function About() {
   const [expandedFAQs, setExpandedFAQs] = useState<number[]>([]);
 
   const toggleFAQ = (index: number) => {
-    setExpandedFAQs(prev => 
-      prev.includes(index) 
-        ? prev.filter(i => i !== index)
-        : [...prev, index]
+    setExpandedFAQs((prev) =>
+      prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index],
     );
   };
 
   const faqs = [
     {
       question: "How much does a custom metal shed or garage cost?",
-      answer: "The cost varies based on size, features, and customization options. We provide detailed quotes after understanding your specific needs and requirements."
+      answer:
+        "The cost varies based on size, features, and customization options. We provide detailed quotes after understanding your specific needs and requirements.",
     },
     {
       question: "What areas does InstaShed serve?",
-      answer: "We serve customers across Texas and surrounding states. Contact us to confirm service availability in your area."
+      answer:
+        "We serve customers across Texas and surrounding states. Contact us to confirm service availability in your area.",
     },
     {
       question: "How long does it take to build and install a metal building?",
-      answer: "Most residential projects take 1-3 days to complete, while larger commercial buildings may take 1-2 weeks depending on complexity."
+      answer:
+        "Most residential projects take 1-3 days to complete, while larger commercial buildings may take 1-2 weeks depending on complexity.",
     },
     {
       question: "Do I need a permit for my shed or garage?",
-      answer: "Permit requirements vary by location and building size. We handle all necessary permits and inspections as part of our service."
+      answer:
+        "Permit requirements vary by location and building size. We handle all necessary permits and inspections as part of our service.",
     },
     {
       question: "What kind of foundations do you install on?",
-      answer: "We work with various foundation types including concrete slabs, gravel pads, and level ground preparations depending on your needs."
+      answer:
+        "We work with various foundation types including concrete slabs, gravel pads, and level ground preparations depending on your needs.",
     },
     {
       question: "Can I customize the size and features of my shed or garage?",
-      answer: "Absolutely! We specialize in custom solutions and can modify size, features, colors, and accessories to meet your specific requirements."
+      answer:
+        "Absolutely! We specialize in custom solutions and can modify size, features, colors, and accessories to meet your specific requirements.",
     },
     {
       question: "What is the lifespan of an InstaShed metal building?",
-      answer: "Our metal buildings are designed to last decades with proper maintenance. We offer comprehensive warranties on materials and workmanship."
+      answer:
+        "Our metal buildings are designed to last decades with proper maintenance. We offer comprehensive warranties on materials and workmanship.",
     },
     {
       question: "Do you offer financing options for new buildings?",
-      answer: "Yes, we partner with financing companies to offer competitive rates and flexible payment plans for qualified customers."
+      answer:
+        "Yes, we partner with financing companies to offer competitive rates and flexible payment plans for qualified customers.",
     },
     {
       question: "How does delivery work and installation work?",
-      answer: "We handle all aspects of delivery and installation. Our team coordinates scheduling and ensures professional setup at your location."
+      answer:
+        "We handle all aspects of delivery and installation. Our team coordinates scheduling and ensures professional setup at your location.",
     },
     {
       question: "What if I need support after installation?",
-      answer: "We provide ongoing support and maintenance services. Our team is available to help with any questions or service needs."
-    }
+      answer:
+        "We provide ongoing support and maintenance services. Our team is available to help with any questions or service needs.",
+    },
   ];
 
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      
+
       {/* Page Header */}
       <section className="py-12 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 
-            className="text-4xl sm:text-5xl font-bold text-left mb-12"
+          <h1
+            className="text-4xl sm:text-5xl font-bold text-center mb-12"
             style={{
-              background: 'linear-gradient(90deg, rgba(0, 55, 58, 1) 0%, rgba(0, 55, 58, 0.4) 100%)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              backgroundClip: 'text'
+              background:
+                "linear-gradient(90deg, rgba(0, 55, 58, 1) 0%, rgba(0, 55, 58, 0.4) 100%)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              backgroundClip: "text",
             }}
           >
             ABOUT US
@@ -85,8 +94,8 @@ export default function About() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Column - Image */}
             <div>
-              <img 
-                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 350'%3E%3Crect width='500' height='350' fill='%23e8f4f7'/%3E%3Cg%3E%3Crect x='100' y='150' width='300' height='140' fill='%23B8BCC8' stroke='%23464646' stroke-width='2'/%3E%3Cpolygon points='100,150 250,100 400,150' fill='%238A8A8A'/%3E%3Crect x='180' y='190' width='50' height='80' fill='%23FF6B35'/%3E%3Crect x='270' y='190' width='50' height='80' fill='%23666'/%3E%3Cpath d='M50 300 Q250 250 450 300 L450 350 L50 350 Z' fill='%2398B8A3'/%3E%3Crect x='20' y='50' width='460' height='80' fill='%23B0D4E3' opacity='0.7'/%3E%3Cellipse cx='100' cy='90' rx='30' ry='15' fill='%23ffffff' opacity='0.8'/%3E%3Cellipse cx='250' cy='70' rx='40' ry='20' fill='%23ffffff' opacity='0.6'/%3E%3Cellipse cx='400' cy='85' rx='35' ry='18' fill='%23ffffff' opacity='0.7'/%3E%3C/g%3E%3C/svg%3E" 
+              <img
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 350'%3E%3Crect width='500' height='350' fill='%23e8f4f7'/%3E%3Cg%3E%3Crect x='100' y='150' width='300' height='140' fill='%23B8BCC8' stroke='%23464646' stroke-width='2'/%3E%3Cpolygon points='100,150 250,100 400,150' fill='%238A8A8A'/%3E%3Crect x='180' y='190' width='50' height='80' fill='%23FF6B35'/%3E%3Crect x='270' y='190' width='50' height='80' fill='%23666'/%3E%3Cpath d='M50 300 Q250 250 450 300 L450 350 L50 350 Z' fill='%2398B8A3'/%3E%3Crect x='20' y='50' width='460' height='80' fill='%23B0D4E3' opacity='0.7'/%3E%3Cellipse cx='100' cy='90' rx='30' ry='15' fill='%23ffffff' opacity='0.8'/%3E%3Cellipse cx='250' cy='70' rx='40' ry='20' fill='%23ffffff' opacity='0.6'/%3E%3Cellipse cx='400' cy='85' rx='35' ry='18' fill='%23ffffff' opacity='0.7'/%3E%3C/g%3E%3C/svg%3E"
                 alt="InstaShed Building"
                 className="w-full h-64 object-cover rounded-lg"
               />
@@ -98,15 +107,14 @@ export default function About() {
                 <span className="text-brand-orange">Our</span> Story
               </h2>
               <p className="text-gray-600 leading-relaxed mb-6">
-                InstaShed was founded in 2003 to help customers replace costly, 
-                unreliable and rotting wood sheds with premium metal buildings. Since our establishment, 
-                thousands have discovered what makes metal 
-                buildings from InstaShed so special.
+                InstaShed was founded in 2003 to help customers replace costly,
+                unreliable and rotting wood sheds with premium metal buildings.
+                Since our establishment, thousands have discovered what makes
+                metal buildings from InstaShed so special.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                Our mission is to develop what matters most 
-                from Owner of Technology to New 
-                Product Development.
+                Our mission is to develop what matters most from Owner of
+                Technology to New Product Development.
               </p>
             </div>
           </div>
@@ -123,19 +131,22 @@ export default function About() {
                 <span className="text-brand-orange">Our</span> Values
               </h2>
               <p className="text-gray-600 leading-relaxed mb-6">
-                We start just build business by understanding 
-                lasting value and reliable people where its 
-                our work can thrive.
+                We start just build business by understanding lasting value and
+                reliable people where its our work can thrive.
               </p>
-              
+
               {/* Stats */}
               <div className="grid grid-cols-2 gap-8">
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-brand-orange mb-2">20+</div>
+                  <div className="text-4xl font-bold text-brand-orange mb-2">
+                    20+
+                  </div>
                   <div className="text-gray-600 text-sm">Years Experience</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-brand-orange mb-2">5K+</div>
+                  <div className="text-4xl font-bold text-brand-orange mb-2">
+                    5K+
+                  </div>
                   <div className="text-gray-600 text-sm">Happy Customers</div>
                 </div>
               </div>
@@ -145,8 +156,21 @@ export default function About() {
             <div className="bg-brand-orange rounded-lg h-64 flex items-center justify-center">
               <div className="text-white text-6xl font-bold">
                 <svg width="100" height="100" viewBox="0 0 100 100" fill="none">
-                  <circle cx="50" cy="50" r="40" stroke="white" strokeWidth="4" fill="none"/>
-                  <path d="M35 50 L45 60 L65 40" stroke="white" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
+                  <circle
+                    cx="50"
+                    cy="50"
+                    r="40"
+                    stroke="white"
+                    strokeWidth="4"
+                    fill="none"
+                  />
+                  <path
+                    d="M35 50 L45 60 L65 40"
+                    stroke="white"
+                    strokeWidth="4"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
                 </svg>
               </div>
             </div>
@@ -160,8 +184,8 @@ export default function About() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Column - Image */}
             <div>
-              <img 
-                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Crect width='400' height='400' fill='%23f0f4f7'/%3E%3Cg%3E%3Ccircle cx='200' cy='180' r='60' fill='%23D4AF9A'/%3E%3Cpath d='M160 220 Q200 250 240 220 L240 350 Q200 370 160 350 Z' fill='%233B82F6'/%3E%3Cpath d='M180 160 Q200 140 220 160 L220 180 Q200 200 180 180 Z' fill='%238B4513'/%3E%3Cpath d='M170 170 Q200 150 230 170 L230 180 Q200 160 170 180 Z' fill='%23654321'/%3E%3Cpath d='M140 240 Q200 260 260 240 L260 280 Q200 300 140 280 Z' fill='%232563EB'/%3E%3Cpath d='M180 280 L220 280 L210 320 L190 320 Z' fill='%231E40AF'/%3E%3C/g%3E%3C/svg%3E" 
+              <img
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Crect width='400' height='400' fill='%23f0f4f7'/%3E%3Cg%3E%3Ccircle cx='200' cy='180' r='60' fill='%23D4AF9A'/%3E%3Cpath d='M160 220 Q200 250 240 220 L240 350 Q200 370 160 350 Z' fill='%233B82F6'/%3E%3Cpath d='M180 160 Q200 140 220 160 L220 180 Q200 200 180 180 Z' fill='%238B4513'/%3E%3Cpath d='M170 170 Q200 150 230 170 L230 180 Q200 160 170 180 Z' fill='%23654321'/%3E%3Cpath d='M140 240 Q200 260 260 240 L260 280 Q200 300 140 280 Z' fill='%232563EB'/%3E%3Cpath d='M180 280 L220 280 L210 320 L190 320 Z' fill='%231E40AF'/%3E%3C/g%3E%3C/svg%3E"
                 alt="Founder"
                 className="w-full h-80 object-cover rounded-lg"
               />
@@ -173,13 +197,12 @@ export default function About() {
                 <span className="text-brand-orange">Our</span> Founder
               </h2>
               <p className="text-gray-600 leading-relaxed mb-6">
-                With 20+ years of construction experience, Jeremy 
-                started InstaShed to deliver affordable metal 
-                buildings nationwide. His commitment to quality, 
-                customer service and building lasting relationships 
-                and honest service.
+                With 20+ years of construction experience, Jeremy started
+                InstaShed to deliver affordable metal buildings nationwide. His
+                commitment to quality, customer service and building lasting
+                relationships and honest service.
               </p>
-              
+
               <div className="bg-brand-orange text-white px-6 py-4 rounded-lg inline-block">
                 <div className="font-semibold">Jeremy Smith</div>
                 <div className="text-sm opacity-90">Founder & CEO</div>
@@ -193,13 +216,17 @@ export default function About() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold mb-12">
-            <span className="text-brand-orange">Frequently</span><br />
+            <span className="text-brand-orange">Frequently</span>
+            <br />
             Asked Questions
           </h2>
-          
+
           <div className="space-y-4">
             {faqs.map((faq, index) => (
-              <div key={index} className="border border-gray-200 rounded-lg overflow-hidden">
+              <div
+                key={index}
+                className="border border-gray-200 rounded-lg overflow-hidden"
+              >
                 <button
                   onClick={() => toggleFAQ(index)}
                   className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
@@ -247,7 +274,7 @@ export default function About() {
                   <span>Closed</span>
                 </div>
               </div>
-              
+
               <div className="mb-8">
                 <h3 className="text-xl font-semibold mb-4">InstaShed HQ</h3>
                 <div className="space-y-2 text-gray-300">
