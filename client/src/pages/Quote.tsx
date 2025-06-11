@@ -40,7 +40,15 @@ export default function Quote() {
       {/* Page Header */}
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 text-left mb-8">
+          <h1 
+            className="text-4xl sm:text-5xl font-bold text-left mb-8"
+            style={{
+              background: 'linear-gradient(90deg, rgba(0, 55, 58, 1) 0%, rgba(0, 55, 58, 0.4) 100%)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text'
+            }}
+          >
             REQUEST QUOTE
           </h1>
         </div>
