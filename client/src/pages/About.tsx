@@ -109,10 +109,10 @@ export default function About() {
               <div className="flex items-start">
                 <div className="relative">
                   <h2 className="text-3xl font-bold mb-6 flex items-center">
-                    <span className="text-brand-orange relative">
+                    <span className="text-brand-orange relative inline-block">
                       Our
-                      <div className="absolute -bottom-2 left-0 w-6 h-0.5 bg-brand-orange"></div>
                     </span>
+
                     <span className="ml-2 text-gray-900">Story</span>
                   </h2>
                   <div className="absolute left-3 top-12 w-0.5 h-32 bg-brand-orange"></div>
@@ -174,12 +174,35 @@ export default function About() {
             </div>
 
             {/* Right Column - SVG Icon */}
-            <div className="flex items-center justify-center">
+            {/* Right Column - SVG with orange rectangle */}
+            {/* Right Column - SVG with orange rectangle */}
+            {/* Right Column - SVG with orange rectangle */}
+            <div className="relative flex flex-col items-center justify-center">
+              {/* SVG (used to define height reference) */}
               <img
                 src={aboutIcon1}
                 alt="Values Icon"
-                className="w-48 h-32 object-contain"
+                style={{
+                  width: "212.6px",
+                  height: "122px",
+                  zIndex: 1,
+                  position: "relative",
+                }}
               />
+
+              {/* Orange rectangle (centered vertically behind the SVG) */}
+              <div
+                style={{
+                  width: "401px",
+                  height: "89px",
+                  backgroundColor: "#F97316", // Orange
+                  borderRadius: "8px",
+                  position: "absolute",
+                  top: "50%",
+                  transform: "translateY(-50%)", // Vertical centering
+                  zIndex: 0,
+                }}
+              ></div>
             </div>
           </div>
         </div>
@@ -194,7 +217,7 @@ export default function About() {
               <img
                 src={heroImage4}
                 alt="Founder"
-                className="w-full h-96 object-cover rounded-lg"
+                className="w-full h-100 object-cover rounded-lg"
               />
             </div>
 
@@ -219,9 +242,16 @@ export default function About() {
                 relationships and honest service.
               </p>
 
-              <div className="bg-brand-orange text-white px-6 py-4 rounded-lg inline-block ml-8">
-                <div className="font-semibold">Jeremy Smith</div>
-                <div className="text-sm opacity-90">Founder & CEO</div>
+              <div
+                className="bg-brand-orange text-white px-6 py-4 rounded-lg inline-block"
+                style={{
+                  width: "502px",
+                  marginLeft: "-80px", // Adjust this value as needed
+                }}
+              >
+                <div className="font-semibold text-center">
+                  Jeremy Zimmerman - Founder & CEO
+                </div>
               </div>
             </div>
           </div>
