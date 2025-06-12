@@ -61,10 +61,10 @@ export default function Quote() {
         </div>
       </section>
 
-      {/* Main Content */}
+      {/* Header Section with Content and Image */}
       <section className="py-8 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
             {/* Left Column - Content */}
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
@@ -79,30 +79,33 @@ export default function Quote() {
                 that meets your needs and budget. Fill out our form to get a
                 personalized quote today.
               </p>
-
-              {/* Hero Image */}
-              <div className="mb-8">
-                <img
-                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 350'%3E%3Crect width='500' height='350' fill='%23e8f4f7'/%3E%3Cg%3E%3Crect x='100' y='150' width='300' height='140' fill='%23B8BCC8' stroke='%23464646' stroke-width='2'/%3E%3Cpolygon points='100,150 250,100 400,150' fill='%238A8A8A'/%3E%3Crect x='180' y='190' width='50' height='80' fill='%23FF6B35'/%3E%3Crect x='270' y='190' width='50' height='80' fill='%23666'/%3E%3Cpath d='M50 300 Q250 250 450 300 L450 350 L50 350 Z' fill='%2398B8A3'/%3E%3Cpath d='M20 50 Q250 30 480 50 L480 120 Q250 100 20 120 Z' fill='%23B0D4E3' opacity='0.7'/%3E%3Cellipse cx='100' cy='85' rx='30' ry='15' fill='%23ffffff' opacity='0.8'/%3E%3Cellipse cx='250' cy='70' rx='40' ry='20' fill='%23ffffff' opacity='0.6'/%3E%3Cellipse cx='400' cy='85' rx='35' ry='18' fill='%23ffffff' opacity='0.7'/%3E%3Ccircle cx='350' cy='200' r='40' fill='%23D4AF9A'/%3E%3Cpath d='M330 230 Q350 250 370 230 L370 290 Q350 300 330 290 Z' fill='%233B82F6'/%3E%3Ccircle cx='450' cy='220' r='35' fill='%23D4AF9A'/%3E%3Cpath d='M425 245 Q450 265 475 245 L475 300 Q450 315 425 300 Z' fill='%23059669'/%3E%3C/g%3E%3C/svg%3E"
-                  alt="Metal Building with People"
-                  className="w-full h-64 object-cover rounded-lg"
-                />
-              </div>
             </div>
 
-            {/* Right Column - Form */}
-            <div className="bg-gray-50 p-8 rounded-lg">
-              <h3 className="text-xl font-bold text-gray-900 mb-6">
-                <span className="text-brand-orange">Fill the Form</span>
-              </h3>
+            {/* Right Column - Hero Image */}
+            <div>
+              <img
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 350'%3E%3Crect width='500' height='350' fill='%23e8f4f7'/%3E%3Cg%3E%3Crect x='100' y='150' width='300' height='140' fill='%23B8BCC8' stroke='%23464646' stroke-width='2'/%3E%3Cpolygon points='100,150 250,100 400,150' fill='%238A8A8A'/%3E%3Crect x='180' y='190' width='50' height='80' fill='%23FF6B35'/%3E%3Crect x='270' y='190' width='50' height='80' fill='%23666'/%3E%3Cpath d='M50 300 Q250 250 450 300 L450 350 L50 350 Z' fill='%2398B8A3'/%3E%3Cpath d='M20 50 Q250 30 480 50 L480 120 Q250 100 20 120 Z' fill='%23B0D4E3' opacity='0.7'/%3E%3Cellipse cx='100' cy='85' rx='30' ry='15' fill='%23ffffff' opacity='0.8'/%3E%3Cellipse cx='250' cy='70' rx='40' ry='20' fill='%23ffffff' opacity='0.6'/%3E%3Cellipse cx='400' cy='85' rx='35' ry='18' fill='%23ffffff' opacity='0.7'/%3E%3Ccircle cx='350' cy='200' r='40' fill='%23D4AF9A'/%3E%3Cpath d='M330 230 Q350 250 370 230 L370 290 Q350 300 330 290 Z' fill='%233B82F6'/%3E%3Ccircle cx='450' cy='220' r='35' fill='%23D4AF9A'/%3E%3Cpath d='M425 245 Q450 265 475 245 L475 300 Q450 315 425 300 Z' fill='%23059669'/%3E%3C/g%3E%3C/svg%3E"
+                alt="Metal Building with People"
+                className="w-full h-64 object-cover rounded-lg"
+              />
+            </div>
+          </div>
 
-              <form onSubmit={handleSubmit} className="space-y-6">
+          {/* Form Section - Full Width */}
+          <div className="bg-gray-50 p-8 rounded-lg">
+            <h3 className="text-xl font-bold text-gray-900 mb-8">
+              <span className="text-brand-orange">Fill the Form</span>
+            </h3>
+
+            <form onSubmit={handleSubmit} className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              {/* Left Column */}
+              <div className="space-y-6">
                 {/* Personal Information */}
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-4">
                     Personal Information
                   </h4>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                  <div className="space-y-4">
                     <input
                       type="text"
                       placeholder="First Name"
@@ -121,21 +124,21 @@ export default function Quote() {
                       }
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent"
                     />
+                    <input
+                      type="email"
+                      placeholder="Email Address"
+                      value={formData.email}
+                      onChange={(e) => handleInputChange("email", e.target.value)}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent"
+                    />
+                    <input
+                      type="tel"
+                      placeholder="Phone Number"
+                      value={formData.phone}
+                      onChange={(e) => handleInputChange("phone", e.target.value)}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent"
+                    />
                   </div>
-                  <input
-                    type="email"
-                    placeholder="Email Address"
-                    value={formData.email}
-                    onChange={(e) => handleInputChange("email", e.target.value)}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent mb-4"
-                  />
-                  <input
-                    type="tel"
-                    placeholder="Phone Number"
-                    value={formData.phone}
-                    onChange={(e) => handleInputChange("phone", e.target.value)}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent"
-                  />
                 </div>
 
                 {/* Preferred Contact Method */}
@@ -143,7 +146,7 @@ export default function Quote() {
                   <h4 className="font-semibold text-gray-900 mb-4">
                     Preferred Contact Method
                   </h4>
-                  <div className="flex space-x-4">
+                  <div className="flex space-x-6">
                     <label className="flex items-center">
                       <input
                         type="radio"
@@ -248,13 +251,16 @@ export default function Quote() {
                     />
                   </div>
                 </div>
+              </div>
 
+              {/* Right Column */}
+              <div className="space-y-6">
                 {/* Intended Use */}
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-4">
                     Intended Use
                   </h4>
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="space-y-4">
                     <input
                       type="text"
                       placeholder="Storage"
@@ -269,12 +275,12 @@ export default function Quote() {
                       placeholder="Workshop"
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent"
                     />
+                    <input
+                      type="text"
+                      placeholder="Other: Garage"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent"
+                    />
                   </div>
-                  <input
-                    type="text"
-                    placeholder="Other: Garage"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent mt-4"
-                  />
                 </div>
 
                 {/* Siding Material */}
@@ -360,7 +366,10 @@ export default function Quote() {
                     </div>
                   </div>
                 </div>
+              </div>
 
+              {/* Full Width Sections */}
+              <div className="col-span-1 lg:col-span-2 space-y-6">
                 {/* How Did You Hear About Us */}
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-4">
@@ -384,8 +393,8 @@ export default function Quote() {
                 >
                   Submit Your Form
                 </Button>
-              </form>
-            </div>
+              </div>
+            </form>
           </div>
         </div>
       </section>
