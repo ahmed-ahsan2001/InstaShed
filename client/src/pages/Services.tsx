@@ -172,59 +172,9 @@ export default function Services() {
                           <h4 className="text-xl font-bold text-gray-900 mb-4">
                             {service.title}
                           </h4>
-                          <p className="text-gray-600 mb-6 leading-relaxed">
-                            {service.content.description}
-                          </p>
-
-                          <div className="mb-6">
-                            <h5 className="font-semibold text-gray-900 mb-3">
-                              Perfect For:
-                            </h5>
-                            <ul className="space-y-2">
-                              {service.content.perfectFor.map((item, idx) => (
-                                <li
-                                  key={idx}
-                                  className="flex items-start space-x-2"
-                                >
-                                  <div className="w-1.5 h-1.5 bg-brand-orange rounded-full mt-2 flex-shrink-0"></div>
-                                  <span className="text-gray-600">{item}</span>
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
                         </div>
 
                         {/* Right Column */}
-                        <div>
-                          <div className="mb-6">
-                            <h5 className="font-semibold text-gray-900 mb-3">
-                              Example Use:
-                            </h5>
-                            <ul className="space-y-2">
-                              {service.content.exampleUse.map((item, idx) => (
-                                <li
-                                  key={idx}
-                                  className="flex items-start space-x-2"
-                                >
-                                  <div className="w-1.5 h-1.5 bg-brand-orange rounded-full mt-2 flex-shrink-0"></div>
-                                  <span className="text-gray-600">{item}</span>
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-
-                          <div className="space-y-4">
-                            <Button className="w-full bg-brand-orange text-white hover:bg-brand-orange-hover transition-colors duration-200">
-                              Get Quote
-                            </Button>
-                            <Button
-                              variant="outline"
-                              className="w-full text-brand-orange border-brand-orange hover:bg-brand-orange hover:text-white transition-colors duration-200"
-                            >
-                              Learn More
-                            </Button>
-                          </div>
-                        </div>
                       </div>
                     </div>
                   </div>
