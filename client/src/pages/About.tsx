@@ -109,7 +109,7 @@ export default function About() {
               <div className="flex items-start">
                 <div className="relative">
                   <h2 className="text-3xl font-bold mb-6 flex items-center">
-                    <span className="text-brand-orange relative inline-block">
+                    <span className="text-orange-500 relative inline-block">
                       Our
                     </span>
 
@@ -142,10 +142,7 @@ export default function About() {
               <div className="flex items-start">
                 <div className="relative">
                   <h2 className="text-3xl font-bold mb-6 flex items-center">
-                    <span className="text-brand-orange relative">
-                      Our
-                      <div className="absolute -bottom-2 left-0 w-6 h-0.5 bg-brand-orange"></div>
-                    </span>
+                    <span className="text-orange-500 relative">Our</span>
                     <span className="ml-2 text-gray-900">Values</span>
                   </h2>
                   <div className="absolute left-3 top-12 w-0.5 h-48 bg-brand-orange"></div>
@@ -226,10 +223,7 @@ export default function About() {
               <div className="flex items-start">
                 <div className="relative">
                   <h2 className="text-3xl font-bold mb-6 flex items-center">
-                    <span className="text-brand-orange relative">
-                      Our
-                      <div className="absolute -bottom-2 left-0 w-6 h-0.5 bg-brand-orange"></div>
-                    </span>
+                    <span className="text-orange-500 relative">Our</span>
                     <span className="ml-2 text-gray-900">Founder</span>
                   </h2>
                   <div className="absolute left-3 top-12 w-0.5 h-32 bg-brand-orange"></div>
