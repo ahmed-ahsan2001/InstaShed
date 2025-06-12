@@ -151,21 +151,21 @@ export default function ResidentialSheds() {
                   <input
                     type="text"
                     placeholder="Full Name (Required)"
-                    className="w-full px-4 py-3 bg-transparent border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:ring-2 focus:ring-brand-orange focus:border-transparent"
+                    className="w-full px-4 py-3 bg-transparent border border-brand-teal rounded-lg text-white placeholder-gray-400 focus:ring-2 focus:ring-brand-teal focus:border-transparent"
                   />
                   <input
                     type="email"
                     placeholder="Email (Required)"
-                    className="w-full px-4 py-3 bg-transparent border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:ring-2 focus:ring-brand-orange focus:border-transparent"
+                    className="w-full px-4 py-3 bg-transparent border border-brand-teal rounded-lg text-white placeholder-gray-400 focus:ring-2 focus:ring-brand-teal focus:border-transparent"
                   />
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <input
                     type="text"
                     placeholder="Zip Code / Area (Required)"
-                    className="w-full px-4 py-3 bg-transparent border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:ring-2 focus:ring-brand-orange focus:border-transparent"
+                    className="w-full px-4 py-3 bg-transparent border border-brand-teal rounded-lg text-white placeholder-gray-400 focus:ring-2 focus:ring-brand-teal focus:border-transparent"
                   />
-                  <select className="w-full px-4 py-3 bg-transparent border border-gray-600 rounded-lg text-white focus:ring-2 focus:ring-brand-orange focus:border-transparent">
+                  <select className="w-full px-4 py-3 bg-transparent border border-brand-teal rounded-lg text-white focus:ring-2 focus:ring-brand-teal focus:border-transparent">
                     <option value="" className="text-gray-900">
                       Type of Service You're Interested In
                     </option>
@@ -186,12 +186,12 @@ export default function ResidentialSheds() {
                 <textarea
                   rows={4}
                   placeholder="Message"
-                  className="w-full px-4 py-3 bg-transparent border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:ring-2 focus:ring-brand-orange focus:border-transparent resize-none"
+                  className="w-full px-4 py-3 bg-transparent border border-brand-teal rounded-lg text-white placeholder-gray-400 focus:ring-2 focus:ring-brand-teal focus:border-transparent resize-none"
                 />
                 <div className="text-right">
                   <span className="text-sm text-gray-400">0/500</span>
                 </div>
-                <Button className="w-full bg-transparent border-2 border-brand-orange text-brand-orange hover:bg-brand-orange hover:text-white transition-colors duration-200 py-3">
+                <Button className="w-full bg-transparent border-2 border-brand-teal text-brand-teal hover:bg-brand-teal hover:text-white transition-colors duration-200 py-3">
                   Schedule My Call
                 </Button>
               </form>
