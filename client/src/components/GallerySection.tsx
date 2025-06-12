@@ -9,61 +9,65 @@ import heroImage9 from "../../../Image 16.png";
 
 export default function GallerySection() {
   const galleryItems = [
-    {
-      image: heroImage2,
-    },
-    {
-      image: heroImage3,
-    },
-    {
-      image: heroImage4,
-    },
-    {
-      image: heroImage5,
-    },
-    {
-      image: heroImage6,
-    },
-    {
-      image: heroImage7,
-    },
+    { image: heroImage2 },
+    { image: heroImage3 },
+    { image: heroImage4 },
+    { image: heroImage5 },
+    { image: heroImage6 },
+    { image: heroImage7 },
   ];
 
   return (
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+        <div className="mb-12 flex flex-col lg:flex-row justify-between items-start gap-6">
+          {/* Left - Subtext */}
+          <p className="text-[30px] text-gray-700 text-left leading-snug">
+            See our Completed
+            <br />
+            <span>
+              <span className="text-orange-500 font-semibold">project</span>{" "}
+              including
+            </span>
+          </p>
+
+          {/* Right - Heading */}
+          <h2 className="text-[80px] font-bold text-gray-900 text-right leading-tight">
             Gallery
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Explore our portfolio of completed projects showcasing the quality
-            and variety of our metal building solutions.
-          </p>
         </div>
 
-        {/* Gallery Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {galleryItems.map((item, index) => (
+        {/* Custom Grid Layout */}
+        <div className="grid grid-cols-12 gap-6">
+          {/* First Row - 3 images, each takes 4 columns (12 / 3 = 4) */}
+          {galleryItems.slice(0, 3).map((item, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+              className="col-span-12 md:col-span-4 group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
             >
               <div className="aspect-w-4 aspect-h-3">
                 <img
                   src={item.image}
-                  alt={item.title}
+                  alt={`Gallery item ${index + 1}`}
                   className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-opacity duration-300 flex items-end">
-                <div className="p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                  <div className="text-sm text-brand-orange font-medium mb-1">
-                    {item.category}
-                  </div>
-                  <h3 className="text-lg font-semibold">{item.title}</h3>
-                </div>
+            </div>
+          ))}
+
+          {/* Second Row - 2 images, each takes 6 columns */}
+          {galleryItems.slice(3, 5).map((item, index) => (
+            <div
+              key={index + 3}
+              className="col-span-12 md:col-span-6 group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+            >
+              <div className="aspect-w-4 aspect-h-3">
+                <img
+                  src={item.image}
+                  alt={`Gallery item ${index + 4}`}
+                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                />
               </div>
             </div>
           ))}

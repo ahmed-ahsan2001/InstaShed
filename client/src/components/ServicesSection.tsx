@@ -1,8 +1,9 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "ServicesPageAll/servicesimage3.png";
+import heroImage from "../../../ServicesPageAll/servicesimage3.png";
 import heroImage1 from "../../../ServicesPageAll/servicesimage2.png";
 import heroImage2 from "../../../ServicesPageAll/servicesimage1.png";
 import heroImage3 from "../../../ServicesPageAll/servicesimage4.png";
+
 export default function ServicesSection() {
   const services = [
     {
@@ -29,7 +30,7 @@ export default function ServicesSection() {
         {/* Left Side */}
         <div className="flex flex-col space-y-6">
           {/* Heading */}
-          <h2 className="text-gray-900 text-[100px] font-bold leading-tight mb-6">
+          <h2 className="text-gray-900 text-[80px] font-bold leading-tight mb-6">
             Services
             <br />
             We Offer
@@ -65,13 +66,6 @@ export default function ServicesSection() {
                 {services[1].title}
               </h3>
             </div>
-          </div>
-
-          {/* Button */}
-          <div className="pt-4">
-            <Button className="bg-brand-orange hover:bg-brand-orange-hover text-white px-6 py-3 text-base rounded-md font-semibold">
-              Find an Installer Near You
-            </Button>
           </div>
         </div>
 
@@ -117,6 +111,13 @@ export default function ServicesSection() {
                 {services[3].title}
               </h3>
             </div>
+          </div>
+
+          {/* Orange Button at Bottom */}
+          <div className="pt-4">
+            <Button className="bg-brand-orange hover:bg-brand-orange-hover text-white px-6 py-3 text-base rounded-md font-semibold">
+              Find an Installer Near You
+            </Button>
           </div>
         </div>
       </div>
