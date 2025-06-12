@@ -3,6 +3,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ChevronDown, ChevronUp } from "lucide-react";
+import heroImage3 from "../../../AboutUs/aboutusimage1.png";
+import heroImage4 from "../../../AboutUs/aboutusimage2.png";
+import aboutIcon1 from "../../../AboutUs/aboutusicon1.svg";
 
 export default function About() {
   const [expandedFAQs, setExpandedFAQs] = useState<number[]>([]);
@@ -95,24 +98,33 @@ export default function About() {
             {/* Left Column - Image */}
             <div>
               <img
-                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 350'%3E%3Crect width='500' height='350' fill='%23e8f4f7'/%3E%3Cg%3E%3Crect x='100' y='150' width='300' height='140' fill='%23B8BCC8' stroke='%23464646' stroke-width='2'/%3E%3Cpolygon points='100,150 250,100 400,150' fill='%238A8A8A'/%3E%3Crect x='180' y='190' width='50' height='80' fill='%23FF6B35'/%3E%3Crect x='270' y='190' width='50' height='80' fill='%23666'/%3E%3Cpath d='M50 300 Q250 250 450 300 L450 350 L50 350 Z' fill='%2398B8A3'/%3E%3Crect x='20' y='50' width='460' height='80' fill='%23B0D4E3' opacity='0.7'/%3E%3Cellipse cx='100' cy='90' rx='30' ry='15' fill='%23ffffff' opacity='0.8'/%3E%3Cellipse cx='250' cy='70' rx='40' ry='20' fill='%23ffffff' opacity='0.6'/%3E%3Cellipse cx='400' cy='85' rx='35' ry='18' fill='%23ffffff' opacity='0.7'/%3E%3C/g%3E%3C/svg%3E"
+                src={heroImage3}
                 alt="InstaShed Building"
                 className="w-full h-64 object-cover rounded-lg"
               />
             </div>
 
             {/* Right Column - Content */}
-            <div>
-              <h2 className="text-3xl font-bold mb-6">
-                <span className="text-brand-orange">Our</span> Story
-              </h2>
-              <p className="text-gray-600 leading-relaxed mb-6">
+            <div className="relative">
+              <div className="flex items-start">
+                <div className="relative">
+                  <h2 className="text-3xl font-bold mb-6 flex items-center">
+                    <span className="text-brand-orange relative">
+                      Our
+                      <div className="absolute -bottom-2 left-0 w-6 h-0.5 bg-brand-orange"></div>
+                    </span>
+                    <span className="ml-2 text-gray-900">Story</span>
+                  </h2>
+                  <div className="absolute left-3 top-12 w-0.5 h-32 bg-brand-orange"></div>
+                </div>
+              </div>
+              <p className="text-gray-600 leading-relaxed mb-6 ml-8">
                 InstaShed was founded in 2003 to help customers replace costly,
                 unreliable and rotting wood sheds with premium metal buildings.
                 Since our establishment, thousands have discovered what makes
                 metal buildings from InstaShed so special.
               </p>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed ml-8">
                 Our mission is to develop what matters most from Owner of
                 Technology to New Product Development.
               </p>
@@ -126,17 +138,26 @@ export default function About() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Column - Content */}
-            <div>
-              <h2 className="text-3xl font-bold mb-6">
-                <span className="text-brand-orange">Our</span> Values
-              </h2>
-              <p className="text-gray-600 leading-relaxed mb-6">
+            <div className="relative">
+              <div className="flex items-start">
+                <div className="relative">
+                  <h2 className="text-3xl font-bold mb-6 flex items-center">
+                    <span className="text-brand-orange relative">
+                      Our
+                      <div className="absolute -bottom-2 left-0 w-6 h-0.5 bg-brand-orange"></div>
+                    </span>
+                    <span className="ml-2 text-gray-900">Values</span>
+                  </h2>
+                  <div className="absolute left-3 top-12 w-0.5 h-48 bg-brand-orange"></div>
+                </div>
+              </div>
+              <p className="text-gray-600 leading-relaxed mb-6 ml-8">
                 We start just build business by understanding lasting value and
                 reliable people where its our work can thrive.
               </p>
 
               {/* Stats */}
-              <div className="grid grid-cols-2 gap-8">
+              <div className="grid grid-cols-2 gap-8 ml-8">
                 <div className="text-center">
                   <div className="text-4xl font-bold text-brand-orange mb-2">
                     20+
@@ -152,27 +173,13 @@ export default function About() {
               </div>
             </div>
 
-            {/* Right Column - Image placeholder */}
-            <div className="bg-brand-orange rounded-lg h-64 flex items-center justify-center">
-              <div className="text-white text-6xl font-bold">
-                <svg width="100" height="100" viewBox="0 0 100 100" fill="none">
-                  <circle
-                    cx="50"
-                    cy="50"
-                    r="40"
-                    stroke="white"
-                    strokeWidth="4"
-                    fill="none"
-                  />
-                  <path
-                    d="M35 50 L45 60 L65 40"
-                    stroke="white"
-                    strokeWidth="4"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </div>
+            {/* Right Column - SVG Icon */}
+            <div className="flex items-center justify-center">
+              <img
+                src={aboutIcon1}
+                alt="Values Icon"
+                className="w-48 h-32 object-contain"
+              />
             </div>
           </div>
         </div>
@@ -185,25 +192,34 @@ export default function About() {
             {/* Left Column - Image */}
             <div>
               <img
-                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Crect width='400' height='400' fill='%23f0f4f7'/%3E%3Cg%3E%3Ccircle cx='200' cy='180' r='60' fill='%23D4AF9A'/%3E%3Cpath d='M160 220 Q200 250 240 220 L240 350 Q200 370 160 350 Z' fill='%233B82F6'/%3E%3Cpath d='M180 160 Q200 140 220 160 L220 180 Q200 200 180 180 Z' fill='%238B4513'/%3E%3Cpath d='M170 170 Q200 150 230 170 L230 180 Q200 160 170 180 Z' fill='%23654321'/%3E%3Cpath d='M140 240 Q200 260 260 240 L260 280 Q200 300 140 280 Z' fill='%232563EB'/%3E%3Cpath d='M180 280 L220 280 L210 320 L190 320 Z' fill='%231E40AF'/%3E%3C/g%3E%3C/svg%3E"
+                src={heroImage4}
                 alt="Founder"
-                className="w-full h-80 object-cover rounded-lg"
+                className="w-full h-96 object-cover rounded-lg"
               />
             </div>
 
             {/* Right Column - Content */}
-            <div>
-              <h2 className="text-3xl font-bold mb-6">
-                <span className="text-brand-orange">Our</span> Founder
-              </h2>
-              <p className="text-gray-600 leading-relaxed mb-6">
+            <div className="relative">
+              <div className="flex items-start">
+                <div className="relative">
+                  <h2 className="text-3xl font-bold mb-6 flex items-center">
+                    <span className="text-brand-orange relative">
+                      Our
+                      <div className="absolute -bottom-2 left-0 w-6 h-0.5 bg-brand-orange"></div>
+                    </span>
+                    <span className="ml-2 text-gray-900">Founder</span>
+                  </h2>
+                  <div className="absolute left-3 top-12 w-0.5 h-32 bg-brand-orange"></div>
+                </div>
+              </div>
+              <p className="text-gray-600 leading-relaxed mb-6 ml-8">
                 With 20+ years of construction experience, Jeremy started
                 InstaShed to deliver affordable metal buildings nationwide. His
                 commitment to quality, customer service and building lasting
                 relationships and honest service.
               </p>
 
-              <div className="bg-brand-orange text-white px-6 py-4 rounded-lg inline-block">
+              <div className="bg-brand-orange text-white px-6 py-4 rounded-lg inline-block ml-8">
                 <div className="font-semibold">Jeremy Smith</div>
                 <div className="text-sm opacity-90">Founder & CEO</div>
               </div>
