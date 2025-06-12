@@ -1,12 +1,12 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import heroImage5 from "../../../ServicesPagesingle2/service2image2.png";
+import heroImage5 from "../../../contactimage1.png";
 export default function Contact() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -14,22 +14,24 @@ export default function Contact() {
             {/* Left Column - Content */}
             <div>
               <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-8 leading-tight">
-                Let's <span className="text-brand-orange">Talk</span> About<br />
-                Your Next<br />
+                Let's <span className="text-orange-500">Talk</span> About
+                <br />
+                Your Next
+                <br />
                 Metal Building
               </h1>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Looking to build a shed, garage, or barn? Submit your info 
-                and our team will give you a call to discuss your project — 
-                no pressure, just expert advice.
+                Looking to build a shed, garage, or barn? Submit your info and
+                our team will give you a call to discuss your project — no
+                pressure, just expert advice.
               </p>
             </div>
 
             {/* Right Column - Customer Service Image */}
             <div className="flex justify-center">
               <div className="bg-gray-100 rounded-2xl p-8 max-w-md">
-                <img 
-                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Crect width='400' height='400' fill='%23f8fafc'/%3E%3Cg%3E%3Ccircle cx='200' cy='150' r='60' fill='%23D4AF9A'/%3E%3Cpath d='M160 190 Q200 220 240 190 L240 320 Q200 340 160 320 Z' fill='%232563EB'/%3E%3Cpath d='M180 130 Q200 110 220 130 L220 150 Q200 170 180 150 Z' fill='%238B4513'/%3E%3Cpath d='M170 140 Q200 120 230 140 L230 150 Q200 130 170 150 Z' fill='%23654321'/%3E%3Cpath d='M140 210 Q200 230 260 210 L260 250 Q200 270 140 250 Z' fill='%231E40AF'/%3E%3Cpath d='M180 250 L220 250 L210 290 L190 290 Z' fill='%231E3A8A'/%3E%3Crect x='50' y='50' width='300' height='200' fill='%23e5e7eb' opacity='0.3' rx='10'/%3E%3Crect x='80' y='80' width='240' height='140' fill='%23ffffff' opacity='0.8' rx='8'/%3E%3Ccircle cx='350' cy='100' r='20' fill='%23FF6B35'/%3E%3Cpath d='M340 110 Q350 120 360 110 L365 130 Q350 140 335 130 Z' fill='%23333'/%3E%3C/g%3E%3C/svg%3E" 
+                <img
+                  src={heroImage5}
                   alt="Customer Service Representative"
                   className="w-full h-80 object-cover rounded-lg"
                 />
@@ -62,7 +64,7 @@ export default function Contact() {
                   <span>Closed</span>
                 </div>
               </div>
-              
+
               <div className="mb-8">
                 <h3 className="text-xl font-semibold mb-6">
                   <span className="text-brand-orange">InstaShed HQ</span>
@@ -78,7 +80,9 @@ export default function Contact() {
                     <div className="w-6 h-6 bg-brand-orange rounded-full flex items-center justify-center mt-1">
                       <span className="text-xs text-white">📍</span>
                     </div>
-                    <span>107 West Main Street #681 Torre Hill, PA 17581 USA</span>
+                    <span>
+                      107 West Main Street #681 Torre Hill, PA 17581 USA
+                    </span>
                   </div>
                 </div>
               </div>
@@ -118,7 +122,7 @@ export default function Contact() {
                     />
                   </div>
                 </div>
-                
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <input
@@ -129,11 +133,21 @@ export default function Contact() {
                   </div>
                   <div>
                     <select className="w-full px-4 py-3 bg-transparent border border-gray-600 rounded-lg text-white focus:ring-2 focus:ring-brand-orange focus:border-transparent">
-                      <option value="" className="text-gray-900">Type of Service You're Interested In</option>
-                      <option value="residential" className="text-gray-900">Residential Metal Shed</option>
-                      <option value="commercial" className="text-gray-900">Commercial Building</option>
-                      <option value="agricultural" className="text-gray-900">Agricultural Barn</option>
-                      <option value="garage" className="text-gray-900">Steel Garage</option>
+                      <option value="" className="text-gray-900">
+                        Type of Service You're Interested In
+                      </option>
+                      <option value="residential" className="text-gray-900">
+                        Residential Metal Shed
+                      </option>
+                      <option value="commercial" className="text-gray-900">
+                        Commercial Building
+                      </option>
+                      <option value="agricultural" className="text-gray-900">
+                        Agricultural Barn
+                      </option>
+                      <option value="garage" className="text-gray-900">
+                        Steel Garage
+                      </option>
                     </select>
                   </div>
                 </div>
