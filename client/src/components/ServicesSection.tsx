@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "../../../ServicesPageAll/servicesimage3.png";
+import heroImage from "ServicesPageAll/servicesimage3.png";
 import heroImage1 from "../../../ServicesPageAll/servicesimage2.png";
 import heroImage2 from "../../../ServicesPageAll/servicesimage1.png";
 import heroImage3 from "../../../ServicesPageAll/servicesimage4.png";
