@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-
+import heroImage5 from "../../../ServicesPagesingle2/service2image2.png";
 export default function Contact() {
   return (
     <div className="min-h-screen bg-white">
