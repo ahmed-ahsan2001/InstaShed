@@ -2,12 +2,13 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Play } from "lucide-react";
-
+import heroImage4 from "../../../Servicespagesingle3/service3image1.png";
+import heroImage5 from "../../../Servicespagesingle3/service3image2.png";
 export default function PrefabGarages() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      
+
       {/* Page Header */}
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -21,8 +22,8 @@ export default function PrefabGarages() {
       <section className="py-8 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative mb-12">
-            <img 
-              src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%23e8f4f7'/%3E%3Cg%3E%3Crect x='100' y='200' width='600' height='180' fill='%23464646' stroke='%23333' stroke-width='3'/%3E%3Cpolygon points='100,200 400,150 700,200' fill='%23333'/%3E%3Crect x='200' y='250' width='80' height='100' fill='%23333'/%3E%3Crect x='300' y='250' width='80' height='100' fill='%23333'/%3E%3Crect x='420' y='250' width='80' height='100' fill='%23333'/%3E%3Crect x='520' y='250' width='80' height='100' fill='%23333'/%3E%3Cline x1='240' y1='250' x2='240' y2='350' stroke='%23666' stroke-width='2'/%3E%3Cline x1='340' y1='250' x2='340' y2='350' stroke='%23666' stroke-width='2'/%3E%3Cline x1='460' y1='250' x2='460' y2='350' stroke='%23666' stroke-width='2'/%3E%3Cline x1='560' y1='250' x2='560' y2='350' stroke='%23666' stroke-width='2'/%3E%3Cpath d='M50 380 Q400 350 750 380 L750 450 L50 450 Z' fill='%2398B8A3'/%3E%3Cpath d='M0 50 Q400 30 800 50 L800 150 Q400 120 0 150 Z' fill='%23567A5C'/%3E%3Cellipse cx='200' cy='100' rx='60' ry='30' fill='%2398B8A3'/%3E%3Cellipse cx='600' cy='85' rx='80' ry='35' fill='%2398B8A3'/%3E%3C/g%3E%3C/svg%3E"
+            <img
+              src={heroImage4}
               alt="Prefab Steel Garage"
               className="w-full h-96 object-cover rounded-lg"
             />
@@ -38,21 +39,33 @@ export default function PrefabGarages() {
             {/* Left Column - Text Content */}
             <div>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Our <span className="text-brand-orange font-medium">steel pole barns</span> are engineered for rugged farm life. Built using rust-resistant galvanized panels, they protect tractors, hay, feed, and livestock year-round with wide, open interiors and minimal maintenance.
+                Our{" "}
+                <span className="text-brand-orange font-medium">
+                  steel pole barns
+                </span>{" "}
+                are engineered for rugged farm life. Built using rust-resistant
+                galvanized panels, they protect tractors, hay, feed, and
+                livestock year-round with wide, open interiors and minimal
+                maintenance.
               </p>
-              
+
               <div className="space-y-8">
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Perfect For:</h3>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                    Perfect For:
+                  </h3>
                   <p className="text-gray-600">
                     Equipment shed, crop storage, livestock barn
                   </p>
                 </div>
-                
+
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Example use:</h3>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                    Example use:
+                  </h3>
                   <p className="text-gray-600">
-                    A pole barn in Canton CT now serves as a machinery shed and hay storage facility.
+                    A pole barn in Canton CT now serves as a machinery shed and
+                    hay storage facility.
                   </p>
                 </div>
               </div>
@@ -60,8 +73,8 @@ export default function PrefabGarages() {
 
             {/* Right Column - Image */}
             <div>
-              <img 
-                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 350'%3E%3Crect width='500' height='350' fill='%23E8F5E8'/%3E%3Cg%3E%3Crect x='50' y='120' width='400' height='160' fill='%23C8E6C9' stroke='%23464646' stroke-width='2'/%3E%3Cpath d='M50 120 Q250 80 450 120' fill='%23A5D6A7'/%3E%3Crect x='80' y='150' width='60' height='110' fill='%23C8E6C9'/%3E%3Crect x='150' y='150' width='60' height='110' fill='%23C8E6C9'/%3E%3Crect x='220' y='150' width='60' height='110' fill='%23C8E6C9'/%3E%3Crect x='290' y='150' width='60' height='110' fill='%23C8E6C9'/%3E%3Crect x='360' y='150' width='60' height='110' fill='%23C8E6C9'/%3E%3Cpath d='M0 290 Q250 270 500 290 L500 350 L0 350 Z' fill='%2398B8A3'/%3E%3Cpath d='M0 30 Q250 10 500 30 L500 80 Q250 60 0 80 Z' fill='%23FFE082' opacity='0.7'/%3E%3Cellipse cx='150' cy='55' rx='40' ry='20' fill='%23FFF59D'/%3E%3Cellipse cx='350' cy='50' rx='50' ry='25' fill='%23FFF59D'/%3E%3C/g%3E%3C/svg%3E"
+              <img
+                src={heroImage5}
                 alt="Steel Garage Storage"
                 className="w-full h-80 object-cover rounded-lg"
               />
@@ -93,7 +106,7 @@ export default function PrefabGarages() {
                   <span>Closed</span>
                 </div>
               </div>
-              
+
               <div className="mb-8">
                 <h3 className="text-xl font-semibold mb-4">
                   <span className="text-brand-orange">InstaShed HQ</span>
@@ -109,7 +122,9 @@ export default function PrefabGarages() {
                     <div className="w-6 h-6 bg-brand-orange rounded-full flex items-center justify-center mt-1">
                       <span className="text-xs text-white">📍</span>
                     </div>
-                    <span>107 West Main Street #681 Torre Hill, PA 17581 USA</span>
+                    <span>
+                      107 West Main Street #681 Torre Hill, PA 17581 USA
+                    </span>
                   </div>
                 </div>
               </div>
@@ -152,11 +167,21 @@ export default function PrefabGarages() {
                     className="w-full px-4 py-3 bg-transparent border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:ring-2 focus:ring-brand-orange focus:border-transparent"
                   />
                   <select className="w-full px-4 py-3 bg-transparent border border-gray-600 rounded-lg text-white focus:ring-2 focus:ring-brand-orange focus:border-transparent">
-                    <option value="" className="text-gray-900">Type of Service You're Interested In</option>
-                    <option value="garage" className="text-gray-900">Prefab Steel Garage</option>
-                    <option value="residential" className="text-gray-900">Residential Metal Shed</option>
-                    <option value="agricultural" className="text-gray-900">Agricultural Barn</option>
-                    <option value="commercial" className="text-gray-900">Commercial Building</option>
+                    <option value="" className="text-gray-900">
+                      Type of Service You're Interested In
+                    </option>
+                    <option value="garage" className="text-gray-900">
+                      Prefab Steel Garage
+                    </option>
+                    <option value="residential" className="text-gray-900">
+                      Residential Metal Shed
+                    </option>
+                    <option value="agricultural" className="text-gray-900">
+                      Agricultural Barn
+                    </option>
+                    <option value="commercial" className="text-gray-900">
+                      Commercial Building
+                    </option>
                   </select>
                 </div>
                 <textarea

@@ -2,12 +2,14 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Play } from "lucide-react";
+import heroImage4 from "../../../ServicesPagesingle2/service2image1.png";
+import heroImage5 from "../../../ServicesPagesingle2/service2image2.png";
 
 export default function AgriculturalBarns() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      
+
       {/* Page Header */}
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -21,8 +23,8 @@ export default function AgriculturalBarns() {
       <section className="py-8 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative mb-12">
-            <img 
-              src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%23e8f4f7'/%3E%3Cg%3E%3Crect x='100' y='200' width='600' height='180' fill='%23D32F2F' stroke='%23B71C1C' stroke-width='3'/%3E%3Cpath d='M100 200 Q400 160 700 200' fill='%23B71C1C'/%3E%3Crect x='200' y='250' width='50' height='100' fill='%23333'/%3E%3Crect x='270' y='250' width='50' height='100' fill='%23333'/%3E%3Crect x='340' y='250' width='50' height='100' fill='%23333'/%3E%3Crect x='410' y='250' width='50' height='100' fill='%23333'/%3E%3Crect x='480' y='250' width='50' height='100' fill='%23333'/%3E%3Crect x='550' y='250' width='50' height='100' fill='%23333'/%3E%3Crect x='380' y='180' width='40' height='40' fill='%23FFEB3B'/%3E%3Cpath d='M50 380 Q400 350 750 380 L750 450 L50 450 Z' fill='%2398B8A3'/%3E%3Cpath d='M0 50 Q400 30 800 50 L800 150 Q400 120 0 150 Z' fill='%23A5D6A7'/%3E%3Cellipse cx='200' cy='100' rx='60' ry='30' fill='%23C8E6C9'/%3E%3Cellipse cx='600' cy='85' rx='80' ry='35' fill='%23C8E6C9'/%3E%3C/g%3E%3C/svg%3E"
+            <img
+              src={heroImage4}
               alt="Agricultural Pole Barn"
               className="w-full h-96 object-cover rounded-lg"
             />
@@ -38,21 +40,32 @@ export default function AgriculturalBarns() {
             {/* Left Column - Text Content */}
             <div>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Protect your vehicles and equipment with a custom-built <span className="text-brand-orange font-medium">prefab steel garage</span>. Available in single, double, or triple-car formats, our garages feature reinforced walls, high-load roof panels, and optional ventilation or insulation.
+                Protect your vehicles and equipment with a custom-built{" "}
+                <span className="text-brand-orange font-medium">
+                  prefab steel garage
+                </span>
+                . Available in single, double, or triple-car formats, our
+                garages feature reinforced walls, high-load roof panels, and
+                optional ventilation or insulation.
               </p>
-              
+
               <div className="space-y-8">
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Perfect For:</h3>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                    Perfect For:
+                  </h3>
                   <p className="text-gray-600">
                     Car garage, RV garage, motorcycle storage, hobby garage
                   </p>
                 </div>
-                
+
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Example use:</h3>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                    Example use:
+                  </h3>
                   <p className="text-gray-600">
-                    In Great Barrington MA, a two-car prefab garage now houses vintage motorcycles and gear.
+                    In Great Barrington MA, a two-car prefab garage now houses
+                    vintage motorcycles and gear.
                   </p>
                 </div>
               </div>
@@ -60,8 +73,8 @@ export default function AgriculturalBarns() {
 
             {/* Right Column - Image */}
             <div>
-              <img 
-                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 350'%3E%3Crect width='500' height='350' fill='%23e8f4f7'/%3E%3Cg%3E%3Crect x='80' y='150' width='340' height='140' fill='%23E8E8E8' stroke='%23464646' stroke-width='2'/%3E%3Cpath d='M80 150 Q250 110 420 150' fill='%23D0D0D0'/%3E%3Crect x='140' y='190' width='60' height='80' fill='%23333'/%3E%3Crect x='220' y='190' width='60' height='80' fill='%23333'/%3E%3Crect x='300' y='190' width='60' height='80' fill='%23333'/%3E%3Cpath d='M30 300 Q250 270 470 300 L470 350 L30 350 Z' fill='%2398B8A3'/%3E%3Cpath d='M0 50 Q250 30 500 50 L500 120 Q250 100 0 120 Z' fill='%23B0D4E3' opacity='0.7'/%3E%3Cellipse cx='150' cy='85' rx='40' ry='20' fill='%23ffffff' opacity='0.8'/%3E%3Cellipse cx='350' cy='80' rx='50' ry='25' fill='%23ffffff' opacity='0.6'/%3E%3C/g%3E%3C/svg%3E"
+              <img
+                src={heroImage5}
                 alt="Agricultural Barn Example"
                 className="w-full h-80 object-cover rounded-lg"
               />
@@ -93,7 +106,7 @@ export default function AgriculturalBarns() {
                   <span>Closed</span>
                 </div>
               </div>
-              
+
               <div className="mb-8">
                 <h3 className="text-xl font-semibold mb-4">
                   <span className="text-brand-orange">InstaShed HQ</span>
@@ -109,7 +122,9 @@ export default function AgriculturalBarns() {
                     <div className="w-6 h-6 bg-brand-orange rounded-full flex items-center justify-center mt-1">
                       <span className="text-xs text-white">📍</span>
                     </div>
-                    <span>107 West Main Street #681 Torre Hill, PA 17581 USA</span>
+                    <span>
+                      107 West Main Street #681 Torre Hill, PA 17581 USA
+                    </span>
                   </div>
                 </div>
               </div>
@@ -152,11 +167,21 @@ export default function AgriculturalBarns() {
                     className="w-full px-4 py-3 bg-transparent border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:ring-2 focus:ring-brand-orange focus:border-transparent"
                   />
                   <select className="w-full px-4 py-3 bg-transparent border border-gray-600 rounded-lg text-white focus:ring-2 focus:ring-brand-orange focus:border-transparent">
-                    <option value="" className="text-gray-900">Type of Service You're Interested In</option>
-                    <option value="agricultural" className="text-gray-900">Agricultural Pole Barn</option>
-                    <option value="residential" className="text-gray-900">Residential Metal Shed</option>
-                    <option value="garage" className="text-gray-900">Steel Garage</option>
-                    <option value="commercial" className="text-gray-900">Commercial Building</option>
+                    <option value="" className="text-gray-900">
+                      Type of Service You're Interested In
+                    </option>
+                    <option value="agricultural" className="text-gray-900">
+                      Agricultural Pole Barn
+                    </option>
+                    <option value="residential" className="text-gray-900">
+                      Residential Metal Shed
+                    </option>
+                    <option value="garage" className="text-gray-900">
+                      Steel Garage
+                    </option>
+                    <option value="commercial" className="text-gray-900">
+                      Commercial Building
+                    </option>
                   </select>
                 </div>
                 <textarea

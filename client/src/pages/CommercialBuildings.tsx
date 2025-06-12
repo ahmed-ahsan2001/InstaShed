@@ -2,12 +2,13 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Play } from "lucide-react";
+import heroImage4 from "../../../Servicespagesingle4/service4image1.png";
 
 export default function CommercialBuildings() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      
+
       {/* Page Header */}
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -21,8 +22,8 @@ export default function CommercialBuildings() {
       <section className="py-8 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative mb-12">
-            <img 
-              src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%23E3F2FD'/%3E%3Cg%3E%3Crect x='50' y='150' width='700' height='200' fill='%232196F3' stroke='%231976D2' stroke-width='3'/%3E%3Cpath d='M50 150 Q400 110 750 150' fill='%231976D2'/%3E%3Crect x='100' y='200' width='80' height='130' fill='%23333'/%3E%3Crect x='200' y='200' width='80' height='130' fill='%23333'/%3E%3Crect x='300' y='200' width='80' height='130' fill='%23333'/%3E%3Crect x='400' y='200' width='80' height='130' fill='%23333'/%3E%3Crect x='500' y='200' width='80' height='130' fill='%23333'/%3E%3Crect x='600' y='200' width='80' height='130' fill='%23333'/%3E%3Cline x1='140' y1='200' x2='140' y2='330' stroke='%23666' stroke-width='2'/%3E%3Cline x1='240' y1='200' x2='240' y2='330' stroke='%23666' stroke-width='2'/%3E%3Cline x1='340' y1='200' x2='340' y2='330' stroke='%23666' stroke-width='2'/%3E%3Cline x1='440' y1='200' x2='440' y2='330' stroke='%23666' stroke-width='2'/%3E%3Cline x1='540' y1='200' x2='540' y2='330' stroke='%23666' stroke-width='2'/%3E%3Cline x1='640' y1='200' x2='640' y2='330' stroke='%23666' stroke-width='2'/%3E%3Cpath d='M0 380 Q400 350 800 380 L800 450 L0 450 Z' fill='%2398B8A3'/%3E%3Cpath d='M0 50 Q400 30 800 50 L800 120 Q400 100 0 120 Z' fill='%23B0D4E3' opacity='0.7'/%3E%3Cellipse cx='200' cy='85' rx='60' ry='30' fill='%23ffffff' opacity='0.8'/%3E%3Cellipse cx='600' cy='75' rx='80' ry='35' fill='%23ffffff' opacity='0.6'/%3E%3C/g%3E%3C/svg%3E"
+            <img
+              src={heroImage4}
               alt="Commercial Steel Building"
               className="w-full h-96 object-cover rounded-lg"
             />
@@ -38,21 +39,32 @@ export default function CommercialBuildings() {
             {/* Left Column - Text Content */}
             <div>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Designed for growth, our <span className="text-brand-orange font-medium">commercial steel buildings</span> are ideal for workshops, warehouses, and contractor depots. With custom dimensions, wide bay doors, and expansion options, your structure scales with your business.
+                Designed for growth, our{" "}
+                <span className="text-brand-orange font-medium">
+                  commercial steel buildings
+                </span>{" "}
+                are ideal for workshops, warehouses, and contractor depots. With
+                custom dimensions, wide bay doors, and expansion options, your
+                structure scales with your business.
               </p>
-              
+
               <div className="space-y-8">
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Perfect For:</h3>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                    Perfect For:
+                  </h3>
                   <p className="text-gray-600">
                     Small warehouse, shop space, business storage
                   </p>
                 </div>
-                
+
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Example use:</h3>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                    Example use:
+                  </h3>
                   <p className="text-gray-600">
-                    In Loveland, a contractor expanded their operation with a 30x60 prefab steel building for equipment and load.
+                    In Loveland, a contractor expanded their operation with a
+                    30x60 prefab steel building for equipment and load.
                   </p>
                 </div>
               </div>
@@ -60,8 +72,8 @@ export default function CommercialBuildings() {
 
             {/* Right Column - Image */}
             <div>
-              <img 
-                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 350'%3E%3Crect width='500' height='350' fill='%23e8f4f7'/%3E%3Cg%3E%3Crect x='50' y='120' width='400' height='160' fill='%23A0A4B0' stroke='%23464646' stroke-width='2'/%3E%3Cpolygon points='50,120 250,80 450,120' fill='%237A7A7A'/%3E%3Crect x='100' y='160' width='60' height='100' fill='%23333'/%3E%3Crect x='180' y='160' width='60' height='100' fill='%23333'/%3E%3Crect x='260' y='160' width='60' height='100' fill='%23333'/%3E%3Crect x='340' y='160' width='60' height='100' fill='%23333'/%3E%3Cpath d='M0 290 Q250 270 500 290 L500 350 L0 350 Z' fill='%2398B8A3'/%3E%3Cpath d='M0 30 Q250 10 500 30 L500 80 Q250 60 0 80 Z' fill='%23B0D4E3' opacity='0.7'/%3E%3Cellipse cx='150' cy='55' rx='40' ry='20' fill='%23ffffff' opacity='0.8'/%3E%3Cellipse cx='350' cy='50' rx='50' ry='25' fill='%23ffffff' opacity='0.6'/%3E%3C/g%3E%3C/svg%3E"
+              <img
+                src={heroImage4}
                 alt="Commercial Building Interior"
                 className="w-full h-80 object-cover rounded-lg"
               />
@@ -93,7 +105,7 @@ export default function CommercialBuildings() {
                   <span>Closed</span>
                 </div>
               </div>
-              
+
               <div className="mb-8">
                 <h3 className="text-xl font-semibold mb-4">
                   <span className="text-brand-orange">InstaShed HQ</span>
@@ -109,7 +121,9 @@ export default function CommercialBuildings() {
                     <div className="w-6 h-6 bg-brand-orange rounded-full flex items-center justify-center mt-1">
                       <span className="text-xs text-white">📍</span>
                     </div>
-                    <span>107 West Main Street #681 Torre Hill, PA 17581 USA</span>
+                    <span>
+                      107 West Main Street #681 Torre Hill, PA 17581 USA
+                    </span>
                   </div>
                 </div>
               </div>
@@ -152,11 +166,21 @@ export default function CommercialBuildings() {
                     className="w-full px-4 py-3 bg-transparent border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:ring-2 focus:ring-brand-orange focus:border-transparent"
                   />
                   <select className="w-full px-4 py-3 bg-transparent border border-gray-600 rounded-lg text-white focus:ring-2 focus:ring-brand-orange focus:border-transparent">
-                    <option value="" className="text-gray-900">Type of Service You're Interested In</option>
-                    <option value="commercial" className="text-gray-900">Commercial Steel Building</option>
-                    <option value="residential" className="text-gray-900">Residential Metal Shed</option>
-                    <option value="agricultural" className="text-gray-900">Agricultural Barn</option>
-                    <option value="garage" className="text-gray-900">Steel Garage</option>
+                    <option value="" className="text-gray-900">
+                      Type of Service You're Interested In
+                    </option>
+                    <option value="commercial" className="text-gray-900">
+                      Commercial Steel Building
+                    </option>
+                    <option value="residential" className="text-gray-900">
+                      Residential Metal Shed
+                    </option>
+                    <option value="agricultural" className="text-gray-900">
+                      Agricultural Barn
+                    </option>
+                    <option value="garage" className="text-gray-900">
+                      Steel Garage
+                    </option>
                   </select>
                 </div>
                 <textarea
