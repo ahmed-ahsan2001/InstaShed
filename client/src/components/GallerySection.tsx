@@ -1,11 +1,11 @@
-import heroImage2 from "../../../Image 8.png";
-import heroImage3 from "../../../Image 9.png";
-import heroImage4 from "../../../Image 11.png";
-import heroImage5 from "../../../Image 12.png";
-import heroImage6 from "../../../Image 13.png";
-import heroImage7 from "../../../Image 14.png";
-import heroImage8 from "../../../Image 15.png";
-import heroImage9 from "../../../Image 16.png";
+import heroImage2 from "@assets/Image 8.png";
+import heroImage3 from "@assets/Image 9.png";
+import heroImage4 from "@assets/Image 11.png";
+import heroImage5 from "@assets/Image 12.png";
+import heroImage6 from "@assets/Image 13.png";
+import heroImage7 from "@assets/Image 14.png";
+import heroImage8 from "@assets/Image 15.png";
+import heroImage9 from "@assets/Image 16.png";
 
 export default function GallerySection() {
   const galleryItems = [
