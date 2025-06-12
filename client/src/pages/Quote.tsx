@@ -2,6 +2,7 @@ import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import heroImage1 from "../../../RequestaQuote/reqaquoteimage1.png";
 import {
   Select,
   SelectContent,
@@ -84,7 +85,7 @@ export default function Quote() {
             {/* Right Column - Hero Image */}
             <div>
               <img
-                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 350'%3E%3Crect width='500' height='350' fill='%23e8f4f7'/%3E%3Cg%3E%3Crect x='100' y='150' width='300' height='140' fill='%23B8BCC8' stroke='%23464646' stroke-width='2'/%3E%3Cpolygon points='100,150 250,100 400,150' fill='%238A8A8A'/%3E%3Crect x='180' y='190' width='50' height='80' fill='%23FF6B35'/%3E%3Crect x='270' y='190' width='50' height='80' fill='%23666'/%3E%3Cpath d='M50 300 Q250 250 450 300 L450 350 L50 350 Z' fill='%2398B8A3'/%3E%3Cpath d='M20 50 Q250 30 480 50 L480 120 Q250 100 20 120 Z' fill='%23B0D4E3' opacity='0.7'/%3E%3Cellipse cx='100' cy='85' rx='30' ry='15' fill='%23ffffff' opacity='0.8'/%3E%3Cellipse cx='250' cy='70' rx='40' ry='20' fill='%23ffffff' opacity='0.6'/%3E%3Cellipse cx='400' cy='85' rx='35' ry='18' fill='%23ffffff' opacity='0.7'/%3E%3Ccircle cx='350' cy='200' r='40' fill='%23D4AF9A'/%3E%3Cpath d='M330 230 Q350 250 370 230 L370 290 Q350 300 330 290 Z' fill='%233B82F6'/%3E%3Ccircle cx='450' cy='220' r='35' fill='%23D4AF9A'/%3E%3Cpath d='M425 245 Q450 265 475 245 L475 300 Q450 315 425 300 Z' fill='%23059669'/%3E%3C/g%3E%3C/svg%3E"
+                src={heroImage1}
                 alt="Metal Building with People"
                 className="w-full h-64 object-cover rounded-lg"
               />
@@ -97,7 +98,10 @@ export default function Quote() {
               <span className="text-brand-orange">Fill the Form</span>
             </h3>
 
-            <form onSubmit={handleSubmit} className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <form
+              onSubmit={handleSubmit}
+              className="grid grid-cols-1 lg:grid-cols-2 gap-8"
+            >
               {/* Left Column */}
               <div className="space-y-6">
                 {/* Personal Information */}
@@ -128,14 +132,18 @@ export default function Quote() {
                       type="email"
                       placeholder="Email Address"
                       value={formData.email}
-                      onChange={(e) => handleInputChange("email", e.target.value)}
+                      onChange={(e) =>
+                        handleInputChange("email", e.target.value)
+                      }
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent"
                     />
                     <input
                       type="tel"
                       placeholder="Phone Number"
                       value={formData.phone}
-                      onChange={(e) => handleInputChange("phone", e.target.value)}
+                      onChange={(e) =>
+                        handleInputChange("phone", e.target.value)
+                      }
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent"
                     />
                   </div>
