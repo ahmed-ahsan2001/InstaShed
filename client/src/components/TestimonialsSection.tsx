@@ -1,4 +1,4 @@
-import buildingImage from "@assets/landingimage17.png";
+import buildingImage from "../../../Image 17.png"; // ✅ Confirmed image path
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 export default function TestimonialsSection() {
@@ -22,10 +22,10 @@ export default function TestimonialsSection() {
         </h2>
 
         {/* Content Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left - Testimonial */}
-          <div>
-            <p className="text-gray-700 text-lg mb-6 italic">
+          <div className="flex flex-col justify-center h-full">
+            <p className="text-gray-700 text-lg mb-6 italic leading-relaxed">
               "{testimonial.text}"
             </p>
 
@@ -44,21 +44,21 @@ export default function TestimonialsSection() {
 
             {/* Arrows */}
             <div className="flex gap-4">
-              <button className="w-8 h-8 rounded-full bg-gray-300 flex items-center justify-center hover:bg-gray-400 transition">
+              <button className="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center hover:bg-gray-400 transition">
                 <FaArrowLeft className="text-white text-sm" />
               </button>
-              <button className="w-8 h-8 rounded-full bg-orange-500 flex items-center justify-center hover:bg-orange-600 transition">
+              <button className="w-10 h-10 rounded-full bg-orange-500 flex items-center justify-center hover:bg-orange-600 transition">
                 <FaArrowRight className="text-white text-sm" />
               </button>
             </div>
           </div>
 
           {/* Right - Image */}
-          <div className="w-full flex justify-end">
+          <div className="w-full">
             <img
               src={buildingImage}
               alt="Client Project"
-              className="max-w-full h-auto rounded-lg shadow-lg"
+              className="w-full max-w-md mx-auto rounded-lg shadow-lg"
             />
           </div>
         </div>

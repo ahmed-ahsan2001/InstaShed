@@ -94,11 +94,6 @@ export default function Header() {
                 Request a Quote
               </span>
             </Link>
-            <Link href="/blog">
-              <span className="text-gray-700 hover:text-brand-orange transition-colors duration-200 cursor-pointer">
-                Blog & Resources
-              </span>
-            </Link>
           </nav>
 
           {/* CTA Button and Mobile Menu */}
@@ -187,11 +182,6 @@ export default function Header() {
             <Link href="/quote">
               <span className="block px-3 py-2 text-gray-700 hover:text-brand-orange cursor-pointer">
                 Request a Quote
-              </span>
-            </Link>
-            <Link href="/blog">
-              <span className="block px-3 py-2 text-gray-700 hover:text-brand-orange cursor-pointer">
-                Blog & Resources
               </span>
             </Link>
           </div>
