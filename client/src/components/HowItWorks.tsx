@@ -8,27 +8,25 @@ export default function HowItWorks() {
   return (
     <section className="bg-teal-800 py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-        {/* Left Side - Title, Image, Button */}
-        <div className="flex flex-col space-y-6">
+        {/* Left Side */}
+        <div className="flex flex-col space-y-10">
           {/* Heading */}
-          <div>
-            <h2 className="text-white text-5xl font-bold leading-tight mb-6">
-              How
-              <br />
-              It Works ?
-            </h2>
-          </div>
+          <h2 className="text-white text-6xl md:text-7xl font-bold leading-tight mb-4">
+            How
+            <br />
+            It Works?
+          </h2>
 
-          {/* Left Image Card */}
-          <div className="w-96 bg-white rounded-2xl shadow-lg overflow-hidden">
-            <div className="h-52">
+          {/* Card 1 */}
+          <div className="w-full max-w-sm relative">
+            <div className="rounded-2xl overflow-hidden shadow-lg">
               <img
                 src={heroImage1}
                 alt="Custom Build"
-                className="h-full w-full object-cover"
+                className="h-80 w-full object-cover"
               />
             </div>
-            <div className="p-6">
+            <div className="bg-white p-6 rounded-xl shadow-lg -mt-24 mx-auto w-[85%] relative z-10">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
                 Custom Build
               </h3>
@@ -49,20 +47,20 @@ export default function HowItWorks() {
           </div>
         </div>
 
-        {/* Right Side - Two Cards */}
-        <div className="flex flex-col space-y-10 items-end">
-          {/* Top Right Card */}
-          <div className="w-96 bg-white rounded-2xl shadow-lg overflow-hidden">
-            <div className="h-52">
+        {/* Right Side */}
+        <div className="flex flex-col space-y-14 items-end mr-auto">
+          {/* Card 2 */}
+          <div className="w-full max-w-sm relative">
+            <div className="rounded-2xl overflow-hidden shadow-lg">
               <img
                 src={heroImage}
                 alt="Free Consultation"
-                className="h-full w-full object-cover"
+                className="h-80 w-full object-cover"
               />
             </div>
-            <div className="p-6">
+            <div className="bg-white p-6 rounded-xl shadow-lg -mt-24 mx-auto w-[85%] relative z-10">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                <span className="text-brand-orange">Free</span> Consultation
+                <span className="text-orange-500">Free</span> Consultation
               </h3>
               <p className="text-base text-gray-600">
                 We help you plan the right metal storage shed, garage, or pole
@@ -71,16 +69,16 @@ export default function HowItWorks() {
             </div>
           </div>
 
-          {/* Bottom Right Card */}
-          <div className="w-96 bg-white rounded-2xl shadow-lg overflow-hidden">
-            <div className="h-52">
+          {/* Card 3 */}
+          <div className="w-full max-w-sm relative">
+            <div className="rounded-2xl overflow-hidden shadow-lg">
               <img
                 src={heroImage2}
                 alt="Delivery & Installation"
-                className="h-full w-full object-cover"
+                className="h-80 w-full object-cover"
               />
             </div>
-            <div className="p-6">
+            <div className="bg-white p-6 rounded-xl shadow-lg -mt-24 mx-auto w-[85%] relative z-10">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
                 Delivery & Installation
               </h3>
