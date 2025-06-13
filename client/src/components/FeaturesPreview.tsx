@@ -12,7 +12,7 @@ export default function FeaturesPreview() {
         {/* Top Section - 2 Boxes Matching Bottom Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0">
           {/* Top Left Box */}
-          <div className="bg-white p-6 border border-gray-200 shadow-sm h-full">
+          <div className="bg-white p-6 border border-gray-200 shadow-sm min-h-[320px]">
             <div className="mb-4">
               <img
                 src={logoSvg}
@@ -30,7 +30,7 @@ export default function FeaturesPreview() {
           </div>
 
           {/* Top Right Heading (spans 3 columns to align with 3 boxes below) */}
-          <div className="col-span-1 md:col-span-1 lg:col-span-3 relative h-full mb-12">
+          <div className="col-span-1 md:col-span-1 lg:col-span-3 relative mb-12">
             <div className="absolute bottom-4 right-0 p-4 text-right">
               {/* Decorative Brackets */}
               <div className="absolute top-0 left-0 w-3 h-3 border-t-2 border-l-2 border-orange-500" />
@@ -52,7 +52,7 @@ export default function FeaturesPreview() {
           {[icon2, icon3, icon4, icon5].map((icon, i) => (
             <div
               key={i}
-              className="bg-white p-6 border border-gray-200 shadow-sm h-full"
+              className="bg-white p-6 border border-gray-200 shadow-sm min-h-[320px]"
             >
               <div className="mb-4">
                 <img src={icon} alt="Feature Icon" className="w-12 h-12 mb-4" />
