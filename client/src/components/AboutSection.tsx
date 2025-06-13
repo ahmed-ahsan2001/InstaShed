@@ -1,44 +1,78 @@
+import heroImage6 from "../../../Image 13.png";
+import aboutIcon1 from "../../../AboutUs/aboutusicon1.svg";
 
 export default function AboutSection() {
-  const stats = [
-    { number: "20", label: "Years Experience", suffix: "+" },
-    { number: "5000", label: "Projects Completed", suffix: "+" },
-    { number: "98", label: "Customer Satisfaction", suffix: "%" },
-    { number: "24", label: "Expert Team Members", suffix: "" }
+  const values = [
+    {
+      title: "Craftsmanship",
+      description: "Attention to detail in every weld and bolt.",
+    },
+    {
+      title: "Durability",
+      description: "Buildings that stand the test of time and climate.",
+    },
+    {
+      title: "Integrity",
+      description: "Clear pricing, no hidden fees, full-service support.",
+    },
   ];
 
   return (
-    <section className="py-16 bg-gray-900 text-white">
+    <section
+      className="py-20 bg-gray-900 text-white bg-cover bg-center"
+      style={{
+        backgroundImage: `url('${heroImage6}')`,
+        backgroundBlendMode: "multiply",
+        backgroundColor: "rgba(0,0,0,0.8)",
+      }}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Left Content */}
-          <div>
-            <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-              About Us
-            </h2>
-            <div className="space-y-4 text-gray-300 leading-relaxed">
-              <p>
-                With over two decades of experience in the metal building industry, INSTA-SHED has become a trusted name in providing premium storage solutions across the region.
-              </p>
-              <p>
-                Our team of skilled craftsmen and engineers work together to deliver buildings that not only meet your immediate needs but also stand the test of time. We use only the highest quality materials and proven construction techniques.
-              </p>
-              <p>
-                From residential storage sheds to large commercial facilities, we've successfully completed thousands of projects, each one tailored to our client's specific requirements and built to exceed expectations.
-              </p>
-            </div>
+        {/* Top Row: About Us + SVG */}
+        <div className="flex flex-col md:flex-row justify-between items-center mb-12">
+          {/* Text */}
+          <h2 className="text-4xl sm:text-5xl font-bold text-left w-full md:w-1/2 mb-6 md:mb-0">
+            About Us
+          </h2>
+          {/* SVG Image */}
+          <div className="w-32 h-32 md:w-40 md:h-40">
+            <img
+              src={aboutIcon1}
+              alt="About Icon"
+              className="w-full h-full object-contain"
+            />
           </div>
+        </div>
 
-          {/* Right Stats Grid */}
-          <div className="grid grid-cols-2 gap-8">
-            {stats.map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-4xl sm:text-5xl font-bold text-brand-orange mb-2">
-                  {stat.number}{stat.suffix}
+        {/* Our Story */}
+        <div className="mb-12">
+          <h3 className="text-2xl font-semibold text-left mb-2">Our Story</h3>
+          <p className="text-center text-gray-300 max-w-4xl mx-auto">
+            InstaShed was founded in 2010 to help customers replace costly
+            rentals and rotting wood sheds with reliable, long-lasting custom
+            metal buildings. We’ve helped thousands of clients protect what
+            matters most — from Canton CT backyards to New York farmlands.
+          </p>
+        </div>
+
+        {/* Our Values */}
+        <div className="mb-12">
+          <h3 className="text-2xl font-semibold text-left mb-2">Our Values</h3>
+          <p className="text-center text-gray-300 max-w-4xl mx-auto mb-8">
+            We don’t just build buildings — we create lasting value and reliable
+            spaces where life and work can thrive.
+          </p>
+
+          {/* Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {values.map((val, idx) => (
+              <div
+                key={idx}
+                className="bg-black bg-opacity-40 border-l-4 border-brand-orange p-6 rounded-lg h-full w-full text-center"
+              >
+                <div className="font-semibold text-white mb-2 text-lg">
+                  {val.title}
                 </div>
-                <div className="text-gray-400 text-sm uppercase tracking-wide">
-                  {stat.label}
-                </div>
+                <p className="text-sm text-gray-300">{val.description}</p>
               </div>
             ))}
           </div>

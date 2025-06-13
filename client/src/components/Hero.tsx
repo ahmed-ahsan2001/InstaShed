@@ -52,14 +52,9 @@ export default function Hero() {
         {/* Hero Slider Container */}
         <div className="relative w-full max-w-[1240px] h-[818px] mx-auto">
           {/* Slider with rounded corners and curved notch cut */}
-          <div
-            className="relative w-full h-full overflow-hidden rounded-3xl"
-            style={{
-              clipPath:
-                "polygon(0 0, 100% 0, 100% 85%, 95% 90%, 90% 95%, 85% 98%, 75% 100%, 0 100%)",
-            }}
-          >
+          <div className="relative w-full h-full overflow-hidden rounded-3xl">
             {/* Current Slide */}
+            <div className="absolute bottom-0 right-0 w-[80px] h-[80px] bg-white rounded-tl-2xl z-20" />
             <div
               className="absolute inset-0 bg-cover bg-center transition-all duration-700 ease-in-out"
               style={{
