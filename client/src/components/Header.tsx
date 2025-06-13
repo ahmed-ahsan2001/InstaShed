@@ -1,16 +1,35 @@
 import { useState } from "react";
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Menu, ChevronDown } from "lucide-react";
 import logoSvg from "../../../intashedlogo.svg";
 
 export default function Header() {
+  const [location] = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
+  };
+
+  const isActive = (path: string) => {
+    if (path === "/" && location === "/") return true;
+    if (path !== "/" && location.startsWith(path)) return true;
+    return false;
+  };
+
+  const getNavLinkClass = (path: string) => {
+    return isActive(path) 
+      ? "text-brand-orange font-medium hover:text-brand-orange-hover transition-colors duration-200 cursor-pointer"
+      : "text-gray-700 hover:text-brand-orange transition-colors duration-200 cursor-pointer";
+  };
+
+  const getMobileNavLinkClass = (path: string) => {
+    return isActive(path)
+      ? "block px-3 py-2 text-brand-orange font-medium cursor-pointer"
+      : "block px-3 py-2 text-gray-700 hover:text-brand-orange cursor-pointer";
   };
 
   return (
@@ -30,12 +49,12 @@ export default function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
             <Link href="/">
-              <span className="text-brand-orange font-medium hover:hover:text-brand-orange-hover transition-colors duration-200 cursor-pointer">
+              <span className={getNavLinkClass("/")}>
                 Home
               </span>
             </Link>
             <Link href="/about">
-              <span className="text-gray-700 hover:text-brand-orange transition-colors duration-200 cursor-pointer">
+              <span className={getNavLinkClass("/about")}>
                 About us
               </span>
             </Link>
@@ -45,7 +64,7 @@ export default function Header() {
               onMouseLeave={() => setServicesDropdownOpen(false)}
             >
               <Link href="/services">
-                <span className="text-gray-700 hover:text-brand-orange transition-colors duration-200 flex items-center cursor-pointer">
+                <span className={`${getNavLinkClass("/services")} flex items-center`}>
                   Services
                   <ChevronDown className="w-4 h-4 ml-1" />
                 </span>
@@ -85,12 +104,12 @@ export default function Header() {
               )}
             </div>
             <Link href="/gallery">
-              <span className="text-gray-700 hover:text-brand-orange transition-colors duration-200 cursor-pointer">
+              <span className={getNavLinkClass("/gallery")}>
                 Gallery
               </span>
             </Link>
             <Link href="/quote">
-              <span className="text-gray-700 hover:text-brand-orange transition-colors duration-200 cursor-pointer">
+              <span className={getNavLinkClass("/quote")}>
                 Request a Quote
               </span>
             </Link>
@@ -122,12 +141,12 @@ export default function Header() {
         <div className="lg:hidden">
           <div className="px-4 pt-2 pb-4 space-y-2 bg-white border-t">
             <Link href="/">
-              <span className="block px-3 py-2 text-brand-orange font-medium cursor-pointer">
+              <span className={getMobileNavLinkClass("/")}>
                 Home
               </span>
             </Link>
             <Link href="/about">
-              <span className="block px-3 py-2 text-gray-700 hover:text-brand-orange cursor-pointer">
+              <span className={getMobileNavLinkClass("/about")}>
                 About us
               </span>
             </Link>
@@ -136,7 +155,11 @@ export default function Header() {
             <div>
               <button
                 onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
-                className="flex items-center justify-between w-full px-3 py-2 text-gray-700 hover:text-brand-orange cursor-pointer"
+                className={`flex items-center justify-between w-full px-3 py-2 cursor-pointer ${
+                  isActive("/services") 
+                    ? "text-brand-orange font-medium" 
+                    : "text-gray-700 hover:text-brand-orange"
+                }`}
               >
                 <span>Services</span>
                 <ChevronDown
@@ -175,12 +198,12 @@ export default function Header() {
             </div>
 
             <Link href="/gallery">
-              <span className="block px-3 py-2 text-gray-700 hover:text-brand-orange cursor-pointer">
+              <span className={getMobileNavLinkClass("/gallery")}>
                 Gallery
               </span>
             </Link>
             <Link href="/quote">
-              <span className="block px-3 py-2 text-gray-700 hover:text-brand-orange cursor-pointer">
+              <span className={getMobileNavLinkClass("/quote")}>
                 Request a Quote
               </span>
             </Link>
