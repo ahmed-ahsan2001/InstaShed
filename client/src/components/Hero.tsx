@@ -100,7 +100,7 @@ export default function Hero() {
                   className="w-[100px] h-[100px] sm:w-[120px] sm:h-[120px] lg:w-[150px] lg:h-[150px]"
                 >
                   <path
-                    d="M 200 200 L 200 80 Q 200 0 120 0 L 0 0 L 0 200 Z"
+                    d="M 0 200 L 80 200 Q 200 200 200 80 L 200 0 L 0 0 Z"
                     fill="white"
                   />
                 </svg>
