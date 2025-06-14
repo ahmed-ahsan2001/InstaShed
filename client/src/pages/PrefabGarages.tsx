@@ -37,7 +37,7 @@ export default function PrefabGarages() {
 
           {/* Description Section */}
           <div className="mb-16">
-            <p className="text-lg text-gray-600 leading-relaxed max-w-4xl mx-auto text-center">
+            <p className="text-lg text-gray-600 leading-relaxed">
               Protect your vehicles and equipment with a custom-built{" "}
               <span className="text-orange-500 font-medium">
                 prefab steel garage

@@ -38,7 +38,7 @@ export default function AgriculturalBarns() {
 
           {/* Description Section */}
           <div className="mb-16">
-            <p className="text-lg text-gray-600 leading-relaxed max-w-4xl mx-auto text-center">
+            <p className="text-lg text-gray-600 leading-relaxed">
               Our{" "}
               <span className="text-orange-500 font-medium">
                 steel pole barns

@@ -37,7 +37,7 @@ export default function CommercialBuildings() {
 
           {/* Description Section */}
           <div className="mb-16">
-            <p className="text-lg text-gray-600 leading-relaxed max-w-4xl mx-auto text-center">
+            <p className="text-lg text-gray-600 leading-relaxed">
               Designed for growth, our{" "}
               <span className="text-brand-orange font-medium">
                 commercial steel buildings
