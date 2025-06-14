@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ContactFormSection from "@/components/ContactFormSection";
 import { Button } from "@/components/ui/button";
 import { Play } from "lucide-react";
 import heroImage3 from "../../../ServicesPageSingle1/service1image1.png";
@@ -199,6 +200,9 @@ export default function ResidentialSheds() {
           </div>
         </div>
       </section>
+
+      {/* Contact Form Section */}
+      <ContactFormSection />
 
       <Footer />
     </div>

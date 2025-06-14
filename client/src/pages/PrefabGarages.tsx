@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ContactFormSection from "@/components/ContactFormSection";
 import { Button } from "@/components/ui/button";
 import { Play } from "lucide-react";
 import heroImage4 from "../../../Servicespagesingle3/service3image1.png";
@@ -200,6 +201,9 @@ export default function PrefabGarages() {
           </div>
         </div>
       </section>
+
+      {/* Contact Form Section */}
+      <ContactFormSection />
 
       <Footer />
     </div>

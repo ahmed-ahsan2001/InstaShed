@@ -21,8 +21,8 @@ export default function Header() {
   };
 
   const getNavLinkClass = (path: string) => {
-    return isActive(path) 
-      ? "text-brand-orange font-medium hover:text-brand-orange-hover transition-colors duration-200 cursor-pointer"
+    return isActive(path)
+      ? "text-orange-500 font-medium hover:text-brand-orange-hover transition-colors duration-200 cursor-pointer"
       : "text-gray-700 hover:text-brand-orange transition-colors duration-200 cursor-pointer";
   };
 
@@ -49,14 +49,10 @@ export default function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
             <Link href="/">
-              <span className={getNavLinkClass("/")}>
-                Home
-              </span>
+              <span className={getNavLinkClass("/")}>Home</span>
             </Link>
             <Link href="/about">
-              <span className={getNavLinkClass("/about")}>
-                About us
-              </span>
+              <span className={getNavLinkClass("/about")}>About us</span>
             </Link>
             <div
               className="relative group"
@@ -64,7 +60,9 @@ export default function Header() {
               onMouseLeave={() => setServicesDropdownOpen(false)}
             >
               <Link href="/services">
-                <span className={`${getNavLinkClass("/services")} flex items-center`}>
+                <span
+                  className={`${getNavLinkClass("/services")} flex items-center`}
+                >
                   Services
                   <ChevronDown className="w-4 h-4 ml-1" />
                 </span>
@@ -104,14 +102,10 @@ export default function Header() {
               )}
             </div>
             <Link href="/gallery">
-              <span className={getNavLinkClass("/gallery")}>
-                Gallery
-              </span>
+              <span className={getNavLinkClass("/gallery")}>Gallery</span>
             </Link>
             <Link href="/quote">
-              <span className={getNavLinkClass("/quote")}>
-                Request a Quote
-              </span>
+              <span className={getNavLinkClass("/quote")}>Request a Quote</span>
             </Link>
           </nav>
 
@@ -141,14 +135,10 @@ export default function Header() {
         <div className="lg:hidden">
           <div className="px-4 pt-2 pb-4 space-y-2 bg-white border-t">
             <Link href="/">
-              <span className={getMobileNavLinkClass("/")}>
-                Home
-              </span>
+              <span className={getMobileNavLinkClass("/")}>Home</span>
             </Link>
             <Link href="/about">
-              <span className={getMobileNavLinkClass("/about")}>
-                About us
-              </span>
+              <span className={getMobileNavLinkClass("/about")}>About us</span>
             </Link>
 
             {/* Mobile Services Dropdown */}
@@ -156,8 +146,8 @@ export default function Header() {
               <button
                 onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
                 className={`flex items-center justify-between w-full px-3 py-2 cursor-pointer ${
-                  isActive("/services") 
-                    ? "text-brand-orange font-medium" 
+                  isActive("/services")
+                    ? "text-brand-orange font-medium"
                     : "text-gray-700 hover:text-brand-orange"
                 }`}
               >
@@ -198,9 +188,7 @@ export default function Header() {
             </div>
 
             <Link href="/gallery">
-              <span className={getMobileNavLinkClass("/gallery")}>
-                Gallery
-              </span>
+              <span className={getMobileNavLinkClass("/gallery")}>Gallery</span>
             </Link>
             <Link href="/quote">
               <span className={getMobileNavLinkClass("/quote")}>
