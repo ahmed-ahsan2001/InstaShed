@@ -94,17 +94,18 @@ export default function Quote() {
           </div>
 
           {/* Form Heading */}
-          <h3 
+          <h3
             className="text-2xl font-bold text-gray-900 mb-8 pl-4 border-l-4 border-orange-500 py-3 pr-8"
             style={{
-              background: 'linear-gradient(90deg, rgba(255, 165, 0, 0.1) 0%, rgba(255, 165, 0, 0) 100%)'
+              background:
+                "linear-gradient(90deg, rgba(255, 165, 0, 0.1) 0%, rgba(255, 165, 0, 0) 100%)",
             }}
           >
             Fill the Form
           </h3>
 
           {/* Form Section - Full Width */}
-          <div className="bg-gray-50 p-8 rounded-lg">
+          <div className=" p-8 rounded-lg">
             <form
               onSubmit={handleSubmit}
               className="grid grid-cols-1 lg:grid-cols-2 gap-8"
@@ -186,25 +187,13 @@ export default function Quote() {
                       />
                       Call
                     </label>
-                    <label className="flex items-center">
-                      <input
-                        type="radio"
-                        name="preferredContact"
-                        value="text"
-                        onChange={(e) =>
-                          handleInputChange("preferredContact", e.target.value)
-                        }
-                        className="mr-2"
-                      />
-                      Text
-                    </label>
                   </div>
                 </div>
 
                 {/* Type of Service */}
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-4">
-                    Type of Service
+                    Type of Structure
                   </h4>
                   <Select
                     onValueChange={(value) =>
