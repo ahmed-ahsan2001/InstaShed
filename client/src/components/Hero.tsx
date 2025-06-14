@@ -51,11 +51,21 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative w-full max-w-[1240px] h-[600px] sm:h-[700px] lg:h-[818px] mx-auto">
           <div className="relative w-full h-full overflow-hidden rounded-3xl">
-            {/* Slide image with overlay */}
+            {/* Define the clip path for the curved cut */}
+            <svg className="absolute inset-0 w-0 h-0">
+              <defs>
+                <clipPath id="heroClipPath" clipPathUnits="objectBoundingBox">
+                  <path d="M 0 0 L 1 0 L 1 0.85 Q 0.9 1 0.8 1 L 0 1 Z" />
+                </clipPath>
+              </defs>
+            </svg>
+
+            {/* Slide image with overlay and curved cut */}
             <div
               className="absolute inset-0 bg-cover bg-center transition-all duration-700 ease-in-out"
               style={{
                 backgroundImage: `url('${slides[currentSlide].image}')`,
+                clipPath: "url(#heroClipPath)"
               }}
             >
               <div className="absolute inset-0 bg-black bg-opacity-40" />
@@ -89,21 +99,6 @@ export default function Hero() {
                     </Link>
                   </div>
                 </div>
-              </div>
-
-              {/* Curved cut design at bottom-right */}
-              <div className="absolute bottom-0 right-0 z-20">
-                <svg
-                  width="200"
-                  height="200"
-                  viewBox="0 0 200 200"
-                  className="w-[100px] h-[100px] sm:w-[120px] sm:h-[120px] lg:w-[150px] lg:h-[150px]"
-                >
-                  <path
-                    d="M 0 200 L 80 200 Q 200 200 200 80 L 200 0 L 0 0 Z"
-                    fill="white"
-                  />
-                </svg>
               </div>
             </div>
           </div>
