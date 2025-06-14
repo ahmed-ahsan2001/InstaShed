@@ -2,65 +2,69 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ContactFormSection from "@/components/ContactFormSection";
 import { Button } from "@/components/ui/button";
-import heroImage2 from "../../../Image 8.png";
-import heroImage3 from "../../../Image 9.png";
-import heroImage4 from "../../../Image 11.png";
-import heroImage5 from "../../../Image 12.png";
-import heroImage6 from "../../../Image 13.png";
-import heroImage7 from "../../../Image 14.png";
-import heroImage8 from "../../../Image 15.png";
-import heroImage9 from "../../../Image 16.png";
+import galleryImage1 from "../../../Gallery/galleryimage1.png";
+import galleryImage2 from "../../../Gallery/galleryimage2.png";
+import galleryImage3 from "../../../Gallery/galleryimage3.png";
+import galleryImage4 from "../../../Gallery/galleryimage4.png";
+import galleryImage5 from "../../../Gallery/galleryimage5.png";
+import galleryImage6 from "../../../Gallery/galleryimage6.png";
+import galleryImage7 from "../../../Gallery/galleryimage7.png";
+import galleryImage8 from "../../../Gallery/galleryimage8.png";
+import galleryImage9 from "../../../Gallery/galleryimage9.png";
 export default function Gallery() {
   const galleryImages = [
     {
       id: 1,
-      src: heroImage2,
-      alt: "Large Commercial Steel Building",
+      src: galleryImage1,
+      alt: "Steel Building Construction",
       className: "col-span-1 row-span-1",
     },
     {
       id: 2,
-      src: heroImage3,
-      alt: "Modern Steel Garage",
+      src: galleryImage2,
+      alt: "Modern Commercial Building",
       className: "col-span-1 row-span-1",
     },
     {
       id: 3,
-      src: heroImage4,
-      alt: "Red Agricultural Barn",
+      src: galleryImage3,
+      alt: "Agricultural Pole Barn",
       className: "col-span-2 row-span-1",
     },
     {
       id: 4,
-      src: heroImage5,
-      alt: "Dark Steel Building",
+      src: galleryImage4,
+      alt: "Steel Structure Framework",
       className: "col-span-1 row-span-1",
     },
     {
       id: 5,
-      src: heroImage6,
+      src: galleryImage5,
+      alt: "Industrial Steel Building",
       className: "col-span-1 row-span-1",
     },
     {
       id: 6,
-      src: heroImage7,
-      alt: "Steel Storage Buildings",
+      src: galleryImage6,
+      alt: "Commercial Steel Buildings",
       className: "col-span-1 row-span-1",
     },
     {
       id: 7,
-      src: heroImage8,
+      src: galleryImage7,
+      alt: "Steel Building Complex",
       className: "col-span-1 row-span-1",
     },
     {
       id: 8,
-      src: heroImage9,
-      alt: "Green Agricultural Building Interior",
+      src: galleryImage8,
+      alt: "Large Steel Warehouse",
       className: "col-span-1 row-span-1",
     },
     {
       id: 9,
-      src: heroImage2,
+      src: galleryImage9,
+      alt: "Metal Storage Buildings",
       className: "col-span-2 row-span-1",
     },
   ];
