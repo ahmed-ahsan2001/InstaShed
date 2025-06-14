@@ -40,25 +40,25 @@ export default function HomePageFAQ() {
   ];
 
   return (
-    <section className="py-16 bg-gray-50">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-left mb-12">
-          <div className="flex items-start gap-4 mb-6">
-            <div className="w-1 h-16 bg-brand-orange rounded-full"></div>
-            <div>
-              <h2 className="text-4xl sm:text-5xl font-bold leading-tight">
-                <div className="text-brand-orange">Frequently</div>
-                <div className="text-gray-900">Asked Questions</div>
-              </h2>
-            </div>
-          </div>
-          <p className="text-lg text-gray-600 ml-8">
+    <section className="py-16 bg-gray-50 relative">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        {/* Vertical Line */}
+        <div className="absolute top-[80px] bottom-0 left-8 w-1 bg-gradient-to-b from-orange-500 to-transparent rounded-full" />
+
+        {/* Heading Section */}
+        <div className="mb-12 text-left">
+          <h2 className="text-5xl sm:text-6xl font-bold text-gray-900 leading-tight">
+            <span className="text-orange-500 block">Frequently</span>
+            <span className="block pl-8 mt-2">Asked Questions</span>
+          </h2>
+          <p className="text-lg text-gray-600 mt-4 max-w-xl pl-8">
             Find answers to the most common questions about our metal building
             services.
           </p>
         </div>
 
-        <div className="space-y-4">
+        {/* FAQ Items */}
+        <div className="space-y-4 pl-8">
           {faqs.map((faq, index) => (
             <div
               key={index}

@@ -8,6 +8,7 @@ import GallerySection from "@/components/GallerySection";
 import BlogSection from "@/components/BlogSection";
 import ClientTestimonials from "@/components/ClientTestimonials";
 import HomePageFAQ from "@/components/HomePageFAQ";
+import ContactFormSection from "@/components/ContactFormSection";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
       <BlogSection />
       <ClientTestimonials />
       <HomePageFAQ />
+      <ContactFormSection />
       <Footer />
     </div>
   );
