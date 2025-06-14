@@ -30,17 +30,14 @@ export default function BlogSection() {
   ];
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-            Blog & Resource Center
+        <div className="mb-12 text-left">
+          <h2 className="text-4xl sm:text-6xl font-bold text-gray-900 mb-4">
+            Blog
+            <br />& Resource Center
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Stay informed with expert tips, industry insights, and helpful
-            guides for your metal building projects.
-          </p>
         </div>
 
         {/* Blog Posts Grid */}
