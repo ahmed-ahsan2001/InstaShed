@@ -89,10 +89,10 @@ export default function Services() {
                       <div className="w-3 h-3 rounded-full bg-gray-300"></div>
                     </div>
                     <h3
-                      className={`text-lg font-semibold ${
+                      className={`text-lg ${
                         expandedSections.includes(index)
-                          ? "text-orange-500"
-                          : "text-gray-900"
+                          ? "text-orange-500 font-normal"
+                          : "text-gray-900 font-semibold"
                       }`}
                     >
                       {service.title}
