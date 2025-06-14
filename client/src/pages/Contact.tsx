@@ -32,7 +32,7 @@ export default function Contact() {
               <img
                 src={heroImage5}
                 alt="Customer Service Representative"
-                className="w-full max-w-md h-80 object-cover rounded-lg"
+                className="w-64 h-96 object-cover rounded-lg"
               />
             </div>
           </div>
