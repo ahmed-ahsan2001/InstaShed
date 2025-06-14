@@ -68,8 +68,8 @@ export default function Quote() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
             {/* Left Column - Content */}
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                Request a Quote
+              <h2 className="text-5xl font-bold text-gray-900 mb-6">
+                Request a<br />Quote
               </h2>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                 Get Your Custom Metal Building Quote Today
