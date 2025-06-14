@@ -35,49 +35,47 @@ export default function CommercialBuildings() {
             </div>
           </div>
 
-          {/* Content Section */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-16">
-            {/* Left Column - Text Content */}
-            <div>
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Designed for growth, our{" "}
-                <span className="text-brand-orange font-medium">
-                  commercial steel buildings
-                </span>{" "}
-                are ideal for workshops, warehouses, and contractor depots. With
-                custom dimensions, wide bay doors, and expansion options, your
-                structure scales with your business.
+          {/* Description Section */}
+          <div className="mb-16">
+            <p className="text-lg text-gray-600 leading-relaxed max-w-4xl mx-auto text-center">
+              Designed for growth, our{" "}
+              <span className="text-brand-orange font-medium">
+                commercial steel buildings
+              </span>{" "}
+              are ideal for workshops, warehouses, and contractor depots. With
+              custom dimensions, wide bay doors, and expansion options, your
+              structure scales with your business.
+            </p>
+          </div>
+
+          {/* Image Section */}
+          <div className="mb-16">
+            <img
+              src={heroImage4}
+              alt="Commercial Building Interior"
+              className="w-full h-80 object-cover rounded-lg"
+            />
+          </div>
+
+          {/* Perfect For and Example Use Section */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-100">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                Perfect For:
+              </h3>
+              <p className="text-gray-600">
+                Small warehouse, shop space, business storage
               </p>
-
-              <div className="space-y-8">
-                <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-100">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                    Perfect For:
-                  </h3>
-                  <p className="text-gray-600">
-                    Small warehouse, shop space, business storage
-                  </p>
-                </div>
-
-                <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-100">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                    Example use:
-                  </h3>
-                  <p className="text-gray-600">
-                    In Loveland, a contractor expanded their operation with a
-                    30x60 prefab steel building for equipment and load.
-                  </p>
-                </div>
-              </div>
             </div>
 
-            {/* Right Column - Image */}
-            <div>
-              <img
-                src={heroImage4}
-                alt="Commercial Building Interior"
-                className="w-full h-80 object-cover rounded-lg"
-              />
+            <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-100">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                Example use:
+              </h3>
+              <p className="text-gray-600">
+                In Loveland, a contractor expanded their operation with a
+                30x60 prefab steel building for equipment and load.
+              </p>
             </div>
           </div>
         </div>

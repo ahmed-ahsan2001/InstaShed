@@ -35,49 +35,47 @@ export default function PrefabGarages() {
             </div>
           </div>
 
-          {/* Content Section */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-16">
-            {/* Left Column - Text Content */}
-            <div>
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Protect your vehicles and equipment with a custom-built{" "}
-                <span className="text-orange-500 font-medium">
-                  prefab steel garage
-                </span>
-                . Available in single, double, or triple-car formats, our
-                garages feature reinforced walls, high-load roof panels, and
-                optional ventilation or insulation.
+          {/* Description Section */}
+          <div className="mb-16">
+            <p className="text-lg text-gray-600 leading-relaxed max-w-4xl mx-auto text-center">
+              Protect your vehicles and equipment with a custom-built{" "}
+              <span className="text-orange-500 font-medium">
+                prefab steel garage
+              </span>
+              . Available in single, double, or triple-car formats, our
+              garages feature reinforced walls, high-load roof panels, and
+              optional ventilation or insulation.
+            </p>
+          </div>
+
+          {/* Image Section */}
+          <div className="mb-16">
+            <img
+              src={heroImage5}
+              alt="Steel Garage Storage"
+              className="w-full h-80 object-cover rounded-lg"
+            />
+          </div>
+
+          {/* Perfect For and Example Use Section */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-100">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                Perfect For:
+              </h3>
+              <p className="text-gray-600">
+                Vehicle protection, workshop space, commercial storage
               </p>
-
-              <div className="space-y-8">
-                <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-100">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                    Perfect For:
-                  </h3>
-                  <p className="text-gray-600">
-                    Vehicle protection, workshop space, commercial storage
-                  </p>
-                </div>
-
-                <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-100">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                    Example use:
-                  </h3>
-                  <p className="text-gray-600">
-                    In Great Barrington, MA, a two-car prefab garage now houses
-                    vintage motorcycles and gear.
-                  </p>
-                </div>
-              </div>
             </div>
 
-            {/* Right Column - Image */}
-            <div>
-              <img
-                src={heroImage5}
-                alt="Steel Garage Storage"
-                className="w-full h-80 object-cover rounded-lg"
-              />
+            <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-100">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                Example use:
+              </h3>
+              <p className="text-gray-600">
+                In Great Barrington, MA, a two-car prefab garage now houses
+                vintage motorcycles and gear.
+              </p>
             </div>
           </div>
         </div>
