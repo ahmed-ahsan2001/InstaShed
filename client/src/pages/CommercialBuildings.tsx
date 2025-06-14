@@ -13,7 +13,7 @@ export default function CommercialBuildings() {
       {/* Page Header */}
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-8">
+          <h1 className="text-6xl sm:text-7xl font-bold text-gray-900 mb-8">
             Commercial Steel Buildings
           </h1>
         </div>

@@ -13,7 +13,7 @@ export default function ResidentialSheds() {
       {/* Page Header */}
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-8">
+          <h1 className="text-center text-6xl sm:text-7xl font-bold text-gray-900 mb-8">
             Residential Metal <span className="text-orange-500">Sheds</span>
           </h1>
         </div>
@@ -43,8 +43,8 @@ export default function ResidentialSheds() {
                 metal sheds for backyard storage
               </span>{" "}
               are built to protect your tools, supplies, and hobbies. Custom
-              design options include windows, double doors, shelving, and
-              lofts — all made from weather-resistant steel.
+              design options include windows, double doors, shelving, and lofts
+              — all made from weather-resistant steel.
             </p>
           </div>
 
@@ -83,8 +83,6 @@ export default function ResidentialSheds() {
           </div>
         </div>
       </section>
-
-
 
       {/* Contact Form Section */}
       <ContactFormSection />
