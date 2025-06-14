@@ -13,7 +13,7 @@ export default function Contact() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Column - Content */}
             <div>
-              <h1 className="text-6xl sm:text-7xl font-bold text-gray-900 mb-8 leading-tight">
+              <h1 className="text-5xl sm:text-7xl font-bold text-gray-900 mb-8 leading-tight">
                 Let's <span className="text-orange-500">Talk</span> About
                 <br />
                 Your Next
@@ -32,7 +32,7 @@ export default function Contact() {
               <img
                 src={heroImage5}
                 alt="Customer Service Representative"
-                className="w-64 h-96 object-cover rounded-lg"
+                className="w-80 h-96 object-cover rounded-lg"
               />
             </div>
           </div>
