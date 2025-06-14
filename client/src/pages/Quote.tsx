@@ -94,7 +94,12 @@ export default function Quote() {
           </div>
 
           {/* Form Heading */}
-          <h3 className="text-2xl font-bold text-gray-900 mb-8 pl-4 border-l-4 border-orange-500">
+          <h3 
+            className="text-2xl font-bold text-gray-900 mb-8 pl-4 border-l-4 border-orange-500 py-3 pr-8"
+            style={{
+              background: 'linear-gradient(90deg, rgba(255, 165, 0, 0.1) 0%, rgba(255, 165, 0, 0) 100%)'
+            }}
+          >
             Fill the Form
           </h3>
 
