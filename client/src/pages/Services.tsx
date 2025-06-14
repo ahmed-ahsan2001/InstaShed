@@ -56,7 +56,7 @@ export default function Services() {
       <section className="py-12 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1
-            className="text-4xl sm:text-5xl font-bold text-center mb-8"
+            className="text-8xl sm:text-8xl font-bold text-center mb-8"
             style={{
               background:
                 "linear-gradient(90deg, rgba(0, 55, 58, 1) 0%, rgba(0, 55, 58, 0.4) 100%)",
@@ -243,7 +243,7 @@ export default function Services() {
                       </h4>
                       <ul className="text-sm text-gray-600 space-y-1">
                         <li>
-                          A farm in Texas uses our pole barn to store hay, 
+                          A farm in Texas uses our pole barn to store hay,
                           protect livestock, and house farming equipment.
                         </li>
                       </ul>
@@ -278,7 +278,9 @@ export default function Services() {
                         Perfect for:
                       </h4>
                       <ul className="text-sm text-gray-600 space-y-1">
-                        <li>Vehicle protection, workshop space, commercial storage</li>
+                        <li>
+                          Vehicle protection, workshop space, commercial storage
+                        </li>
                       </ul>
                     </div>
                     <div>

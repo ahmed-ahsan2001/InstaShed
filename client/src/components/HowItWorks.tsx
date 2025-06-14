@@ -6,7 +6,7 @@ import heroImage2 from "../../../Image 4.png";
 
 export default function HowItWorks() {
   return (
-    <section className="bg-teal-800 py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+    <section className="py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden" style={{ backgroundColor: '#003D3D' }}>
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
         {/* Left Side */}
         <div className="flex flex-col space-y-10">
