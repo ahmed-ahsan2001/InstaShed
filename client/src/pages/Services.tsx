@@ -3,11 +3,11 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ChevronDown, ChevronUp } from "lucide-react";
-import icon7 from "../../../Icon 6.svg"; // Down arrow (collapsed)
-import icon6 from "../../../reqicon2.svg"; // Up arrow (expanded)
+// Down arrow (collapsed)
+// Up arrow (expanded)
 import heroImage from "../../../ServicesPageAll/servicesimage3.png";
-import servicesicon from "../../../servicesallicon1.svg";
-import servicesicon1 from "../../../servicesallicon2.svg";
+import icon6 from "../../../servicesallicon1.svg";
+import icon7 from "../../../servicesallicon2.svg";
 import heroImage1 from "../../../ServicesPageAll/servicesimage2.png";
 import heroImage2 from "../../../ServicesPageAll/servicesimage1.png";
 import heroImage3 from "../../../ServicesPageAll/servicesimage4.png";
@@ -143,14 +143,18 @@ export default function Services() {
                     <div className="w-8 h-8 rounded-full border-2 border-gray-300 flex items-center justify-center">
                       <div className="w-3 h-3 rounded-full bg-gray-300"></div>
                     </div>
-                    <h3 className="text-lg font-semibold text-gray-900">
+                    <h3 className={`text-lg font-semibold transition-colors duration-200 ${
+                      expandedSections.includes(index) ? "text-brand-orange" : "text-gray-900"
+                    }`}>
                       {service.title}
                     </h3>
                   </div>
                   <div className="flex items-center space-x-2">
                     <img
                       src={expandedSections.includes(index) ? icon7 : icon6}
-                      alt={expandedSections.includes(index) ? "Collapse" : "Expand"}
+                      alt={
+                        expandedSections.includes(index) ? "Collapse" : "Expand"
+                      }
                       className="w-5 h-5 flex-shrink-0"
                     />
                   </div>
@@ -173,9 +177,7 @@ export default function Services() {
                       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                         {/* Left Column */}
                         <div>
-                          <h4 className="text-xl font-bold text-gray-900 mb-4">
-                            {service.title}
-                          </h4>
+                          <h4 className="text-xl font-bold text-gray-900 mb-4"></h4>
                         </div>
 
                         {/* Right Column */}
