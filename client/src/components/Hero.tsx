@@ -5,6 +5,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import heroImage from "../../../image1.jpg";
 import heroImage2 from "../../../Image 7.png";
 import heroImage3 from "../../../Back ground 1.jpg";
+
 export default function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -40,57 +41,48 @@ export default function Hero() {
     setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
   };
 
-  // Auto-advance slides every 5 seconds
   useEffect(() => {
     const timer = setInterval(nextSlide, 5000);
     return () => clearInterval(timer);
   }, []);
 
   return (
-    <section className="py-8 bg-white">
+    <section className="py-8 bg-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Hero Slider Container */}
-        <div className="relative w-full max-w-[1240px] h-[818px] mx-auto">
-          {/* Slider with rounded corners and curved notch cut */}
+        <div className="relative w-full max-w-[1240px] h-[600px] sm:h-[700px] lg:h-[818px] mx-auto">
           <div className="relative w-full h-full overflow-hidden rounded-3xl">
-            {/* Current Slide */}
-            <div className="absolute bottom-0 right-0 w-[80px] h-[80px] bg-white rounded-tl-2xl z-20" />
+            {/* Slide image with overlay */}
             <div
               className="absolute inset-0 bg-cover bg-center transition-all duration-700 ease-in-out"
               style={{
                 backgroundImage: `url('${slides[currentSlide].image}')`,
-                clipPath: "polygon(0 0, 100% 0, 100% 90%, 90% 100%, 0% 100%)",
               }}
             >
-              {/* Dark overlay */}
               <div className="absolute inset-0 bg-black bg-opacity-40" />
 
               {/* Content */}
-              <div className="relative z-10 flex items-center h-full px-8 lg:px-16">
+              <div className="relative z-10 flex items-center h-full px-4 sm:px-8 lg:px-16">
                 <div className="max-w-2xl text-white">
-                  <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                  <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-semibold leading-tight mb-4 sm:mb-6">
                     {slides[currentSlide].title}
                     <br />
-                    <span className="text-white">
-                      {slides[currentSlide].subtitle}
-                    </span>
+                    <span>{slides[currentSlide].subtitle}</span>
                   </h1>
 
-                  <p className="text-lg sm:text-xl text-gray-200 mb-8 leading-relaxed">
+                  <p className="text-base sm:text-lg md:text-xl text-gray-200 mb-6 sm:mb-8 leading-relaxed font-normal">
                     {slides[currentSlide].description}
                   </p>
 
-                  {/* CTA Buttons */}
                   <div className="flex flex-col sm:flex-row gap-4">
                     <Link href="/quote">
-                      <Button className="bg-brand-orange text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-brand-orange-hover transform hover:scale-105 transition-all duration-200 shadow-lg h-auto">
+                      <Button className="bg-brand-orange text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg hover:bg-brand-orange-hover transform hover:scale-105 transition-all duration-200 shadow-lg h-auto">
                         Get a Free Quote
                       </Button>
                     </Link>
                     <Link href="/services">
                       <Button
                         variant="outline"
-                        className="bg-gray-800 bg-opacity-80 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-opacity-100 transition-all duration-200 border border-gray-600 h-auto"
+                        className="bg-gray-800 bg-opacity-80 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg hover:bg-opacity-100 transition-all duration-200 border border-gray-600 h-auto"
                       >
                         Explore Structures
                       </Button>
@@ -98,16 +90,31 @@ export default function Hero() {
                   </div>
                 </div>
               </div>
+
+              {/* Curved cut design at bottom-right */}
+              <div className="absolute bottom-0 right-0 z-20">
+                <svg
+                  width="200"
+                  height="200"
+                  viewBox="0 0 200 200"
+                  className="w-[100px] h-[100px] sm:w-[120px] sm:h-[120px] lg:w-[150px] lg:h-[150px]"
+                >
+                  <path
+                    d="M 200 200 L 200 80 Q 200 0 120 0 L 0 0 L 0 200 Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
             </div>
           </div>
 
-          {/* Slide Indicators - positioned in the cut-out area */}
+          {/* Slide Indicators */}
           <div className="absolute bottom-4 right-4 flex space-x-2 z-30">
             {slides.map((_, index) => (
               <button
                 key={index}
                 onClick={() => setCurrentSlide(index)}
-                className={`w-3 h-3 rounded-full transition-all duration-200 ${
+                className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all duration-200 ${
                   index === currentSlide
                     ? "bg-brand-orange"
                     : "bg-gray-400 hover:bg-gray-500"
