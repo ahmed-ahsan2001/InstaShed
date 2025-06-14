@@ -1,145 +1,97 @@
 import { Link } from "wouter";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import instaShedLogo from "../../../intashedlogo.svg";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <footer className="bg-gray-100 text-gray-900">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Main Footer Content */}
-        <div className="py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
-          <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-brand-orange rounded-sm flex items-center justify-center">
-                <span className="text-white font-bold text-sm">IS</span>
-              </div>
-              <span className="text-xl font-bold">INSTA-SHED</span>
+          <div className="md:col-span-2">
+            <div className="mb-6">
+              <img src={instaShedLogo} alt="InstaShed Logo" className="h-16 w-auto mb-4" />
             </div>
-            <p className="text-gray-400 mb-4 leading-relaxed">
-              Premier metal sheds, steel garages, and outdoor storage buildings engineered for durability and designed for your needs.
+            <p className="text-gray-600 mb-6 leading-relaxed text-sm max-w-md">
+              InstaShed was founded in 2010 to help customers replace costly rentals and rotting wood sheds with reliable, long-lasting custom metal buildings. We've helped thousands of clients turn from Canton CT backyards to New York farmlands.
             </p>
-            <div className="flex space-x-4">
-              <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-brand-orange transition-colors duration-200 cursor-pointer">
-                <span className="text-sm">f</span>
-              </div>
-              <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-brand-orange transition-colors duration-200 cursor-pointer">
-                <span className="text-sm">t</span>
-              </div>
-              <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-brand-orange transition-colors duration-200 cursor-pointer">
-                <span className="text-sm">in</span>
-              </div>
-            </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <h3 className="text-lg font-semibold mb-4 text-gray-900">Quick Links</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/">
-                  <span className="text-gray-400 hover:text-brand-orange transition-colors duration-200 cursor-pointer">Home</span>
-                </Link>
-              </li>
-              <li>
-                <Link href="/about">
-                  <span className="text-gray-400 hover:text-brand-orange transition-colors duration-200 cursor-pointer">About Us</span>
+                  <span className="text-gray-600 hover:text-brand-orange transition-colors duration-200 cursor-pointer text-sm">Home</span>
                 </Link>
               </li>
               <li>
                 <Link href="/services">
-                  <span className="text-gray-400 hover:text-brand-orange transition-colors duration-200 cursor-pointer">Services</span>
+                  <span className="text-gray-600 hover:text-brand-orange transition-colors duration-200 cursor-pointer text-sm">Projects</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/services">
+                  <span className="text-gray-600 hover:text-brand-orange transition-colors duration-200 cursor-pointer text-sm">Services</span>
                 </Link>
               </li>
               <li>
                 <Link href="/gallery">
-                  <span className="text-gray-400 hover:text-brand-orange transition-colors duration-200 cursor-pointer">Gallery</span>
+                  <span className="text-gray-600 hover:text-brand-orange transition-colors duration-200 cursor-pointer text-sm">Shop</span>
                 </Link>
               </li>
               <li>
-                <Link href="/quote">
-                  <span className="text-gray-400 hover:text-brand-orange transition-colors duration-200 cursor-pointer">Get Quote</span>
+                <Link href="/about">
+                  <span className="text-gray-600 hover:text-brand-orange transition-colors duration-200 cursor-pointer text-sm">About Us</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact">
+                  <span className="text-gray-600 hover:text-brand-orange transition-colors duration-200 cursor-pointer text-sm">Contact</span>
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Services */}
+          {/* Contact Us */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Services</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link href="/services/residential-sheds">
-                  <span className="text-gray-400 hover:text-brand-orange transition-colors duration-200 cursor-pointer">Metal Sheds</span>
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/prefab-garages">
-                  <span className="text-gray-400 hover:text-brand-orange transition-colors duration-200 cursor-pointer">Steel Garages</span>
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/commercial-buildings">
-                  <span className="text-gray-400 hover:text-brand-orange transition-colors duration-200 cursor-pointer">Workshop Buildings</span>
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/agricultural-barns">
-                  <span className="text-gray-400 hover:text-brand-orange transition-colors duration-200 cursor-pointer">Agricultural Storage</span>
-                </Link>
-              </li>
-              <li>
-                <Link href="/services">
-                  <span className="text-gray-400 hover:text-brand-orange transition-colors duration-200 cursor-pointer">Custom Buildings</span>
-                </Link>
-              </li>
-            </ul>
+            <h3 className="text-lg font-semibold mb-4 text-gray-900">Contact Us</h3>
+            <div className="space-y-2">
+              <p className="text-gray-600 text-sm">Building No 66 New York</p>
+              <p className="text-gray-600 text-sm">+1 (234)567890</p>
+              <p className="text-gray-600 text-sm">info@instashed.com</p>
+            </div>
           </div>
 
-          {/* Contact Info */}
+          {/* Follow */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
-            <div className="space-y-3">
-              <div className="flex items-start space-x-3">
-                <MapPin className="w-5 h-5 text-brand-orange mt-1 flex-shrink-0" />
-                <div className="text-gray-400">
-                  <div>123 Industrial Blvd</div>
-                  <div>Austin, TX 78701</div>
-                </div>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Phone className="w-5 h-5 text-brand-orange flex-shrink-0" />
-                <span className="text-gray-400">(512) 555-0123</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Mail className="w-5 h-5 text-brand-orange flex-shrink-0" />
-                <span className="text-gray-400">info@instashed.com</span>
-              </div>
-              <div className="flex items-start space-x-3">
-                <Clock className="w-5 h-5 text-brand-orange mt-1 flex-shrink-0" />
-                <div className="text-gray-400">
-                  <div>Mon - Fri: 8:00 AM - 6:00 PM</div>
-                  <div>Sat: 9:00 AM - 4:00 PM</div>
-                </div>
-              </div>
+            <h3 className="text-lg font-semibold mb-4 text-gray-900">Follow</h3>
+            <div className="space-y-2">
+              <p className="text-gray-600 text-sm">Facebook</p>
+              <p className="text-gray-600 text-sm">LinkedIn</p>
+              <p className="text-gray-600 text-sm">Instagram</p>
+              <p className="text-gray-600 text-sm">X</p>
+              <p className="text-gray-600 text-sm">Youtube</p>
             </div>
           </div>
         </div>
 
         {/* Bottom Footer */}
-        <div className="border-t border-gray-800 py-6">
+        <div className="border-t border-gray-300 mt-8 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2024 INSTA-SHED. All rights reserved.
+            <div className="text-gray-500 text-sm mb-4 md:mb-0">
+              Copyright © 2025 | All right reserved by InstaShed
             </div>
             <div className="flex space-x-6 text-sm">
-              <Link href="/privacy">
-                <span className="text-gray-400 hover:text-brand-orange transition-colors duration-200 cursor-pointer">Privacy Policy</span>
-              </Link>
               <Link href="/terms">
-                <span className="text-gray-400 hover:text-brand-orange transition-colors duration-200 cursor-pointer">Terms of Service</span>
+                <span className="text-gray-500 hover:text-brand-orange transition-colors duration-200 cursor-pointer">Terms & Conditions</span>
               </Link>
-              <Link href="/cookies">
-                <span className="text-gray-400 hover:text-brand-orange transition-colors duration-200 cursor-pointer">Cookie Policy</span>
+              <Link href="/privacy">
+                <span className="text-gray-500 hover:text-brand-orange transition-colors duration-200 cursor-pointer">Privacy Policy</span>
+              </Link>
+              <Link href="/contact">
+                <span className="text-gray-500 hover:text-brand-orange transition-colors duration-200 cursor-pointer">Contact Us</span>
               </Link>
             </div>
           </div>
