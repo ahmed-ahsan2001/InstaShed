@@ -219,11 +219,12 @@ export default function Services() {
                     Agricultural Pole Barns
                   </h3>
                   <p className="text-gray-600 mb-6">
-                    Protect your vehicles and equipment with a custom-built{" "}
-                    <span className="text-orange-500">prefab steel garage</span>
-                    . Available in single, double, or triple-car formats, our
-                    garages feature reinforced walls, high-load roof panels, and
-                    optional ventilation or insulation.
+                    Our{" "}
+                    <span className="text-orange-500">steel pole barns</span>{" "}
+                    are engineered for rugged farm life. Built using
+                    rust-resistant galvanized panels, they protect tractors,
+                    hay, feed, and livestock year-round with wide, open
+                    interiors and minimal maintenance.
                   </p>
                   <div className="grid grid-cols-1 gap-6">
                     <div>
@@ -232,7 +233,7 @@ export default function Services() {
                       </h4>
                       <ul className="text-sm text-gray-600 space-y-1">
                         <li>
-                          Car garage, ATV/motorcycle storage, hobby garage
+                          Equipment storage, livestock shelter, farm operations
                         </li>
                       </ul>
                     </div>
@@ -242,8 +243,8 @@ export default function Services() {
                       </h4>
                       <ul className="text-sm text-gray-600 space-y-1">
                         <li>
-                          In Great Barrington, MA, a two-car prefab garage now
-                          houses vintage motorcycles and gear.
+                          A farm in Texas uses our pole barn to store hay, 
+                          protect livestock, and house farming equipment.
                         </li>
                       </ul>
                     </div>
@@ -265,11 +266,11 @@ export default function Services() {
                     Prefab Steel Garages
                   </h3>
                   <p className="text-gray-600 mb-6">
-                    Our<span className="text-orange-500">steel pole barns</span>{" "}
-                    are engineered for rugged farm life. Built using
-                    rust-resistant galvanized panels, they protect tractors,
-                    hay, feed, and livestock year-round with wide, open
-                    interiors and minimal maintenance.
+                    Protect your vehicles and equipment with a custom-built{" "}
+                    <span className="text-orange-500">prefab steel garage</span>
+                    . Available in single, double, or triple-car formats, our
+                    garages feature reinforced walls, high-load roof panels, and
+                    optional ventilation or insulation.
                   </p>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
@@ -277,7 +278,7 @@ export default function Services() {
                         Perfect for:
                       </h4>
                       <ul className="text-sm text-gray-600 space-y-1">
-                        <li>Vehicle protection, workshop space</li>
+                        <li>Vehicle protection, workshop space, commercial storage</li>
                       </ul>
                     </div>
                     <div>
@@ -286,8 +287,8 @@ export default function Services() {
                       </h4>
                       <ul className="text-sm text-gray-600 space-y-1">
                         <li>
-                          Professional workshop for automotive repairs and
-                          secure tool storage.
+                          In Great Barrington, MA, a two-car prefab garage now
+                          houses vintage motorcycles and gear.
                         </li>
                       </ul>
                     </div>
