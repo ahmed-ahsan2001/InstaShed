@@ -24,10 +24,10 @@ export default function GallerySection() {
         <div className="mb-12 flex flex-col lg:flex-row justify-between items-start gap-6">
           {/* Left - Subtext */}
           <p className="text-[30px] text-gray-700 text-left leading-snug">
-            See our Completed
+            See our completed
             <br />
             <span>
-              <span className="text-orange-500 font-semibold">project</span>{" "}
+              <span className="text-orange-500 font-semibold">projects</span>{" "}
               including
             </span>
           </p>

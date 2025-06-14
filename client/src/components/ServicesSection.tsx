@@ -30,28 +30,31 @@ export default function ServicesSection() {
     },
   ];
 
-  const renderCard = (service: { title: string; image: string; url: string }) => (
-    <div className="w-[500px] bg-white rounded-2xl shadow-lg overflow-hidden">
-      <div className="h-[350px]">
+  const renderCard = (service: {
+    title: string;
+    image: string;
+    url: string;
+  }) => (
+    <div className="w-[500px] flex flex-col items-start space-y-4">
+      {/* Image Card */}
+      <div className="w-full h-[350px] bg-white rounded-2xl shadow-lg overflow-hidden">
         <img
           src={service.image}
           alt={service.title}
           className="h-full w-full object-cover"
         />
       </div>
-      <div className="p-4">
-        <div className="flex items-center justify-between">
-          <h3 className="text-xl font-semibold text-gray-900">
-            {service.title}
-          </h3>
-          <Link href={service.url}>
-            <img 
-              src={icon1} 
-              alt="View service details" 
-              className="w-8 h-8 cursor-pointer hover:opacity-75 transition-opacity duration-200" 
-            />
-          </Link>
-        </div>
+
+      {/* Title + Icon (outside the card) */}
+      <div className="flex items-center justify-between w-full px-1">
+        <h3 className="text-xl font-semibold text-gray-900">{service.title}</h3>
+        <Link href={service.url}>
+          <img
+            src={icon1}
+            alt="View service details"
+            className="w-8 h-8 cursor-pointer hover:opacity-75 transition-opacity duration-200"
+          />
+        </Link>
       </div>
     </div>
   );
@@ -61,21 +64,17 @@ export default function ServicesSection() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
         {/* Left Side */}
         <div className="flex flex-col space-y-6">
-          {/* Heading */}
           <h2 className="text-gray-900 text-[80px] font-bold leading-tight mb-6">
             Services
             <br />
             We Offer
           </h2>
-
-          {/* Left Cards */}
           {renderCard(services[0])}
           {renderCard(services[1])}
         </div>
 
         {/* Right Side */}
         <div className="flex flex-col space-y-10 items-end relative">
-          {/* Absolute Button */}
           <div className="absolute -top-20 right-0 z-10">
             <Button
               variant="outline"
@@ -84,12 +83,8 @@ export default function ServicesSection() {
               Request a Free Quote
             </Button>
           </div>
-
-          {/* Right Cards */}
           {renderCard(services[2])}
           {renderCard(services[3])}
-
-          {/* Bottom Orange Button */}
           <div className="pt-4">
             <Button className="bg-brand-orange hover:bg-brand-orange-hover text-white px-6 py-3 text-base rounded-md font-semibold">
               Find an Installer Near You
