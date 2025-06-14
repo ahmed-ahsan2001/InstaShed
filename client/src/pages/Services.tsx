@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ContactFormSection from "@/components/ContactFormSection";
 import { Button } from "@/components/ui/button";
 import { ChevronDown, ChevronUp } from "lucide-react";
 // Down arrow (collapsed)
@@ -143,9 +144,7 @@ export default function Services() {
                     <div className="w-8 h-8 rounded-full border-2 border-gray-300 flex items-center justify-center">
                       <div className="w-3 h-3 rounded-full bg-gray-300"></div>
                     </div>
-                    <h3 className={`text-lg font-semibold transition-colors duration-200 ${
-                      expandedSections.includes(index) ? "text-brand-orange" : "text-gray-900"
-                    }`}>
+                    <h3 className="text-lg font-semibold text-gray-900">
                       {service.title}
                     </h3>
                   </div>
@@ -209,7 +208,7 @@ export default function Services() {
                   </h3>
                   <p className="text-gray-600 mb-6">
                     Our{" "}
-                    <span className="text-brand-orange">
+                    <span className="text-orange-500">
                       metal sheds for backyard storage
                     </span>{" "}
                     are built to protect your tools, supplies, and hobbies.
@@ -232,7 +231,7 @@ export default function Services() {
                       <ul className="text-sm text-gray-600 space-y-1">
                         <li>
                           A family in{" "}
-                          <span className="text-brand-orange">Dedham MA</span>{" "}
+                          <span className="text-orange-500">Hillsdale MA</span>{" "}
                           built a custom shed for woodworking with double doors
                           and a windowed loft.
                         </li>
@@ -271,9 +270,7 @@ export default function Services() {
                   </h3>
                   <p className="text-gray-600 mb-6">
                     Protect your vehicles and equipment with a custom-built{" "}
-                    <span className="text-brand-orange">
-                      prefab steel garage
-                    </span>
+                    <span className="text-orange-500">prefab steel garage</span>
                     . Available in single, double, or triple-car formats, our
                     garages feature reinforced walls, high-load roof panels, and
                     optional ventilation or insulation.
@@ -318,10 +315,11 @@ export default function Services() {
                     Prefab Steel Garages
                   </h3>
                   <p className="text-gray-600 mb-6">
-                    Premium prefab garages designed for superior security and
-                    commercial applications. High quality steel construction,
-                    enhanced security features, professional grade hardware, and
-                    commercial grade finishes.
+                    Our<span className="text-orange-500">steel pole barns</span>{" "}
+                    are engineered for rugged farm life. Built using
+                    rust-resistant galvanized panels, they protect tractors,
+                    hay, feed, and livestock year-round with wide, open
+                    interiors and minimal maintenance.
                   </p>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
@@ -375,7 +373,10 @@ export default function Services() {
                     Commercial Steel Buildings
                   </h3>
                   <p className="text-gray-600 mb-6">
-                    Designed for growing businesses. Commercial steel buildings
+                    Designed for growth, our{" "}
+                    <span className="text-orange-500">
+                      Commercial steel buildings
+                    </span>
                     that are ideal for warehouses, workshops, and commercial
                     storage. Wide open design, multiple bay configurations,
                     office space integration, and loading dock compatibility.
@@ -395,8 +396,9 @@ export default function Services() {
                       </h4>
                       <ul className="text-sm text-gray-600 space-y-1">
                         <li>
-                          Large-scale commercial storage and distribution
-                          operations.
+                          In <span className="text-orange-500">New York</span>,
+                          a contractor expanded their operation with a 30x60
+                          prefab steel building for equipment and load.
                         </li>
                       </ul>
                     </div>
@@ -408,78 +410,8 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Business Hours Section */}
-      <section className="py-16 bg-gray-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Left Column */}
-            <div className="text-white">
-              <h2 className="text-3xl font-bold mb-6">Business Hours</h2>
-              <div className="space-y-3">
-                <div className="flex justify-between">
-                  <span>Mon - Fri:</span>
-                  <span>8:00 AM - 6:00 PM</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Saturday:</span>
-                  <span>9:00 AM - 4:00 PM</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Sunday:</span>
-                  <span>Closed</span>
-                </div>
-              </div>
-
-              <div className="mt-8">
-                <h3 className="text-xl font-semibold mb-4">InstaShed.org</h3>
-                <p className="text-gray-300">
-                  Get expert advice and quality metal buildings delivered on
-                  time, every time.
-                </p>
-              </div>
-            </div>
-
-            {/* Right Column */}
-            <div className="bg-white p-8 rounded-lg">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                Fill out the form and we'll get you back.
-              </h3>
-              <form className="space-y-4">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <input
-                    type="text"
-                    placeholder="First Name"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent"
-                  />
-                  <input
-                    type="text"
-                    placeholder="Last Name"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent"
-                  />
-                </div>
-                <input
-                  type="email"
-                  placeholder="Email Address"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent"
-                />
-                <input
-                  type="tel"
-                  placeholder="Phone Number"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent"
-                />
-                <textarea
-                  rows={4}
-                  placeholder="Message"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent"
-                ></textarea>
-                <Button className="w-full bg-brand-orange text-white hover:bg-brand-orange-hover transition-colors duration-200 py-3">
-                  Submit Form
-                </Button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Contact Form Section */}
+      <ContactFormSection />
 
       <Footer />
     </div>
