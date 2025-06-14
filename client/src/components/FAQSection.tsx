@@ -1,4 +1,6 @@
 import { useState } from "react";
+import icon6 from "../../../Icon 6.svg";
+import icon7 from "../../../Icon 7.svg";"
 import { ChevronDown, ChevronUp } from "lucide-react";
 
 export default function FAQSection() {
@@ -53,7 +55,7 @@ export default function FAQSection() {
               Frequently
               <span className="block w-[2px] h-8 bg-brand-orange mx-auto mt-1"></span>
             </span>{" "}
-            Frequently Asked Questions
+             Questions
           </h2>
           <p className="text-lg text-gray-600 mt-4">
             Find answers to the most common questions about our metal building
