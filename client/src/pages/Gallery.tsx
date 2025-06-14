@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ContactFormSection from "@/components/ContactFormSection";
 import { Button } from "@/components/ui/button";
 import heroImage2 from "../../../Image 8.png";
 import heroImage3 from "../../../Image 9.png";
@@ -263,6 +264,9 @@ export default function Gallery() {
           </div>
         </div>
       </section>
+
+      {/* Contact Form Section */}
+      <ContactFormSection />
 
       <Footer />
     </div>
