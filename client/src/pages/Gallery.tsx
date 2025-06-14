@@ -88,26 +88,28 @@ export default function Gallery() {
 
       {/* Gallery Grid */}
       <section className="py-8 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="space-y-4">
             {/* Row 1 - Two equal images */}
-            <div className="aspect-[4/3] overflow-hidden rounded-lg">
-              <img
-                src={galleryImages[0].src}
-                alt={galleryImages[0].alt}
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="aspect-[4/3] overflow-hidden rounded-lg">
-              <img
-                src={galleryImages[1].src}
-                alt={galleryImages[1].alt}
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-              />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="aspect-[4/3] overflow-hidden rounded-lg">
+                <img
+                  src={galleryImages[0].src}
+                  alt={galleryImages[0].alt}
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div className="aspect-[4/3] overflow-hidden rounded-lg">
+                <img
+                  src={galleryImages[1].src}
+                  alt={galleryImages[1].alt}
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
             </div>
 
             {/* Row 2 - Wide panoramic image */}
-            <div className="col-span-1 md:col-span-2 aspect-[2/1] overflow-hidden rounded-lg">
+            <div className="aspect-[5/2] overflow-hidden rounded-lg">
               <img
                 src={galleryImages[2].src}
                 alt={galleryImages[2].alt}
@@ -116,14 +118,14 @@ export default function Gallery() {
             </div>
 
             {/* Row 3 - Three images */}
-            <div className="aspect-[4/3] overflow-hidden rounded-lg">
-              <img
-                src={galleryImages[3].src}
-                alt={galleryImages[3].alt}
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="grid grid-cols-1 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div className="aspect-[4/3] overflow-hidden rounded-lg">
+                <img
+                  src={galleryImages[3].src}
+                  alt={galleryImages[3].alt}
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
               <div className="aspect-[4/3] overflow-hidden rounded-lg">
                 <img
                   src={galleryImages[4].src}
@@ -141,23 +143,25 @@ export default function Gallery() {
             </div>
 
             {/* Row 4 - Two images */}
-            <div className="aspect-[4/3] overflow-hidden rounded-lg">
-              <img
-                src={galleryImages[6].src}
-                alt={galleryImages[6].alt}
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="aspect-[4/3] overflow-hidden rounded-lg">
-              <img
-                src={galleryImages[7].src}
-                alt={galleryImages[7].alt}
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-              />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="aspect-[4/3] overflow-hidden rounded-lg">
+                <img
+                  src={galleryImages[6].src}
+                  alt={galleryImages[6].alt}
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div className="aspect-[4/3] overflow-hidden rounded-lg">
+                <img
+                  src={galleryImages[7].src}
+                  alt={galleryImages[7].alt}
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
             </div>
 
             {/* Row 5 - Wide panoramic image */}
-            <div className="col-span-1 md:col-span-2 aspect-[2/1] overflow-hidden rounded-lg">
+            <div className="aspect-[5/2] overflow-hidden rounded-lg">
               <img
                 src={galleryImages[8].src}
                 alt={galleryImages[8].alt}
