@@ -14,7 +14,7 @@ export default function AgriculturalBarns() {
       {/* Page Header */}
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-8">
+          <h1 className="text-center text-6xl sm:text-7xl font-bold text-gray-900 mb-8">
             Agricultural Pole Barns
           </h1>
         </div>
@@ -42,7 +42,7 @@ export default function AgriculturalBarns() {
             <div>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                 Our{" "}
-                <span className="text-brand-orange font-medium">
+                <span className="text-orange-500 font-medium">
                   steel pole barns
                 </span>{" "}
                 are engineered for rugged farm life. Built using rust-resistant
@@ -52,7 +52,7 @@ export default function AgriculturalBarns() {
               </p>
 
               <div className="space-y-8">
-                <div>
+                <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-100">
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">
                     Perfect For:
                   </h3>
@@ -61,7 +61,7 @@ export default function AgriculturalBarns() {
                   </p>
                 </div>
 
-                <div>
+                <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-100">
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">
                     Example use:
                   </h3>
@@ -84,7 +84,6 @@ export default function AgriculturalBarns() {
           </div>
         </div>
       </section>
-
 
       {/* Contact Form Section */}
       <ContactFormSection />

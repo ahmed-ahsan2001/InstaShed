@@ -50,7 +50,7 @@ export default function ResidentialSheds() {
               </p>
 
               <div className="space-y-8">
-                <div>
+                <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-100">
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">
                     Perfect For:
                   </h3>
@@ -59,7 +59,7 @@ export default function ResidentialSheds() {
                   </p>
                 </div>
 
-                <div>
+                <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-100">
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">
                     Example use:
                   </h3>

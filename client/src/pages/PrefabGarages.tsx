@@ -41,7 +41,7 @@ export default function PrefabGarages() {
             <div>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                 Protect your vehicles and equipment with a custom-built{" "}
-                <span className="text-brand-orange font-medium">
+                <span className="text-orange-500 font-medium">
                   prefab steel garage
                 </span>
                 . Available in single, double, or triple-car formats, our
@@ -50,7 +50,7 @@ export default function PrefabGarages() {
               </p>
 
               <div className="space-y-8">
-                <div>
+                <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-100">
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">
                     Perfect For:
                   </h3>
@@ -59,7 +59,7 @@ export default function PrefabGarages() {
                   </p>
                 </div>
 
-                <div>
+                <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-100">
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">
                     Example use:
                   </h3>
@@ -82,7 +82,6 @@ export default function PrefabGarages() {
           </div>
         </div>
       </section>
-
 
       {/* Contact Form Section */}
       <ContactFormSection />
