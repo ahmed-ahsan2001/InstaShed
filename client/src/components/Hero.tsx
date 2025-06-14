@@ -59,6 +59,7 @@ export default function Hero() {
               className="absolute inset-0 bg-cover bg-center transition-all duration-700 ease-in-out"
               style={{
                 backgroundImage: `url('${slides[currentSlide].image}')`,
+                clipPath: "polygon(0 0, 100% 0, 100% 90%, 90% 100%, 0% 100%)",
               }}
             >
               {/* Dark overlay */}

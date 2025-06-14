@@ -2,8 +2,12 @@ import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { ChevronDown, ChevronUp, Plus, Minus } from "lucide-react";
+import { ChevronDown, ChevronUp } from "lucide-react";
+import icon7 from "../../../Icon 6.svg"; // Down arrow (collapsed)
+import icon6 from "../../../reqicon2.svg"; // Up arrow (expanded)
 import heroImage from "../../../ServicesPageAll/servicesimage3.png";
+import servicesicon from "../../../servicesallicon1.svg";
+import servicesicon1 from "../../../servicesallicon2.svg";
 import heroImage1 from "../../../ServicesPageAll/servicesimage2.png";
 import heroImage2 from "../../../ServicesPageAll/servicesimage1.png";
 import heroImage3 from "../../../ServicesPageAll/servicesimage4.png";
@@ -144,11 +148,11 @@ export default function Services() {
                     </h3>
                   </div>
                   <div className="flex items-center space-x-2">
-                    {expandedSections.includes(index) ? (
-                      <Minus className="w-5 h-5 text-gray-500" />
-                    ) : (
-                      <Plus className="w-5 h-5 text-gray-500" />
-                    )}
+                    <img
+                      src={expandedSections.includes(index) ? icon7 : icon6}
+                      alt={expandedSections.includes(index) ? "Collapse" : "Expand"}
+                      className="w-5 h-5 flex-shrink-0"
+                    />
                   </div>
                 </button>
 

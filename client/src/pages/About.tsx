@@ -7,7 +7,6 @@ import heroImage4 from "../../../AboutUs/aboutusimage2.png";
 import aboutIcon1 from "../../../AboutUs/aboutusicon1.svg";
 
 export default function About() {
-
   return (
     <div className="min-h-screen bg-white">
       <Header />
@@ -169,10 +168,11 @@ export default function About() {
                 </div>
               </div>
               <p className="text-gray-600 leading-relaxed mb-6 ml-8">
-                With 20+ years of construction experience, Jeremy started
-                InstaShed to deliver affordable metal buildings nationwide. His
-                commitment to quality, customer service and building lasting
-                relationships and honest service.
+                With <span className="text-orange-500">20+</span> years of
+                construction experience, Jeremy started InstaShed to deliver
+                affordable metal buildings nationwide. His commitment to
+                quality, customer service and building lasting relationships and
+                honest service.
               </p>
 
               <div
