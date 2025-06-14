@@ -55,7 +55,7 @@ export default function Hero() {
             <svg className="absolute inset-0 w-0 h-0">
               <defs>
                 <clipPath id="heroClipPath" clipPathUnits="objectBoundingBox">
-                  <path d="M 0 0 L 1 0 L 1 0.85 Q 0.9 1 0.8 1 L 0 1 Z" />
+                  <path d="M 0 0 L 1 0 L 1 0.87 Q 0.92 0.75 0.82 0.87 L 0.82 1 L 0 1 Z" />
                 </clipPath>
               </defs>
             </svg>
@@ -100,6 +100,11 @@ export default function Hero() {
                   </div>
                 </div>
               </div>
+            </div>
+
+            {/* Bottom-right corner rounded box */}
+            <div className="absolute bottom-0 right-0 w-[100px] h-[100px] sm:w-[120px] sm:h-[120px] lg:w-[150px] lg:h-[150px] z-20">
+              <div className="w-full h-full bg-white rounded-tl-[30px] sm:rounded-tl-[40px] lg:rounded-tl-[50px]"></div>
             </div>
           </div>
 
