@@ -68,8 +68,9 @@ export default function Quote() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
             {/* Left Column - Content */}
             <div>
-              <h2 className="text-5xl font-bold text-gray-900 mb-6">
-                Request a<br />Quote
+              <h2 className="text-6xl font-bold text-gray-900 mb-6">
+                Request a<br />
+                Quote
               </h2>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                 Get Your Custom Metal Building Quote Today
@@ -87,17 +88,18 @@ export default function Quote() {
               <img
                 src={heroImage1}
                 alt="Metal Building with People"
-                className="w-full h-64 object-cover rounded-lg"
+                className="w-full h-80 object-cover rounded-lg"
               />
             </div>
           </div>
 
+          {/* Form Heading */}
+          <h3 className="text-2xl font-bold text-gray-900 mb-8 pl-4 border-l-4 border-orange-500">
+            Fill the Form
+          </h3>
+
           {/* Form Section - Full Width */}
           <div className="bg-gray-50 p-8 rounded-lg">
-            <h3 className="text-xl font-bold text-gray-900 mb-8">
-              <span className="text-brand-orange">Fill the Form</span>
-            </h3>
-
             <form
               onSubmit={handleSubmit}
               className="grid grid-cols-1 lg:grid-cols-2 gap-8"
