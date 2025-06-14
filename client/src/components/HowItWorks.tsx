@@ -6,7 +6,10 @@ import heroImage2 from "../../../Image 4.png";
 
 export default function HowItWorks() {
   return (
-    <section className="py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden" style={{ backgroundColor: '#003D3D' }}>
+    <section
+      className="py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden"
+      style={{ backgroundColor: "#003D3D" }}
+    >
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
         {/* Left Side */}
         <div className="flex flex-col space-y-10">
@@ -23,7 +26,7 @@ export default function HowItWorks() {
               <img
                 src={heroImage1}
                 alt="Custom Build"
-                className="h-80 w-full object-cover"
+                className="h-[24rem] w-full object-cover"
               />
             </div>
             <div className="bg-white p-6 rounded-xl shadow-lg -mt-24 mx-auto w-[85%] relative z-10">
@@ -38,8 +41,8 @@ export default function HowItWorks() {
           </div>
 
           {/* Button */}
-          <div className="pt-4">
-            <Link href="/quote">
+          <div className="pt-4 flex justify-center mr-20 mt-20">
+            <Link href="/quote" className="">
               <Button className="bg-brand-orange hover:bg-brand-orange-hover text-white px-6 py-3 text-base rounded-md font-semibold">
                 Get Free Consultation
               </Button>
@@ -55,7 +58,7 @@ export default function HowItWorks() {
               <img
                 src={heroImage}
                 alt="Free Consultation"
-                className="h-80 w-full object-cover"
+                className="h-[24rem] w-full object-cover"
               />
             </div>
             <div className="bg-white p-6 rounded-xl shadow-lg -mt-24 mx-auto w-[85%] relative z-10">
@@ -75,7 +78,7 @@ export default function HowItWorks() {
               <img
                 src={heroImage2}
                 alt="Delivery & Installation"
-                className="h-80 w-full object-cover"
+                className="h-[24rem] w-full object-cover"
               />
             </div>
             <div className="bg-white p-6 rounded-xl shadow-lg -mt-24 mx-auto w-[85%] relative z-10">

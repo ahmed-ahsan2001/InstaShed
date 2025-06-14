@@ -67,12 +67,16 @@ export default function AboutSection() {
             {values.map((val, idx) => (
               <div
                 key={idx}
-                className="bg-black bg-opacity-40 border-l-4 border-brand-orange p-6 rounded-lg h-full w-full text-center"
+                className="border-l-4 p-6 rounded-lg h-full w-full text-center"
+                style={{
+                  backgroundColor: "rgba(255, 122, 50, 0.1)", // Slight transparency
+                  borderColor: "rgba(255, 122, 50, 1)",
+                }}
               >
                 <div className="font-semibold text-white mb-2 text-lg">
                   {val.title}
                 </div>
-                <p className="text-sm text-gray-300">{val.description}</p>
+                <p className="text-sm text-gray-100">{val.description}</p>
               </div>
             ))}
           </div>

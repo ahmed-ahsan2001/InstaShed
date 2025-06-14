@@ -41,13 +41,14 @@ export default function AgriculturalBarns() {
             {/* Left Column - Text Content */}
             <div>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Protect your vehicles and equipment with a custom-built{" "}
+                Our{" "}
                 <span className="text-brand-orange font-medium">
-                  prefab steel garage
-                </span>
-                . Available in single, double, or triple-car formats, our
-                garages feature reinforced walls, high-load roof panels, and
-                optional ventilation or insulation.
+                  steel pole barns
+                </span>{" "}
+                are engineered for rugged farm life. Built using rust-resistant
+                galvanized panels, they protect tractors, hay, feed, and
+                livestock year-round with wide, open interiors and minimal
+                maintenance.
               </p>
 
               <div className="space-y-8">
@@ -56,7 +57,7 @@ export default function AgriculturalBarns() {
                     Perfect For:
                   </h3>
                   <p className="text-gray-600">
-                    Car garage, RV garage, motorcycle storage, hobby garage
+                    Equipment storage, livestock shelter, farm operations
                   </p>
                 </div>
 
@@ -65,8 +66,8 @@ export default function AgriculturalBarns() {
                     Example use:
                   </h3>
                   <p className="text-gray-600">
-                    In Great Barrington MA, a two-car prefab garage now houses
-                    vintage motorcycles and gear.
+                    A farm in Texas uses our pole barn to store hay, protect
+                    livestock, and house farming equipment.
                   </p>
                 </div>
               </div>

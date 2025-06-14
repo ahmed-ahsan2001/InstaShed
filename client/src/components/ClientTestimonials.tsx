@@ -45,22 +45,17 @@ export default function ClientTestimonials() {
           <h2 className="text-4xl sm:text-7xl font-bold text-gray-900 mb-4 text-left">
             What Our Clients <br /> Are Saying
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl text-left">
-            Don’t just take our word for it. See what our satisfied customers
-            have to say about their experience with INSTA-SHED.
-          </p>
         </div>
 
         {/* 2-column grid: Testimonial & Image */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           {/* Left: Testimonial */}
           <div className="bg-gray-50 p-8">
-            <div className="text-5xl text-brand-orange mb-4 leading-none">
-              “
-            </div>
-            <blockquote className="text-xl sm:text-2xl text-gray-700 italic leading-relaxed mb-6">
+            <div className="text-5xl text-brand-orange mb-4 leading-none"></div>
+            <blockquote className="text-xs sm:text-base text-gray-700 italic leading-relaxed mb-6">
               {testimonials[currentTestimonial].quote}
             </blockquote>
+
             <div className="flex items-center">
               <div className="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
               <div>
@@ -79,7 +74,7 @@ export default function ClientTestimonials() {
             <img
               src={testimonialImage}
               alt="Client"
-              className="w-64 h-auto object-cover rounded-xl"
+              className="w-80 h-auto object-cover rounded-xl"
             />
           </div>
         </div>

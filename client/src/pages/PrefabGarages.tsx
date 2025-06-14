@@ -40,14 +40,13 @@ export default function PrefabGarages() {
             {/* Left Column - Text Content */}
             <div>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Our{" "}
+                Protect your vehicles and equipment with a custom-built{" "}
                 <span className="text-brand-orange font-medium">
-                  steel pole barns
-                </span>{" "}
-                are engineered for rugged farm life. Built using rust-resistant
-                galvanized panels, they protect tractors, hay, feed, and
-                livestock year-round with wide, open interiors and minimal
-                maintenance.
+                  prefab steel garage
+                </span>
+                . Available in single, double, or triple-car formats, our
+                garages feature reinforced walls, high-load roof panels, and
+                optional ventilation or insulation.
               </p>
 
               <div className="space-y-8">
@@ -56,7 +55,7 @@ export default function PrefabGarages() {
                     Perfect For:
                   </h3>
                   <p className="text-gray-600">
-                    Equipment shed, crop storage, livestock barn
+                    Vehicle protection, workshop space, commercial storage
                   </p>
                 </div>
 
@@ -65,8 +64,8 @@ export default function PrefabGarages() {
                     Example use:
                   </h3>
                   <p className="text-gray-600">
-                    A pole barn in Canton CT now serves as a machinery shed and
-                    hay storage facility.
+                    In Great Barrington, MA, a two-car prefab garage now houses
+                    vintage motorcycles and gear.
                   </p>
                 </div>
               </div>
