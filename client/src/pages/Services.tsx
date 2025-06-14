@@ -25,80 +25,24 @@ export default function Services() {
     {
       title: "Residential Metal Sheds",
       content: {
-        description:
-          "Premium metal sheds ideal for homeowners. High-quality steel construction with customizable features for your backyard storage needs.",
-        perfectFor: [
-          "Backyard storage",
-          "Garden tool storage",
-          "Seasonal equipment",
-          "Hobby workspace",
-        ],
-        exampleUse: [
-          "Store lawn equipment",
-          "Workshop for projects",
-          "Seasonal decoration storage",
-          "Bicycle and sports gear",
-        ],
         image: heroImage2,
       },
     },
     {
       title: "Agricultural Pole Barns",
       content: {
-        description:
-          "Premium metal structures ideal for equipment and livestock. All models include multiple access options, durable metal structure, interior shelving, security and ATV, and air-vent for weather resistance.",
-        perfectFor: [
-          "Equipment storage",
-          "Livestock shelter",
-          "Farm operations",
-          "Large machinery storage",
-        ],
-        exampleUse: [
-          "Store farming equipment",
-          "Protect livestock from weather",
-          "Workshop space for repairs",
-          "Hay and feed storage",
-        ],
         image: heroImage1,
       },
     },
     {
       title: "Prefab Steel Garages",
       content: {
-        description:
-          "Premium prefab garages designed for superior security and commercial applications. High quality steel construction, enhanced security features, professional grade hardware, and commercial grade finishes.",
-        perfectFor: [
-          "Vehicle protection",
-          "Workshop space",
-          "Commercial storage",
-          "Equipment protection",
-        ],
-        exampleUse: [
-          "Protect vehicles from weather",
-          "Create professional workshop",
-          "Secure tool storage",
-          "Commercial vehicle storage",
-        ],
         image: heroImage,
       },
     },
     {
       title: "Commercial Steel Buildings",
       content: {
-        description:
-          "Designed for growing businesses. Commercial steel buildings that are ideal for warehouses, workshops, and commercial storage. Wide open design, multiple bay configurations, office space integration, and loading dock compatibility.",
-        perfectFor: [
-          "Warehouse operations",
-          "Manufacturing facilities",
-          "Commercial workshops",
-          "Distribution centers",
-        ],
-        exampleUse: [
-          "Store inventory and supplies",
-          "Manufacturing operations",
-          "Vehicle service centers",
-          "Distribution and logistics",
-        ],
         image: heroImage3,
       },
     },
@@ -144,7 +88,13 @@ export default function Services() {
                     <div className="w-8 h-8 rounded-full border-2 border-gray-300 flex items-center justify-center">
                       <div className="w-3 h-3 rounded-full bg-gray-300"></div>
                     </div>
-                    <h3 className="text-lg font-semibold text-gray-900">
+                    <h3
+                      className={`text-lg font-semibold ${
+                        expandedSections.includes(index)
+                          ? "text-orange-500"
+                          : "text-gray-900"
+                      }`}
+                    >
                       {service.title}
                     </h3>
                   </div>
