@@ -54,8 +54,8 @@ export default function Hero() {
             {/* Define the clip path for the curved cut */}
             <svg className="absolute inset-0 w-0 h-0">
               <defs>
-                <clipPath id="heroClipPath" clipPathUnits="objectBoundingBox">
-                  <path d="M 0 0 L 1 0 L 1 0.87 Q 0.92 0.75 0.82 0.87 L 0.82 1 L 0 1 Z" />
+                <clipPath id="heroClipPath">
+                  <path d="M 0 0 L 1240 0 L 1240 718 Q 1140 818 1040 818 L 0 818 Z" />
                 </clipPath>
               </defs>
             </svg>
@@ -65,7 +65,7 @@ export default function Hero() {
               className="absolute inset-0 bg-cover bg-center transition-all duration-700 ease-in-out"
               style={{
                 backgroundImage: `url('${slides[currentSlide].image}')`,
-                clipPath: "url(#heroClipPath)"
+                clipPath: "url(#heroClipPath)",
               }}
             >
               <div className="absolute inset-0 bg-black bg-opacity-40" />
@@ -100,11 +100,6 @@ export default function Hero() {
                   </div>
                 </div>
               </div>
-            </div>
-
-            {/* Bottom-right corner rounded box */}
-            <div className="absolute bottom-0 right-0 w-[100px] h-[100px] sm:w-[120px] sm:h-[120px] lg:w-[150px] lg:h-[150px] z-20">
-              <div className="w-full h-full bg-white rounded-tl-[30px] sm:rounded-tl-[40px] lg:rounded-tl-[50px]"></div>
             </div>
           </div>
 
