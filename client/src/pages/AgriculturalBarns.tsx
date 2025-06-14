@@ -50,34 +50,37 @@ export default function AgriculturalBarns() {
             </p>
           </div>
 
-          {/* Image Section */}
-          <div className="mb-16">
-            <img
-              src={heroImage5}
-              alt="Agricultural Barn Example"
-              className="w-full h-80 object-cover rounded-lg"
-            />
-          </div>
+          {/* Content and Image Section */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            {/* Left Column - Perfect For and Example Use */}
+            <div className="space-y-8">
+              <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-100">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                  Perfect For:
+                </h3>
+                <p className="text-gray-600">
+                  Equipment storage, livestock shelter, farm operations
+                </p>
+              </div>
 
-          {/* Perfect For and Example Use Section */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-100">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                Perfect For:
-              </h3>
-              <p className="text-gray-600">
-                Equipment storage, livestock shelter, farm operations
-              </p>
+              <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-100">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                  Example use:
+                </h3>
+                <p className="text-gray-600">
+                  A farm in Texas uses our pole barn to store hay, protect
+                  livestock, and house farming equipment.
+                </p>
+              </div>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-100">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                Example use:
-              </h3>
-              <p className="text-gray-600">
-                A farm in Texas uses our pole barn to store hay, protect
-                livestock, and house farming equipment.
-              </p>
+            {/* Right Column - Image */}
+            <div>
+              <img
+                src={heroImage5}
+                alt="Agricultural Barn Example"
+                className="w-full h-80 object-cover rounded-lg"
+              />
             </div>
           </div>
         </div>
