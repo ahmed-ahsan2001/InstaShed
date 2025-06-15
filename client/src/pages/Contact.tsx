@@ -43,28 +43,10 @@ export default function Contact() {
       <section className="py-16 bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-            {/* Left Column - Business Info */}
+            {/* Left Column - Contact Info */}
             <div className="text-white">
-              <h2 className="text-3xl font-bold mb-8">
-                <span className="text-brand-orange">Business Hours</span>
-              </h2>
-              <div className="space-y-3 mb-12">
-                <div className="flex justify-between">
-                  <span>Mon - Fri:</span>
-                  <span>9 AM - 6 PM</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Saturday:</span>
-                  <span>9 AM - 12 PM</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Sunday:</span>
-                  <span>Closed</span>
-                </div>
-              </div>
-
               <div className="mb-8">
-                <h3 className="text-xl font-semibold mb-6">
+                <h3 className="text-3xl font-bold mb-6">
                   <span className="text-brand-orange">InstaShed HQ</span>
                 </h3>
                 <div className="space-y-3 text-gray-300">
