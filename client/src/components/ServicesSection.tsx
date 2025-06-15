@@ -35,9 +35,9 @@ export default function ServicesSection() {
     image: string;
     url: string;
   }) => (
-    <div className="w-[500px] flex flex-col items-start space-y-4">
+    <div className="w-full sm:w-[90%] md:w-[500px] flex flex-col items-start space-y-4 mx-auto">
       {/* Image Card */}
-      <div className="w-full h-[350px] bg-white rounded-2xl shadow-lg overflow-hidden">
+      <div className="w-full h-[250px] sm:h-[300px] md:h-[350px] bg-white rounded-2xl shadow-lg overflow-hidden">
         <img
           src={service.image}
           alt={service.title}
@@ -47,12 +47,14 @@ export default function ServicesSection() {
 
       {/* Title + Icon (outside the card) */}
       <div className="flex items-center justify-between w-full px-1">
-        <h3 className="text-xl font-semibold text-gray-900">{service.title}</h3>
+        <h3 className="text-lg sm:text-xl font-semibold text-gray-900">
+          {service.title}
+        </h3>
         <Link href={service.url}>
           <img
             src={icon1}
             alt="View service details"
-            className="w-8 h-8 cursor-pointer hover:opacity-75 transition-opacity duration-200"
+            className="w-7 h-7 sm:w-8 sm:h-8 cursor-pointer hover:opacity-75 transition-opacity duration-200"
           />
         </Link>
       </div>
@@ -60,11 +62,11 @@ export default function ServicesSection() {
   );
 
   return (
-    <section className="bg-white py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+    <section className="bg-white py-16 sm:py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
         {/* Left Side */}
         <div className="flex flex-col space-y-6">
-          <h2 className="text-gray-900 text-[80px] font-bold leading-tight mb-6">
+          <h2 className="text-gray-900 text-4xl sm:text-5xl md:text-[80px] font-bold leading-tight mb-6">
             Services
             <br />
             We Offer
@@ -74,8 +76,9 @@ export default function ServicesSection() {
         </div>
 
         {/* Right Side */}
-        <div className="flex flex-col space-y-10 items-end relative">
-          <div className="absolute -top-20 right-0 z-10">
+        <div className="flex flex-col space-y-10 items-end md:items-end relative">
+          {/* Button on top - reposition on mobile */}
+          <div className="absolute -top-16 sm:-top-20 right-0 z-10">
             <Button
               variant="outline"
               className="px-4 py-2 border border-gray-300 text-sm font-medium bg-white hover:bg-gray-50"
@@ -85,7 +88,9 @@ export default function ServicesSection() {
           </div>
           {renderCard(services[2])}
           {renderCard(services[3])}
-          <div className="pt-4">
+
+          {/* Bottom CTA Button */}
+          <div className="pt-4 self-center md:self-auto">
             <Button className="bg-brand-orange hover:bg-brand-orange-hover text-white px-6 py-3 text-base rounded-md font-semibold">
               Find an Installer Near You
             </Button>
