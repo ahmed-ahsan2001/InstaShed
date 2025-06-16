@@ -85,8 +85,8 @@ export default function Services() {
                   className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
                 >
                   <div className="flex items-center space-x-4">
-                    <div className="w-8 h-8 rounded-full border-2 border-gray-300 flex items-center justify-center">
-                      <div className="w-3 h-3 rounded-full bg-gray-300"></div>
+                    <div className="w-8 h-8 rounded-full bg-gray-200 text-gray-700 flex items-center justify-center text-sm font-semibold">
+                      {String(index + 1).padStart(2, "0")}
                     </div>
                     <h3
                       className={`text-lg ${
@@ -98,6 +98,7 @@ export default function Services() {
                       {service.title}
                     </h3>
                   </div>
+
                   <div className="flex items-center space-x-2">
                     <img
                       src={expandedSections.includes(index) ? icon7 : icon6}

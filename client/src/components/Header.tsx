@@ -67,7 +67,7 @@ export default function Header() {
 
               {/* Services Dropdown */}
               {servicesDropdownOpen && (
-                <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50">
+                <div className="absolute top-full left-0 w-64 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50">
                   <Link href="/services/residential-sheds">
                     <span className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-brand-orange transition-colors duration-200 cursor-pointer">
                       Residential Metal Sheds
