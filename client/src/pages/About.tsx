@@ -34,7 +34,6 @@ export default function About() {
       <section className="py-8 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Left Column - Image */}
             <div>
               <img
                 src={heroImage3}
@@ -42,8 +41,6 @@ export default function About() {
                 className="w-full h-64 object-cover rounded-lg"
               />
             </div>
-
-            {/* Right Column - Content */}
             <div className="relative">
               <div className="flex items-start">
                 <div className="relative">
@@ -51,10 +48,15 @@ export default function About() {
                     <span className="text-orange-500 relative inline-block">
                       Our
                     </span>
-
                     <span className="ml-2 text-gray-900">Story</span>
                   </h2>
-                  <div className="absolute left-3 top-12 w-0.5 h-32 bg-brand-orange"></div>
+                  <div
+                    className="absolute left-3 top-12 w-[3px] h-[160px]"
+                    style={{
+                      background:
+                        "linear-gradient(to bottom, #F97316, transparent)",
+                    }}
+                  ></div>
                 </div>
               </div>
               <p className="text-gray-600 leading-relaxed mb-6 ml-8">
@@ -76,7 +78,6 @@ export default function About() {
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Left Column - Content */}
             <div className="relative">
               <div className="flex items-start">
                 <div className="relative">
@@ -84,7 +85,13 @@ export default function About() {
                     <span className="text-orange-500 relative">Our</span>
                     <span className="ml-2 text-gray-900">Values</span>
                   </h2>
-                  <div className="absolute left-3 top-12 w-0.5 h-48 bg-brand-orange"></div>
+                  <div
+                    className="absolute left-3 top-12 w-[3px] h-[200px]"
+                    style={{
+                      background:
+                        "linear-gradient(to bottom, #F97316, transparent)",
+                    }}
+                  ></div>
                 </div>
               </div>
               <p className="text-gray-600 leading-relaxed mb-6 ml-8">
@@ -92,7 +99,6 @@ export default function About() {
                 reliable people where its our work can thrive.
               </p>
 
-              {/* Stats */}
               <div className="grid grid-cols-2 gap-8 ml-8">
                 <div className="text-center">
                   <div className="text-4xl font-bold text-brand-orange mb-2">
@@ -109,12 +115,8 @@ export default function About() {
               </div>
             </div>
 
-            {/* Right Column - SVG Icon */}
-            {/* Right Column - SVG with orange rectangle */}
-            {/* Right Column - SVG with orange rectangle */}
-            {/* Right Column - SVG with orange rectangle */}
+            {/* Orange background with icon */}
             <div className="relative flex flex-col items-center justify-center">
-              {/* SVG (used to define height reference) */}
               <img
                 src={aboutIcon1}
                 alt="Values Icon"
@@ -125,17 +127,15 @@ export default function About() {
                   position: "relative",
                 }}
               />
-
-              {/* Orange rectangle (centered vertically behind the SVG) */}
               <div
                 style={{
                   width: "401px",
                   height: "89px",
-                  backgroundColor: "#F97316", // Orange
+                  backgroundColor: "#F97316",
                   borderRadius: "8px",
                   position: "absolute",
                   top: "50%",
-                  transform: "translateY(-50%)", // Vertical centering
+                  transform: "translateY(-50%)",
                   zIndex: 0,
                 }}
               ></div>
@@ -148,7 +148,6 @@ export default function About() {
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Left Column - Image */}
             <div>
               <img
                 src={heroImage4}
@@ -156,8 +155,6 @@ export default function About() {
                 className="w-full h-100 object-cover rounded-lg"
               />
             </div>
-
-            {/* Right Column - Content */}
             <div className="relative">
               <div className="flex items-start">
                 <div className="relative">
@@ -165,7 +162,13 @@ export default function About() {
                     <span className="text-orange-500 relative">Our</span>
                     <span className="ml-2 text-gray-900">Founder</span>
                   </h2>
-                  <div className="absolute left-3 top-12 w-0.5 h-32 bg-brand-orange"></div>
+                  <div
+                    className="absolute left-3 top-12 w-[3px] h-[160px]"
+                    style={{
+                      background:
+                        "linear-gradient(to bottom, #F97316, transparent)",
+                    }}
+                  ></div>
                 </div>
               </div>
               <p className="text-gray-600 leading-relaxed mb-6 ml-8">
@@ -180,7 +183,7 @@ export default function About() {
                 className="bg-brand-orange text-white px-6 py-4 rounded-lg inline-block"
                 style={{
                   width: "502px",
-                  marginLeft: "-80px", // Adjust this value as needed
+                  marginLeft: "-80px",
                 }}
               >
                 <div className="font-semibold text-center">
@@ -192,12 +195,8 @@ export default function About() {
         </div>
       </section>
 
-      {/* FAQ Section */}
       <HomePageFAQ />
-
-      {/* Contact Form Section */}
       <ContactFormSection />
-
       <Footer />
     </div>
   );

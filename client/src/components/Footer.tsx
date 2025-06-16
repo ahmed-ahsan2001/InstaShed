@@ -67,7 +67,7 @@ export default function Footer() {
           {/* Follow */}
           <div>
             <h3 className="text-lg font-semibold mb-4 text-gray-900">Follow</h3>
-            <div className="space-y-2">
+            <div className="flex flex-wrap gap-4">
               <p className="text-gray-600 text-sm">Facebook</p>
               <p className="text-gray-600 text-sm">LinkedIn</p>
               <p className="text-gray-600 text-sm">Instagram</p>
