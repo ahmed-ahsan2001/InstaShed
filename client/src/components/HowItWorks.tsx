@@ -10,7 +10,7 @@ export default function HowItWorks() {
       className="py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden"
       style={{ backgroundColor: "#003D3D" }}
     >
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-start">
         {/* Left Side */}
         <div className="flex flex-col space-y-10">
           {/* Heading */}
@@ -21,7 +21,7 @@ export default function HowItWorks() {
           </h2>
 
           {/* Card 1 */}
-          <div className="w-full max-w-sm relative">
+          <div className="w-full max-w-md relative">
             <div className="rounded-2xl overflow-hidden shadow-lg">
               <img
                 src={heroImage1}
@@ -53,7 +53,7 @@ export default function HowItWorks() {
         {/* Right Side */}
         <div className="flex flex-col space-y-14 items-end mr-auto">
           {/* Card 2 */}
-          <div className="w-full max-w-sm relative">
+          <div className="w-full max-w-md relative">
             <div className="rounded-2xl overflow-hidden shadow-lg">
               <img
                 src={heroImage}
@@ -73,7 +73,7 @@ export default function HowItWorks() {
           </div>
 
           {/* Card 3 */}
-          <div className="w-full max-w-sm relative">
+          <div className="w-full max-w-md relative">
             <div className="rounded-2xl overflow-hidden shadow-lg">
               <img
                 src={heroImage2}

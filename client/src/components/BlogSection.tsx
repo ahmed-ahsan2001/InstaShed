@@ -67,22 +67,9 @@ export default function BlogSection() {
                 <p className="text-gray-600 mb-4 line-clamp-3">
                   {post.excerpt}
                 </p>
-                <Button
-                  variant="outline"
-                  className="text-brand-orange border-brand-orange hover:bg-brand-orange hover:text-white transition-colors duration-200"
-                >
-                  Read More
-                </Button>
               </div>
             </article>
           ))}
-        </div>
-
-        {/* CTA Button */}
-        <div className="text-center">
-          <Button className="bg-brand-orange text-white px-8 py-3 rounded-lg font-semibold hover:bg-brand-orange-hover transition-colors duration-200">
-            View All Articles
-          </Button>
         </div>
       </div>
     </section>

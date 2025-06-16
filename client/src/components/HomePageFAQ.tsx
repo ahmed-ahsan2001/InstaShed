@@ -15,27 +15,52 @@ export default function HomePageFAQ() {
     {
       question: "How much does a custom metal shed or garage cost?",
       answer:
-        "The cost varies based on size, features, and customization options. We provide detailed quotes after understanding your specific needs and requirements.",
+        "The price depends on size, features, and location. Our metal building quotes are tailored to your space — most customers find steel sheds more affordable than traditional wood structures over time. Request a Free Quote!",
     },
     {
       question: "What areas does InstaShed serve?",
       answer:
-        "We serve customers across Texas and surrounding states. Contact us to confirm service availability in your area.",
+        "We serve customers across multiple states with our network of certified installers. Contact us to confirm service availability in your specific area and get connected with local installation teams.",
     },
     {
       question: "How long does it take to build and install a metal building?",
       answer:
-        "Most residential projects take 1-3 days to complete, while larger commercial buildings may take 1-2 weeks depending on complexity.",
+        "Most residential metal sheds and garages take 1-3 days to complete installation. Larger commercial buildings may take 1-2 weeks depending on size and complexity. We provide detailed timelines during the quote process.",
     },
     {
       question: "Do I need a permit for my shed or garage?",
       answer:
-        "Permit requirements vary by location and building size. We handle all necessary permits and inspections as part of our service.",
+        "Permit requirements vary by location, building size, and local regulations. We help guide you through the permit process and can assist with applications where needed. Our team knows local requirements in most service areas.",
     },
     {
       question: "What kind of foundations do you install on?",
       answer:
-        "We work with various foundation types including concrete slabs, gravel pads, and level ground preparations depending on your needs.",
+        "We work with various foundation types including concrete slabs, gravel pads, level ground preparations, and pier foundations. Our team will recommend the best foundation option based on your soil conditions, building size, and local requirements.",
+    },
+    {
+      question: "Can I customize the size and features of my shed or garage?",
+      answer:
+        "Absolutely! We specialize in custom metal buildings tailored to your exact needs. Choose from various sizes, door configurations, window placements, insulation options, and color schemes to create your perfect building.",
+    },
+    {
+      question: "What is the lifespan of an InstaShed metal building?",
+      answer:
+        "Our metal buildings are built to last decades with minimal maintenance. Steel construction resists rot, insects, and weather damage. Most components come with manufacturer warranties up to 40 years against rust and corrosion.",
+    },
+    {
+      question: "Do you offer financing or rent-to-own options?",
+      answer:
+        "Yes, we offer flexible financing solutions including rent-to-own programs to make your metal building more affordable. Contact us to discuss available financing options and find a payment plan that works for your budget.",
+    },
+    {
+      question: "How does delivery and installation work?",
+      answer:
+        "We handle the entire process from manufacturing to installation. Your building is delivered directly to your site by our professional team, who then complete the installation according to specifications. We coordinate timing to minimize disruption to your schedule.",
+    },
+    {
+      question: "What if I need support after installation?",
+      answer:
+        "We provide ongoing customer support after installation. Our warranty covers both materials and workmanship, and our customer service team is available to address any questions or concerns you may have about your metal building.",
     },
   ];
 

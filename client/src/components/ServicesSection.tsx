@@ -35,7 +35,7 @@ export default function ServicesSection() {
     image: string;
     url: string;
   }) => (
-    <div className="w-full sm:w-[90%] md:w-[500px] flex flex-col items-start space-y-4 mx-auto">
+    <div className="w-full sm:w-[90%] md:w-[500px] flex flex-col items-start space-y-4">
       {/* Image Card */}
       <div className="w-full h-[250px] sm:h-[300px] md:h-[350px] bg-white rounded-2xl shadow-lg overflow-hidden">
         <img
