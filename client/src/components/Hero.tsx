@@ -8,7 +8,7 @@ export default function Hero() {
   const totalSlides = 3;
 
   return (
-    <section className="bg-white">
+    <section className="py-8 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative w-full max-w-[1240px] h-[818px] mx-auto rounded-3xl overflow-hidden bg-white">
           {/* SVG as main background image */}
@@ -54,7 +54,7 @@ export default function Hero() {
           </div>
 
           {/* Slider dots */}
-          <div className="absolute bottom-6 right-6 z-30 flex space-x-2">
+          <div className="absolute bottom-6 right-16 z-30 flex space-x-2">
             {Array.from({ length: totalSlides }).map((_, idx) => (
               <button
                 key={idx}
