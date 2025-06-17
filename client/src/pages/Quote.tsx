@@ -101,7 +101,7 @@ export default function Quote() {
         className="bg-white flex items-center justify-center"
         style={{ height: "150px" }}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32">
           <h1
             className="font-bold text-center"
             style={{
@@ -119,7 +119,7 @@ export default function Quote() {
       </section>
 
       {/* Header Section with Content and Image */}
-      <section className="py-8 bg-white">
+      <section className="py-8 bg-white pt-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
             {/* Left Column - Content */}

@@ -53,11 +53,15 @@ export default function Services() {
       <Header />
 
       {/* Page Header */}
-      <section className="bg-white flex items-center justify-center" style={{height: '150px'}}>
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section
+        className="bg-white flex items-center justify-center"
+        style={{ height: "150px" }}
+      >
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
           <h1
-            className="text-8xl sm:text-8xl font-bold text-center"
+            className="font-bold text-center mt-12 mb-12 pt-6 pb-6 px-4"
             style={{
+              fontSize: "150px",
               background:
                 "linear-gradient(90deg, rgba(0, 55, 58, 1) 0%, rgba(0, 55, 58, 0.4) 100%)",
               WebkitBackgroundClip: "text",
@@ -65,13 +69,13 @@ export default function Services() {
               backgroundClip: "text",
             }}
           >
-            SERVICES
+            Services
           </h1>
         </div>
       </section>
 
       {/* Services List */}
-      <section className="py-8 bg-white">
+      <section className="py-8 bg-white pt-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-6">
             {services.map((service, index) => (
@@ -147,24 +151,27 @@ export default function Services() {
           {/* Service 1 */}
           <div>
             <div className="flex items-center mb-6">
-              <div className="w-10 h-10 rounded-full flex items-center justify-center mr-6" style={{ backgroundColor: '#D9D9D9' }}>
+              <div
+                className="w-10 h-10 rounded-full flex items-center justify-center mr-6"
+                style={{ backgroundColor: "#D9D9D9" }}
+              >
                 <span className="text-lg font-bold text-gray-800">01</span>
               </div>
               <div className="h-px bg-gray-300 flex-1"></div>
             </div>
-            
+
             <h3 className="text-3xl font-bold text-gray-900 mb-4">
               Residential Metal Sheds
             </h3>
-            
+
             <p className="text-gray-600 mb-8 leading-relaxed">
               Our{" "}
               <span className="text-orange-500">
                 metal sheds for backyard storage
               </span>{" "}
               are built to protect your tools, supplies, and hobbies. Custom
-              design options include windows, double doors, shelving, and
-              lofts — all made from weather-resistant steel.
+              design options include windows, double doors, shelving, and lofts
+              — all made from weather-resistant steel.
             </p>
 
             <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
@@ -177,20 +184,20 @@ export default function Services() {
                     Backyard tool shed, garden shed, DIY workshop
                   </p>
                 </div>
-                
+
                 <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
                   <h4 className="font-semibold text-gray-900 mb-3">
                     Example use:
                   </h4>
                   <p className="text-gray-600 text-sm">
                     A family in{" "}
-                    <span className="text-orange-500">Hillsdale NY</span>{" "}
-                    built a custom shed for woodworking with double doors
-                    and a windowed loft.
+                    <span className="text-orange-500">Hillsdale NY</span> built
+                    a custom shed for woodworking with double doors and a
+                    windowed loft.
                   </p>
                 </div>
               </div>
-              
+
               <div className="lg:col-span-3">
                 <img
                   src={heroImage2}
@@ -204,22 +211,24 @@ export default function Services() {
           {/* Service 2 */}
           <div>
             <div className="flex items-center mb-6">
-              <div className="w-10 h-10 rounded-full flex items-center justify-center mr-6" style={{ backgroundColor: '#D9D9D9' }}>
+              <div
+                className="w-10 h-10 rounded-full flex items-center justify-center mr-6"
+                style={{ backgroundColor: "#D9D9D9" }}
+              >
                 <span className="text-lg font-bold text-gray-800">02</span>
               </div>
               <div className="h-px bg-gray-300 flex-1"></div>
             </div>
-            
+
             <h3 className="text-3xl font-bold text-gray-900 mb-4">
               Agricultural Pole Barns
             </h3>
-            
+
             <p className="text-gray-600 mb-8 leading-relaxed">
-              Our <span className="text-orange-500">steel pole barns</span>{" "}
-              are engineered for rugged farm life. Built using
-              rust-resistant galvanized panels, they protect tractors, hay,
-              feed, and livestock year-round with wide, open interiors and
-              minimal maintenance.
+              Our <span className="text-orange-500">steel pole barns</span> are
+              engineered for rugged farm life. Built using rust-resistant
+              galvanized panels, they protect tractors, hay, feed, and livestock
+              year-round with wide, open interiors and minimal maintenance.
             </p>
 
             <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
@@ -230,7 +239,7 @@ export default function Services() {
                   className="w-full h-64 object-cover rounded-lg"
                 />
               </div>
-              
+
               <div className="lg:col-span-2 space-y-6">
                 <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
                   <h4 className="font-semibold text-gray-900 mb-3">
@@ -240,7 +249,7 @@ export default function Services() {
                     Equipment storage, livestock shelter, farm operations
                   </p>
                 </div>
-                
+
                 <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
                   <h4 className="font-semibold text-gray-900 mb-3">
                     Example use:
@@ -257,22 +266,25 @@ export default function Services() {
           {/* Service 3 */}
           <div>
             <div className="flex items-center mb-6">
-              <div className="w-10 h-10 rounded-full flex items-center justify-center mr-6" style={{ backgroundColor: '#D9D9D9' }}>
+              <div
+                className="w-10 h-10 rounded-full flex items-center justify-center mr-6"
+                style={{ backgroundColor: "#D9D9D9" }}
+              >
                 <span className="text-lg font-bold text-gray-800">03</span>
               </div>
               <div className="h-px bg-gray-300 flex-1"></div>
             </div>
-            
+
             <h3 className="text-3xl font-bold text-gray-900 mb-4">
               Prefab Steel Garages
             </h3>
-            
+
             <p className="text-gray-600 mb-8 leading-relaxed">
               Protect your vehicles and equipment with a custom-built{" "}
               <span className="text-orange-500">prefab steel garage</span>.
-              Available in single, double, or triple-car formats, our
-              garages feature reinforced walls, high-load roof panels, and
-              optional ventilation or insulation.
+              Available in single, double, or triple-car formats, our garages
+              feature reinforced walls, high-load roof panels, and optional
+              ventilation or insulation.
             </p>
 
             <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
@@ -285,18 +297,18 @@ export default function Services() {
                     Vehicle protection, workshop space, commercial storage
                   </p>
                 </div>
-                
+
                 <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
                   <h4 className="font-semibold text-gray-900 mb-3">
                     Example use:
                   </h4>
                   <p className="text-gray-600 text-sm">
-                    In Great Barrington, MA, a two-car prefab garage now
-                    houses vintage motorcycles and gear.
+                    In Great Barrington, MA, a two-car prefab garage now houses
+                    vintage motorcycles and gear.
                   </p>
                 </div>
               </div>
-              
+
               <div className="lg:col-span-3">
                 <img
                   src={heroImage}
@@ -310,23 +322,26 @@ export default function Services() {
           {/* Service 4 */}
           <div>
             <div className="flex items-center mb-6">
-              <div className="w-10 h-10 rounded-full flex items-center justify-center mr-6" style={{ backgroundColor: '#D9D9D9' }}>
+              <div
+                className="w-10 h-10 rounded-full flex items-center justify-center mr-6"
+                style={{ backgroundColor: "#D9D9D9" }}
+              >
                 <span className="text-lg font-bold text-gray-800">04</span>
               </div>
               <div className="h-px bg-gray-300 flex-1"></div>
             </div>
-            
+
             <h3 className="text-3xl font-bold text-gray-900 mb-4">
               Commercial Steel Buildings
             </h3>
-            
+
             <p className="text-gray-600 mb-8 leading-relaxed">
               Designed for growth, our{" "}
               <span className="text-orange-500">
                 Commercial steel buildings
               </span>{" "}
-              are ideal for warehouses, workshops, and commercial storage.
-              Wide open design, multiple bay configurations, office space
+              are ideal for warehouses, workshops, and commercial storage. Wide
+              open design, multiple bay configurations, office space
               integration, and loading dock compatibility.
             </p>
 
@@ -338,7 +353,7 @@ export default function Services() {
                   className="w-full h-64 object-cover rounded-lg"
                 />
               </div>
-              
+
               <div className="lg:col-span-2 space-y-6">
                 <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
                   <h4 className="font-semibold text-gray-900 mb-3">
@@ -348,7 +363,7 @@ export default function Services() {
                     Warehouse operations, manufacturing facilities
                   </p>
                 </div>
-                
+
                 <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
                   <h4 className="font-semibold text-gray-900 mb-3">
                     Example use:
