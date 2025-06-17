@@ -94,15 +94,16 @@ export default function Quote() {
           </div>
 
           {/* Form Heading */}
-          <h3
-            className="text-2xl font-bold text-gray-900 mb-8 pl-4 border-l-4 border-orange-500 py-3 pr-8"
-            style={{
-              background:
-                "linear-gradient(90deg, rgba(255, 165, 0, 0.1) 0%, rgba(255, 165, 0, 0) 100%)",
-            }}
-          >
-            Fill the Form
-          </h3>
+          <div className="mb-8">
+            <h3 className="text-2xl font-bold text-gray-900 pl-4 border-l-4 border-orange-500 py-3 pr-8 inline-block"
+              style={{
+                background:
+                  "linear-gradient(90deg, rgba(255, 165, 0, 0.1) 0%, rgba(255, 165, 0, 0) 100%)",
+              }}
+            >
+              Fill the Form
+            </h3>
+          </div>
 
           {/* Form Section - Full Width */}
           <div className=" p-8 rounded-lg">
@@ -162,8 +163,8 @@ export default function Quote() {
                   <h4 className="font-semibold text-gray-900 mb-4">
                     Preferred Contact Method
                   </h4>
-                  <div className="flex space-x-6">
-                    <label className="flex items-center">
+                  <div className="flex space-x-8">
+                    <label className="flex items-center cursor-pointer">
                       <input
                         type="radio"
                         name="preferredContact"
@@ -171,11 +172,11 @@ export default function Quote() {
                         onChange={(e) =>
                           handleInputChange("preferredContact", e.target.value)
                         }
-                        className="mr-2"
+                        className="mr-3 w-4 h-4 text-orange-500 border-gray-300 focus:ring-orange-500"
                       />
-                      Email
+                      <span className="text-gray-700">Email</span>
                     </label>
-                    <label className="flex items-center">
+                    <label className="flex items-center cursor-pointer">
                       <input
                         type="radio"
                         name="preferredContact"
@@ -183,9 +184,9 @@ export default function Quote() {
                         onChange={(e) =>
                           handleInputChange("preferredContact", e.target.value)
                         }
-                        className="mr-2"
+                        className="mr-3 w-4 h-4 text-orange-500 border-gray-300 focus:ring-orange-500"
                       />
-                      Call
+                      <span className="text-gray-700">Call</span>
                     </label>
                   </div>
                 </div>
@@ -343,14 +344,26 @@ export default function Quote() {
                     <h4 className="font-semibold text-gray-900 mb-4">
                       Shelving
                     </h4>
-                    <div className="space-y-2">
-                      <label className="flex items-center">
-                        <input type="checkbox" className="mr-2" />
-                        Yes
+                    <div className="space-y-3">
+                      <label className="flex items-center cursor-pointer">
+                        <input 
+                          type="radio" 
+                          name="shelving"
+                          value="yes"
+                          onChange={(e) => handleInputChange("shelving", e.target.value)}
+                          className="mr-3 w-4 h-4 text-orange-500 border-gray-300 focus:ring-orange-500" 
+                        />
+                        <span className="text-gray-700">Yes</span>
                       </label>
-                      <label className="flex items-center">
-                        <input type="checkbox" className="mr-2" />
-                        No
+                      <label className="flex items-center cursor-pointer">
+                        <input 
+                          type="radio" 
+                          name="shelving"
+                          value="no"
+                          onChange={(e) => handleInputChange("shelving", e.target.value)}
+                          className="mr-3 w-4 h-4 text-orange-500 border-gray-300 focus:ring-orange-500" 
+                        />
+                        <span className="text-gray-700">No</span>
                       </label>
                     </div>
                   </div>
@@ -358,14 +371,26 @@ export default function Quote() {
                     <h4 className="font-semibold text-gray-900 mb-4">
                       Work Bench
                     </h4>
-                    <div className="space-y-2">
-                      <label className="flex items-center">
-                        <input type="checkbox" className="mr-2" />
-                        Yes
+                    <div className="space-y-3">
+                      <label className="flex items-center cursor-pointer">
+                        <input 
+                          type="radio" 
+                          name="workbench"
+                          value="yes"
+                          onChange={(e) => handleInputChange("workbench", e.target.value)}
+                          className="mr-3 w-4 h-4 text-orange-500 border-gray-300 focus:ring-orange-500" 
+                        />
+                        <span className="text-gray-700">Yes</span>
                       </label>
-                      <label className="flex items-center">
-                        <input type="checkbox" className="mr-2" />
-                        No
+                      <label className="flex items-center cursor-pointer">
+                        <input 
+                          type="radio" 
+                          name="workbench"
+                          value="no"
+                          onChange={(e) => handleInputChange("workbench", e.target.value)}
+                          className="mr-3 w-4 h-4 text-orange-500 border-gray-300 focus:ring-orange-500" 
+                        />
+                        <span className="text-gray-700">No</span>
                       </label>
                     </div>
                   </div>
