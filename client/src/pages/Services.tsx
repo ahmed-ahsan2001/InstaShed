@@ -195,7 +195,7 @@ export default function Services() {
                 <img
                   src={heroImage2}
                   alt="Residential Metal Shed"
-                  className="w-full h-64 object-cover rounded-lg"
+                  className="w-[60%] h-64 object-cover rounded-lg"
                 />
               </div>
             </div>
@@ -248,7 +248,7 @@ export default function Services() {
                 <img
                   src={heroImage1}
                   alt="Agricultural Pole Barn"
-                  className="w-full h-64 object-cover rounded-lg"
+                  className="w-[60%] h-64 object-cover rounded-lg"
                 />
               </div>
             </div>
@@ -301,7 +301,7 @@ export default function Services() {
                 <img
                   src={heroImage}
                   alt="Prefab Steel Garage"
-                  className="w-full h-64 object-cover rounded-lg"
+                  className="w-[60%] h-64 object-cover rounded-lg"
                 />
               </div>
             </div>
@@ -357,7 +357,7 @@ export default function Services() {
                 <img
                   src={heroImage3}
                   alt="Commercial Steel Building"
-                  className="w-full h-64 object-cover rounded-lg"
+                  className="w-[60%] h-64 object-cover rounded-lg"
                 />
               </div>
             </div>
