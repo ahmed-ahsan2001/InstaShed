@@ -147,7 +147,9 @@ export default function Services() {
           {/* Service 1 */}
           <div>
             <div className="flex items-center mb-6">
-              <span className="text-3xl font-bold text-gray-400 mr-6">01</span>
+              <div className="w-12 h-12 bg-gray-400 rounded-full flex items-center justify-center mr-6">
+                <span className="text-xl font-bold text-white">01</span>
+              </div>
               <div className="h-px bg-gray-300 flex-1"></div>
             </div>
             
@@ -202,7 +204,9 @@ export default function Services() {
           {/* Service 2 */}
           <div>
             <div className="flex items-center mb-6">
-              <span className="text-3xl font-bold text-gray-400 mr-6">02</span>
+              <div className="w-12 h-12 bg-gray-400 rounded-full flex items-center justify-center mr-6">
+                <span className="text-xl font-bold text-white">02</span>
+              </div>
               <div className="h-px bg-gray-300 flex-1"></div>
             </div>
             
@@ -253,7 +257,9 @@ export default function Services() {
           {/* Service 3 */}
           <div>
             <div className="flex items-center mb-6">
-              <span className="text-3xl font-bold text-gray-400 mr-6">03</span>
+              <div className="w-12 h-12 bg-gray-400 rounded-full flex items-center justify-center mr-6">
+                <span className="text-xl font-bold text-white">03</span>
+              </div>
               <div className="h-px bg-gray-300 flex-1"></div>
             </div>
             
@@ -304,7 +310,9 @@ export default function Services() {
           {/* Service 4 */}
           <div>
             <div className="flex items-center mb-6">
-              <span className="text-3xl font-bold text-gray-400 mr-6">04</span>
+              <div className="w-12 h-12 bg-gray-400 rounded-full flex items-center justify-center mr-6">
+                <span className="text-xl font-bold text-white">04</span>
+              </div>
               <div className="h-px bg-gray-300 flex-1"></div>
             </div>
             
