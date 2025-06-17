@@ -94,7 +94,7 @@ export default function Quote() {
           </div>
 
           {/* Form Heading */}
-          <div className="mb-8">
+          <div className="mb-8 text-center">
             <h3 className="text-2xl font-bold text-gray-900 pl-4 border-l-4 border-orange-500 py-3 pr-8 inline-block"
               style={{
                 background:
@@ -106,12 +106,11 @@ export default function Quote() {
           </div>
 
           {/* Form Section - Full Width */}
-          <div className=" p-8 rounded-lg">
+          <div className="p-8 rounded-lg">
             <form
               onSubmit={handleSubmit}
-              className="grid grid-cols-1 lg:grid-cols-2 gap-8"
+              className="max-w-2xl mx-auto space-y-8"
             >
-              {/* Left Column */}
               <div className="space-y-6">
                 {/* Personal Information */}
                 <div>
@@ -258,7 +257,6 @@ export default function Quote() {
                 </div>
               </div>
 
-              {/* Right Column */}
               <div className="space-y-6">
                 {/* Intended Use */}
                 <div>
@@ -397,8 +395,7 @@ export default function Quote() {
                 </div>
               </div>
 
-              {/* Full Width Sections */}
-              <div className="col-span-1 lg:col-span-2 space-y-6">
+              <div className="space-y-6">
                 {/* How Did You Hear About Us */}
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-4">
