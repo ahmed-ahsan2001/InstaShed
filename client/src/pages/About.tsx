@@ -13,11 +13,15 @@ export default function About() {
       <Header />
 
       {/* Page Header */}
-      <section className="py-12 bg-white">
+      <section
+        className="bg-white flex items-center justify-center"
+        style={{ height: "150px" }}
+      >
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1
-            className="text-5xl sm:text-6xl font-bold text-center mb-12"
+            className="font-bold text-center"
             style={{
+              fontSize: "150px",
               background:
                 "linear-gradient(90deg, rgba(0, 55, 58, 1) 0%, rgba(0, 55, 58, 0.4) 100%)",
               WebkitBackgroundClip: "text",

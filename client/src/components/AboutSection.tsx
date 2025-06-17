@@ -46,7 +46,7 @@ export default function AboutSection() {
         {/* Our Story */}
         <div className="mb-12">
           <h3 className="text-2xl font-semibold text-left mb-2">Our Story</h3>
-          <p className="text-left text-gray-300 max-w-4xl mx-auto">
+          <p className="text-left text-gray-300 max-w-4xl">
             InstaShed was founded in 2010 to help customers replace costly
             rentals and rotting wood sheds with reliable, long-lasting custom
             metal buildings. We’ve helped thousands of clients protect what
@@ -57,7 +57,7 @@ export default function AboutSection() {
         {/* Our Values */}
         <div className="mb-12">
           <h3 className="text-2xl font-semibold text-left mb-2">Our Values</h3>
-          <p className="text-left text-gray-300 max-w-4xl mx-auto mb-8">
+          <p className="text-left text-gray-300 max-w-4xl mb-8">
             We don’t just build buildings — we create lasting value and reliable
             spaces where life and work can thrive.
           </p>

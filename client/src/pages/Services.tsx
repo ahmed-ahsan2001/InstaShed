@@ -53,10 +53,10 @@ export default function Services() {
       <Header />
 
       {/* Page Header */}
-      <section className="py-12 bg-white">
+      <section className="bg-white flex items-center justify-center" style={{height: '150px'}}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1
-            className="text-8xl sm:text-8xl font-bold text-center mb-8"
+            className="text-8xl sm:text-8xl font-bold text-center"
             style={{
               background:
                 "linear-gradient(90deg, rgba(0, 55, 58, 1) 0%, rgba(0, 55, 58, 0.4) 100%)",

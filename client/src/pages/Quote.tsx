@@ -97,11 +97,15 @@ export default function Quote() {
       <Header />
 
       {/* Page Header */}
-      <section className="py-12 bg-white">
+      <section
+        className="bg-white flex items-center justify-center"
+        style={{ height: "150px" }}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1
-            className="text-6xl sm:text-7xl font-bold text-center mb-8"
+            className="font-bold text-center"
             style={{
+              fontSize: "130px",
               background:
                 "linear-gradient(90deg, rgba(0, 55, 58, 1) 0%, rgba(0, 55, 58, 0.4) 100%)",
               WebkitBackgroundClip: "text",
@@ -208,7 +212,10 @@ export default function Quote() {
                         value="email"
                         checked={formData.preferredContact?.includes("email")}
                         onChange={(e) =>
-                          handleCheckboxChange("preferredContact", e.target.value)
+                          handleCheckboxChange(
+                            "preferredContact",
+                            e.target.value,
+                          )
                         }
                         className="mr-3 w-4 h-4 text-orange-500 border-gray-300 focus:ring-orange-500"
                       />
@@ -221,7 +228,10 @@ export default function Quote() {
                         value="phone"
                         checked={formData.preferredContact?.includes("phone")}
                         onChange={(e) =>
-                          handleCheckboxChange("preferredContact", e.target.value)
+                          handleCheckboxChange(
+                            "preferredContact",
+                            e.target.value,
+                          )
                         }
                         className="mr-3 w-4 h-4 text-orange-500 border-gray-300 focus:ring-orange-500"
                       />
@@ -308,13 +318,17 @@ export default function Quote() {
                       <input
                         type="checkbox"
                         value="equipment-storage"
-                        checked={formData.intendedUse?.includes("equipment-storage")}
+                        checked={formData.intendedUse?.includes(
+                          "equipment-storage",
+                        )}
                         onChange={(e) =>
                           handleCheckboxChange("intendedUse", e.target.value)
                         }
                         className="mr-3 w-4 h-4 text-orange-500 border-gray-300 focus:ring-orange-500"
                       />
-                      <span className="text-gray-700 font-medium">Equipment storage</span>
+                      <span className="text-gray-700 font-medium">
+                        Equipment storage
+                      </span>
                     </label>
                     <label className="flex items-center cursor-pointer p-4 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors duration-200">
                       <input
@@ -326,7 +340,9 @@ export default function Quote() {
                         }
                         className="mr-3 w-4 h-4 text-orange-500 border-gray-300 focus:ring-orange-500"
                       />
-                      <span className="text-gray-700 font-medium">Workshop</span>
+                      <span className="text-gray-700 font-medium">
+                        Workshop
+                      </span>
                     </label>
                     <label className="flex items-center cursor-pointer p-4 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors duration-200">
                       <input
@@ -338,7 +354,9 @@ export default function Quote() {
                         }
                         className="mr-3 w-4 h-4 text-orange-500 border-gray-300 focus:ring-orange-500"
                       />
-                      <span className="text-gray-700 font-medium">Home Garage</span>
+                      <span className="text-gray-700 font-medium">
+                        Home Garage
+                      </span>
                     </label>
                   </div>
                 </div>
@@ -353,14 +371,18 @@ export default function Quote() {
                       type="text"
                       placeholder="Galvanized"
                       value={formData.galvanized || ""}
-                      onChange={(e) => handleInputChange("galvanized", e.target.value)}
+                      onChange={(e) =>
+                        handleInputChange("galvanized", e.target.value)
+                      }
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent"
                     />
                     <input
                       type="text"
                       placeholder="Painted"
                       value={formData.painted || ""}
-                      onChange={(e) => handleInputChange("painted", e.target.value)}
+                      onChange={(e) =>
+                        handleInputChange("painted", e.target.value)
+                      }
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent"
                     />
                   </div>
@@ -376,14 +398,18 @@ export default function Quote() {
                       type="text"
                       placeholder="Number of Windows"
                       value={formData.numberOfWindows || ""}
-                      onChange={(e) => handleInputChange("numberOfWindows", e.target.value)}
+                      onChange={(e) =>
+                        handleInputChange("numberOfWindows", e.target.value)
+                      }
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent"
                     />
                     <input
                       type="text"
                       placeholder="Window Size"
                       value={formData.windowSize || ""}
-                      onChange={(e) => handleInputChange("windowSize", e.target.value)}
+                      onChange={(e) =>
+                        handleInputChange("windowSize", e.target.value)
+                      }
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent"
                     />
                   </div>
@@ -398,7 +424,9 @@ export default function Quote() {
                     type="text"
                     placeholder="Standard"
                     value={formData.doorType}
-                    onChange={(e) => handleInputChange("doorType", e.target.value)}
+                    onChange={(e) =>
+                      handleInputChange("doorType", e.target.value)
+                    }
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent"
                   />
                 </div>
@@ -479,7 +507,10 @@ export default function Quote() {
                       type="date"
                       value={formData.preferredInstallationDate}
                       onChange={(e) =>
-                        handleInputChange("preferredInstallationDate", e.target.value)
+                        handleInputChange(
+                          "preferredInstallationDate",
+                          e.target.value,
+                        )
                       }
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent"
                     />
