@@ -15,7 +15,7 @@ export default function AgriculturalBarns() {
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-center text-6xl sm:text-7xl font-bold text-gray-900 mb-8">
-            Agricultural Pole Barns
+            Agriculture Pole <span className="text-orange-500">Barns</span>
           </h1>
         </div>
       </section>
@@ -44,9 +44,8 @@ export default function AgriculturalBarns() {
                 steel pole barns
               </span>{" "}
               are engineered for rugged farm life. Built using rust-resistant
-              galvanized panels, they protect tractors, hay, feed, and
-              livestock year-round with wide, open interiors and minimal
-              maintenance.
+              galvanized panels, they protect tractors, hay, feed, and livestock
+              year-round with wide, open interiors and minimal maintenance.
             </p>
           </div>
 

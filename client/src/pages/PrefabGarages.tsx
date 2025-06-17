@@ -13,8 +13,8 @@ export default function PrefabGarages() {
       {/* Page Header */}
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-6xl sm:text-7xl font-bold text-gray-900 mb-8">
-            Prefab Steel Garages
+          <h1 className="text-center text-6xl sm:text-7xl font-bold text-gray-900 mb-8">
+            Prefab Steel <span className="text-orange-500">Garages</span>
           </h1>
         </div>
       </section>
@@ -42,9 +42,9 @@ export default function PrefabGarages() {
               <span className="text-orange-500 font-medium">
                 prefab steel garage
               </span>
-              . Available in single, double, or triple-car formats, our
-              garages feature reinforced walls, high-load roof panels, and
-              optional ventilation or insulation.
+              . Available in single, double, or triple-car formats, our garages
+              feature reinforced walls, high-load roof panels, and optional
+              ventilation or insulation.
             </p>
           </div>
 
