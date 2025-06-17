@@ -167,8 +167,8 @@ export default function Services() {
               lofts — all made from weather-resistant steel.
             </p>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              <div className="space-y-6">
+            <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
+              <div className="lg:col-span-2 space-y-6">
                 <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
                   <h4 className="font-semibold text-gray-900 mb-3">
                     Perfect for:
@@ -191,11 +191,11 @@ export default function Services() {
                 </div>
               </div>
               
-              <div>
+              <div className="lg:col-span-3">
                 <img
                   src={heroImage2}
                   alt="Residential Metal Shed"
-                  className="w-[60%] h-64 object-cover rounded-lg"
+                  className="w-full h-64 object-cover rounded-lg"
                 />
               </div>
             </div>
@@ -222,8 +222,8 @@ export default function Services() {
               minimal maintenance.
             </p>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              <div className="space-y-6">
+            <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
+              <div className="lg:col-span-2 space-y-6">
                 <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
                   <h4 className="font-semibold text-gray-900 mb-3">
                     Perfect for:
@@ -244,11 +244,11 @@ export default function Services() {
                 </div>
               </div>
               
-              <div>
+              <div className="lg:col-span-3">
                 <img
                   src={heroImage1}
                   alt="Agricultural Pole Barn"
-                  className="w-[60%] h-64 object-cover rounded-lg"
+                  className="w-full h-64 object-cover rounded-lg"
                 />
               </div>
             </div>
@@ -275,8 +275,8 @@ export default function Services() {
               optional ventilation or insulation.
             </p>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              <div className="space-y-6">
+            <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
+              <div className="lg:col-span-2 space-y-6">
                 <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
                   <h4 className="font-semibold text-gray-900 mb-3">
                     Perfect for:
@@ -297,11 +297,11 @@ export default function Services() {
                 </div>
               </div>
               
-              <div>
+              <div className="lg:col-span-3">
                 <img
                   src={heroImage}
                   alt="Prefab Steel Garage"
-                  className="w-[60%] h-64 object-cover rounded-lg"
+                  className="w-full h-64 object-cover rounded-lg"
                 />
               </div>
             </div>
@@ -330,8 +330,8 @@ export default function Services() {
               integration, and loading dock compatibility.
             </p>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              <div className="space-y-6">
+            <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
+              <div className="lg:col-span-2 space-y-6">
                 <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
                   <h4 className="font-semibold text-gray-900 mb-3">
                     Perfect for:
@@ -353,11 +353,11 @@ export default function Services() {
                 </div>
               </div>
               
-              <div>
+              <div className="lg:col-span-3">
                 <img
                   src={heroImage3}
                   alt="Commercial Steel Building"
-                  className="w-[60%] h-64 object-cover rounded-lg"
+                  className="w-full h-64 object-cover rounded-lg"
                 />
               </div>
             </div>
