@@ -21,9 +21,7 @@ interface FormData {
   length: string;
   width: string;
   height: string;
-  intendedUse: string;
-  intendedUse2: string;
-  intendedUse3: string;
+  intendedUse: string[];
   sidingMaterial: string;
   windowType: string;
   doorType: string;
@@ -49,9 +47,7 @@ export default function Quote() {
     length: "",
     width: "",
     height: "",
-    intendedUse: "",
-    intendedUse2: "",
-    intendedUse3: "",
+    intendedUse: [],
     sidingMaterial: "",
     windowType: "",
     doorType: "",
@@ -304,54 +300,42 @@ export default function Quote() {
                     Intended Use
                   </h4>
                   <div className="grid grid-cols-3 gap-4">
-                    <Select
-                      onValueChange={(value) =>
-                        handleInputChange("intendedUse", value)
-                      }
-                    >
-                      <SelectTrigger className="w-full">
-                        <SelectValue placeholder="Equipment storage" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="equipment-storage">Equipment storage</SelectItem>
-                        <SelectItem value="storage">Storage</SelectItem>
-                        <SelectItem value="tools">Tools</SelectItem>
-                        <SelectItem value="vehicles">Vehicles</SelectItem>
-                        <SelectItem value="supplies">Supplies</SelectItem>
-                      </SelectContent>
-                    </Select>
-                    <Select
-                      onValueChange={(value) =>
-                        handleInputChange("intendedUse2", value)
-                      }
-                    >
-                      <SelectTrigger className="w-full">
-                        <SelectValue placeholder="Workshop" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="workshop">Workshop</SelectItem>
-                        <SelectItem value="woodworking">Woodworking</SelectItem>
-                        <SelectItem value="metalworking">Metalworking</SelectItem>
-                        <SelectItem value="auto-repair">Auto Repair</SelectItem>
-                        <SelectItem value="crafts">Crafts</SelectItem>
-                      </SelectContent>
-                    </Select>
-                    <Select
-                      onValueChange={(value) =>
-                        handleInputChange("intendedUse3", value)
-                      }
-                    >
-                      <SelectTrigger className="w-full">
-                        <SelectValue placeholder="Home Garage" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="home-garage">Home Garage</SelectItem>
-                        <SelectItem value="car-garage">Car Garage</SelectItem>
-                        <SelectItem value="commercial-garage">Commercial Garage</SelectItem>
-                        <SelectItem value="livestock">Livestock Shelter</SelectItem>
-                        <SelectItem value="commercial">Commercial Use</SelectItem>
-                      </SelectContent>
-                    </Select>
+                    <label className="flex items-center cursor-pointer p-4 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors duration-200">
+                      <input
+                        type="checkbox"
+                        value="equipment-storage"
+                        checked={formData.intendedUse?.includes("equipment-storage")}
+                        onChange={(e) =>
+                          handleCheckboxChange("intendedUse", e.target.value)
+                        }
+                        className="mr-3 w-4 h-4 text-orange-500 border-gray-300 focus:ring-orange-500"
+                      />
+                      <span className="text-gray-700 font-medium">Equipment storage</span>
+                    </label>
+                    <label className="flex items-center cursor-pointer p-4 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors duration-200">
+                      <input
+                        type="checkbox"
+                        value="workshop"
+                        checked={formData.intendedUse?.includes("workshop")}
+                        onChange={(e) =>
+                          handleCheckboxChange("intendedUse", e.target.value)
+                        }
+                        className="mr-3 w-4 h-4 text-orange-500 border-gray-300 focus:ring-orange-500"
+                      />
+                      <span className="text-gray-700 font-medium">Workshop</span>
+                    </label>
+                    <label className="flex items-center cursor-pointer p-4 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors duration-200">
+                      <input
+                        type="checkbox"
+                        value="home-garage"
+                        checked={formData.intendedUse?.includes("home-garage")}
+                        onChange={(e) =>
+                          handleCheckboxChange("intendedUse", e.target.value)
+                        }
+                        className="mr-3 w-4 h-4 text-orange-500 border-gray-300 focus:ring-orange-500"
+                      />
+                      <span className="text-gray-700 font-medium">Home Garage</span>
+                    </label>
                   </div>
                 </div>
 
