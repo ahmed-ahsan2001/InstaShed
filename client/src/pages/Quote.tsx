@@ -11,13 +11,38 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
+interface FormData {
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone: string;
+  preferredContact: string[];
+  serviceType: string;
+  length: string;
+  width: string;
+  height: string;
+  intendedUse: string;
+  sidingMaterial: string;
+  windowType: string;
+  doorType: string;
+  shelving: string;
+  workbench: string;
+  howDidYouHear: string;
+  workshopUse: string;
+  otherUse: string;
+  galvanized: string;
+  painted: string;
+  numberOfWindows: string;
+  windowSize: string;
+}
+
 export default function Quote() {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
     firstName: "",
     lastName: "",
     email: "",
     phone: "",
-    preferredContact: "",
+    preferredContact: [],
     serviceType: "",
     length: "",
     width: "",
@@ -39,6 +64,23 @@ export default function Quote() {
 
   const handleInputChange = (field: string, value: string) => {
     setFormData((prev) => ({ ...prev, [field]: value }));
+  };
+
+  const handleCheckboxChange = (field: keyof FormData, value: string) => {
+    setFormData((prev) => {
+      const currentValues = (prev[field] as string[]) || [];
+      if (currentValues.includes(value)) {
+        return {
+          ...prev,
+          [field]: currentValues.filter((item: string) => item !== value),
+        } as FormData;
+      } else {
+        return {
+          ...prev,
+          [field]: [...currentValues, value],
+        } as FormData;
+      }
+    });
   };
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -157,12 +199,12 @@ export default function Quote() {
                   <div className="flex space-x-8">
                     <label className="flex items-center cursor-pointer">
                       <input
-                        type="radio"
+                        type="checkbox"
                         name="preferredContact"
                         value="email"
-                        checked={formData.preferredContact === "email"}
+                        checked={formData.preferredContact?.includes("email")}
                         onChange={(e) =>
-                          handleInputChange("preferredContact", e.target.value)
+                          handleCheckboxChange("preferredContact", e.target.value)
                         }
                         className="mr-3 w-4 h-4 text-orange-500 border-gray-300 focus:ring-orange-500"
                       />
@@ -170,12 +212,12 @@ export default function Quote() {
                     </label>
                     <label className="flex items-center cursor-pointer">
                       <input
-                        type="radio"
+                        type="checkbox"
                         name="preferredContact"
                         value="phone"
-                        checked={formData.preferredContact === "phone"}
+                        checked={formData.preferredContact?.includes("phone")}
                         onChange={(e) =>
-                          handleInputChange("preferredContact", e.target.value)
+                          handleCheckboxChange("preferredContact", e.target.value)
                         }
                         className="mr-3 w-4 h-4 text-orange-500 border-gray-300 focus:ring-orange-500"
                       />
