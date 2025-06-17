@@ -29,6 +29,12 @@ export default function Quote() {
     shelving: "",
     workbench: "",
     howDidYouHear: "",
+    workshopUse: "",
+    otherUse: "",
+    galvanized: "",
+    painted: "",
+    numberOfWindows: "",
+    windowSize: "",
   });
 
   const handleInputChange = (field: string, value: string) => {
@@ -93,9 +99,10 @@ export default function Quote() {
             </div>
           </div>
 
-          {/* Form Heading */}
-          <div className="mb-8 text-center">
-            <h3 className="text-2xl font-bold text-gray-900 pl-4 border-l-4 border-orange-500 py-3 pr-8 inline-block"
+          {/* Form Section - Full Width */}
+          <div className="p-8 rounded-lg">
+            <h3
+              className="text-2xl font-bold text-gray-900 pl-4 border-l-4 border-orange-500 py-3 inline-block mb-8"
               style={{
                 background:
                   "linear-gradient(90deg, rgba(255, 165, 0, 0.1) 0%, rgba(255, 165, 0, 0) 100%)",
@@ -103,14 +110,7 @@ export default function Quote() {
             >
               Fill the Form
             </h3>
-          </div>
-
-          {/* Form Section - Full Width */}
-          <div className="p-8 rounded-lg">
-            <form
-              onSubmit={handleSubmit}
-              className="max-w-2xl mx-auto space-y-8"
-            >
+            <form onSubmit={handleSubmit} className="w-full space-y-8">
               <div className="space-y-6">
                 {/* Personal Information */}
                 <div>
@@ -120,22 +120,14 @@ export default function Quote() {
                   <div className="space-y-4">
                     <input
                       type="text"
-                      placeholder="First Name"
+                      placeholder="Full Name"
                       value={formData.firstName}
                       onChange={(e) =>
                         handleInputChange("firstName", e.target.value)
                       }
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent"
                     />
-                    <input
-                      type="text"
-                      placeholder="Last Name"
-                      value={formData.lastName}
-                      onChange={(e) =>
-                        handleInputChange("lastName", e.target.value)
-                      }
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent"
-                    />
+
                     <input
                       type="email"
                       placeholder="Email Address"
@@ -147,7 +139,7 @@ export default function Quote() {
                     />
                     <input
                       type="tel"
-                      placeholder="Phone Number"
+                      placeholder="ZIP Code"
                       value={formData.phone}
                       onChange={(e) =>
                         handleInputChange("phone", e.target.value)
@@ -168,6 +160,7 @@ export default function Quote() {
                         type="radio"
                         name="preferredContact"
                         value="email"
+                        checked={formData.preferredContact === "email"}
                         onChange={(e) =>
                           handleInputChange("preferredContact", e.target.value)
                         }
@@ -180,6 +173,7 @@ export default function Quote() {
                         type="radio"
                         name="preferredContact"
                         value="phone"
+                        checked={formData.preferredContact === "phone"}
                         onChange={(e) =>
                           handleInputChange("preferredContact", e.target.value)
                         }
@@ -276,11 +270,15 @@ export default function Quote() {
                     <input
                       type="text"
                       placeholder="Workshop"
+                      value={formData.workshopUse || ""}
+                      onChange={(e) => handleInputChange("workshopUse", e.target.value)}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent"
                     />
                     <input
                       type="text"
                       placeholder="Other: Garage"
+                      value={formData.otherUse || ""}
+                      onChange={(e) => handleInputChange("otherUse", e.target.value)}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent"
                     />
                   </div>
@@ -295,11 +293,15 @@ export default function Quote() {
                     <input
                       type="text"
                       placeholder="Galvanized"
+                      value={formData.galvanized || ""}
+                      onChange={(e) => handleInputChange("galvanized", e.target.value)}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent"
                     />
                     <input
                       type="text"
                       placeholder="Painted"
+                      value={formData.painted || ""}
+                      onChange={(e) => handleInputChange("painted", e.target.value)}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent"
                     />
                   </div>
@@ -314,11 +316,15 @@ export default function Quote() {
                     <input
                       type="text"
                       placeholder="Number of Windows"
+                      value={formData.numberOfWindows || ""}
+                      onChange={(e) => handleInputChange("numberOfWindows", e.target.value)}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent"
                     />
                     <input
                       type="text"
                       placeholder="Window Size"
+                      value={formData.windowSize || ""}
+                      onChange={(e) => handleInputChange("windowSize", e.target.value)}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent"
                     />
                   </div>
@@ -332,6 +338,8 @@ export default function Quote() {
                   <input
                     type="text"
                     placeholder="Standard"
+                    value={formData.doorType}
+                    onChange={(e) => handleInputChange("doorType", e.target.value)}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent"
                   />
                 </div>
@@ -344,22 +352,26 @@ export default function Quote() {
                     </h4>
                     <div className="space-y-3">
                       <label className="flex items-center cursor-pointer">
-                        <input 
-                          type="radio" 
+                        <input
+                          type="radio"
                           name="shelving"
                           value="yes"
-                          onChange={(e) => handleInputChange("shelving", e.target.value)}
-                          className="mr-3 w-4 h-4 text-orange-500 border-gray-300 focus:ring-orange-500" 
+                          onChange={(e) =>
+                            handleInputChange("shelving", e.target.value)
+                          }
+                          className="mr-3 w-4 h-4 text-orange-500 border-gray-300 focus:ring-orange-500"
                         />
                         <span className="text-gray-700">Yes</span>
                       </label>
                       <label className="flex items-center cursor-pointer">
-                        <input 
-                          type="radio" 
+                        <input
+                          type="radio"
                           name="shelving"
                           value="no"
-                          onChange={(e) => handleInputChange("shelving", e.target.value)}
-                          className="mr-3 w-4 h-4 text-orange-500 border-gray-300 focus:ring-orange-500" 
+                          onChange={(e) =>
+                            handleInputChange("shelving", e.target.value)
+                          }
+                          className="mr-3 w-4 h-4 text-orange-500 border-gray-300 focus:ring-orange-500"
                         />
                         <span className="text-gray-700">No</span>
                       </label>
@@ -371,22 +383,26 @@ export default function Quote() {
                     </h4>
                     <div className="space-y-3">
                       <label className="flex items-center cursor-pointer">
-                        <input 
-                          type="radio" 
+                        <input
+                          type="radio"
                           name="workbench"
                           value="yes"
-                          onChange={(e) => handleInputChange("workbench", e.target.value)}
-                          className="mr-3 w-4 h-4 text-orange-500 border-gray-300 focus:ring-orange-500" 
+                          onChange={(e) =>
+                            handleInputChange("workbench", e.target.value)
+                          }
+                          className="mr-3 w-4 h-4 text-orange-500 border-gray-300 focus:ring-orange-500"
                         />
                         <span className="text-gray-700">Yes</span>
                       </label>
                       <label className="flex items-center cursor-pointer">
-                        <input 
-                          type="radio" 
+                        <input
+                          type="radio"
                           name="workbench"
                           value="no"
-                          onChange={(e) => handleInputChange("workbench", e.target.value)}
-                          className="mr-3 w-4 h-4 text-orange-500 border-gray-300 focus:ring-orange-500" 
+                          onChange={(e) =>
+                            handleInputChange("workbench", e.target.value)
+                          }
+                          className="mr-3 w-4 h-4 text-orange-500 border-gray-300 focus:ring-orange-500"
                         />
                         <span className="text-gray-700">No</span>
                       </label>
