@@ -21,7 +21,7 @@ interface FormData {
   length: string;
   width: string;
   height: string;
-  intendedUse: string;
+  intendedUse: string[];
   sidingMaterial: string;
   windowType: string;
   doorType: string;
@@ -47,7 +47,7 @@ export default function Quote() {
     length: "",
     width: "",
     height: "",
-    intendedUse: "",
+    intendedUse: [],
     sidingMaterial: "",
     windowType: "",
     doorType: "",
@@ -299,30 +299,67 @@ export default function Quote() {
                   <h4 className="font-semibold text-gray-900 mb-4">
                     Intended Use
                   </h4>
-                  <div className="space-y-4">
-                    <input
-                      type="text"
-                      placeholder="Storage"
-                      value={formData.intendedUse}
-                      onChange={(e) =>
-                        handleInputChange("intendedUse", e.target.value)
-                      }
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent"
-                    />
-                    <input
-                      type="text"
-                      placeholder="Workshop"
-                      value={formData.workshopUse || ""}
-                      onChange={(e) => handleInputChange("workshopUse", e.target.value)}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent"
-                    />
-                    <input
-                      type="text"
-                      placeholder="Other: Garage"
-                      value={formData.otherUse || ""}
-                      onChange={(e) => handleInputChange("otherUse", e.target.value)}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent"
-                    />
+                  <div className="space-y-3">
+                    <label className="flex items-center cursor-pointer">
+                      <input
+                        type="checkbox"
+                        value="storage"
+                        checked={formData.intendedUse?.includes("storage")}
+                        onChange={(e) =>
+                          handleCheckboxChange("intendedUse", e.target.value)
+                        }
+                        className="mr-3 w-4 h-4 text-orange-500 border-gray-300 focus:ring-orange-500"
+                      />
+                      <span className="text-gray-700">Storage</span>
+                    </label>
+                    <label className="flex items-center cursor-pointer">
+                      <input
+                        type="checkbox"
+                        value="workshop"
+                        checked={formData.intendedUse?.includes("workshop")}
+                        onChange={(e) =>
+                          handleCheckboxChange("intendedUse", e.target.value)
+                        }
+                        className="mr-3 w-4 h-4 text-orange-500 border-gray-300 focus:ring-orange-500"
+                      />
+                      <span className="text-gray-700">Workshop</span>
+                    </label>
+                    <label className="flex items-center cursor-pointer">
+                      <input
+                        type="checkbox"
+                        value="garage"
+                        checked={formData.intendedUse?.includes("garage")}
+                        onChange={(e) =>
+                          handleCheckboxChange("intendedUse", e.target.value)
+                        }
+                        className="mr-3 w-4 h-4 text-orange-500 border-gray-300 focus:ring-orange-500"
+                      />
+                      <span className="text-gray-700">Garage</span>
+                    </label>
+                    <label className="flex items-center cursor-pointer">
+                      <input
+                        type="checkbox"
+                        value="livestock"
+                        checked={formData.intendedUse?.includes("livestock")}
+                        onChange={(e) =>
+                          handleCheckboxChange("intendedUse", e.target.value)
+                        }
+                        className="mr-3 w-4 h-4 text-orange-500 border-gray-300 focus:ring-orange-500"
+                      />
+                      <span className="text-gray-700">Livestock Shelter</span>
+                    </label>
+                    <label className="flex items-center cursor-pointer">
+                      <input
+                        type="checkbox"
+                        value="commercial"
+                        checked={formData.intendedUse?.includes("commercial")}
+                        onChange={(e) =>
+                          handleCheckboxChange("intendedUse", e.target.value)
+                        }
+                        className="mr-3 w-4 h-4 text-orange-500 border-gray-300 focus:ring-orange-500"
+                      />
+                      <span className="text-gray-700">Commercial Use</span>
+                    </label>
                   </div>
                 </div>
 
