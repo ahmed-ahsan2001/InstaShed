@@ -143,221 +143,214 @@ export default function Services() {
 
       {/* Services Timeline Section */}
       <section className="py-16 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="space-y-16">
-            {/* Service 1 - Residential Metal Sheds */}
-            <div className="flex items-start space-x-8">
-              <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-white rounded-full border-2 border-gray-300 flex items-center justify-center">
-                  <span className="text-gray-600 font-semibold">01</span>
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+          {/* Service 1 */}
+          <div className="bg-white rounded-lg p-8 shadow-sm border border-gray-200">
+            <div className="flex items-center mb-6">
+              <span className="text-3xl font-bold text-gray-400 mr-6">01</span>
+              <div className="h-px bg-gray-300 flex-1"></div>
+            </div>
+            
+            <h3 className="text-3xl font-bold text-gray-900 mb-4">
+              Residential Metal Sheds
+            </h3>
+            
+            <p className="text-gray-600 mb-8 leading-relaxed">
+              Our{" "}
+              <span className="text-orange-500">
+                metal sheds for backyard storage
+              </span>{" "}
+              are built to protect your tools, supplies, and hobbies. Custom
+              design options include windows, double doors, shelving, and
+              lofts — all made from weather-resistant steel.
+            </p>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div className="space-y-6">
+                <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                  <h4 className="font-semibold text-gray-900 mb-3">
+                    Perfect for:
+                  </h4>
+                  <p className="text-gray-600 text-sm">
+                    Backyard tool shed, garden shed, DIY workshop
+                  </p>
+                </div>
+                
+                <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                  <h4 className="font-semibold text-gray-900 mb-3">
+                    Example use:
+                  </h4>
+                  <p className="text-gray-600 text-sm">
+                    A family in{" "}
+                    <span className="text-orange-500">Hillsdale NY</span>{" "}
+                    built a custom shed for woodworking with double doors
+                    and a windowed loft.
+                  </p>
                 </div>
               </div>
-              <div className="flex-1 grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                    Residential Metal Sheds
-                  </h3>
-                  <p className="text-gray-600 mb-6">
-                    Our{" "}
-                    <span className="text-orange-500">
-                      metal sheds for backyard storage
-                    </span>{" "}
-                    are built to protect your tools, supplies, and hobbies.
-                    Custom design options include windows, double doors,
-                    shelving, and lofts — all made from weather-resistant steel.
-                  </p>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                      <h4 className="font-semibold text-gray-900 mb-2">
-                        Perfect for:
-                      </h4>
-                      <ul className="text-sm text-gray-600 space-y-1">
-                        <li>Backyard tool shed, garden shed, DIY workshop</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-900 mb-2">
-                        Example use:
-                      </h4>
-                      <ul className="text-sm text-gray-600 space-y-1">
-                        <li>
-                          A family in{" "}
-                          <span className="text-orange-500">Hillsdale MA</span>{" "}
-                          built a custom shed for woodworking with double doors
-                          and a windowed loft.
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <img
-                    src={heroImage2}
-                    alt="Residential Metal Shed"
-                    className="w-full h-48 object-cover rounded-lg shadow-sm"
-                  />
-                </div>
+              
+              <div>
+                <img
+                  src={heroImage2}
+                  alt="Residential Metal Shed"
+                  className="w-full h-64 object-cover rounded-lg"
+                />
               </div>
             </div>
+          </div>
 
-            {/* Service 2 - Agricultural Pole Barns */}
-            <div className="flex items-start space-x-8">
-              <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-white rounded-full border-2 border-gray-300 flex items-center justify-center">
-                  <span className="text-gray-600 font-semibold">02</span>
+          {/* Service 2 */}
+          <div className="bg-white rounded-lg p-8 shadow-sm border border-gray-200">
+            <div className="flex items-center mb-6">
+              <span className="text-3xl font-bold text-gray-400 mr-6">02</span>
+              <div className="h-px bg-gray-300 flex-1"></div>
+            </div>
+            
+            <h3 className="text-3xl font-bold text-gray-900 mb-4">
+              Agricultural Pole Barns
+            </h3>
+            
+            <p className="text-gray-600 mb-8 leading-relaxed">
+              Our <span className="text-orange-500">steel pole barns</span>{" "}
+              are engineered for rugged farm life. Built using
+              rust-resistant galvanized panels, they protect tractors, hay,
+              feed, and livestock year-round with wide, open interiors and
+              minimal maintenance.
+            </p>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div className="space-y-6">
+                <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                  <h4 className="font-semibold text-gray-900 mb-3">
+                    Perfect for:
+                  </h4>
+                  <p className="text-gray-600 text-sm">
+                    Equipment storage, livestock shelter, farm operations
+                  </p>
+                </div>
+                
+                <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                  <h4 className="font-semibold text-gray-900 mb-3">
+                    Example use:
+                  </h4>
+                  <p className="text-gray-600 text-sm">
+                    A farm in Texas uses our pole barn to store hay, protect
+                    livestock, and house farming equipment.
+                  </p>
                 </div>
               </div>
-              <div className="flex-1 grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <div>
-                  <img
-                    src={heroImage1}
-                    alt="Agricultural Pole Barn"
-                    className="w-full h-48 object-cover rounded-lg shadow-sm"
-                  />
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                    Agricultural Pole Barns
-                  </h3>
-                  <p className="text-gray-600 mb-6">
-                    Our{" "}
-                    <span className="text-orange-500">steel pole barns</span>{" "}
-                    are engineered for rugged farm life. Built using
-                    rust-resistant galvanized panels, they protect tractors,
-                    hay, feed, and livestock year-round with wide, open
-                    interiors and minimal maintenance.
-                  </p>
-                  <div className="grid grid-cols-1 gap-6">
-                    <div>
-                      <h4 className="font-semibold text-gray-900 mb-2">
-                        Perfect for:
-                      </h4>
-                      <ul className="text-sm text-gray-600 space-y-1">
-                        <li>
-                          Equipment storage, livestock shelter, farm operations
-                        </li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-900 mb-2">
-                        Example use:
-                      </h4>
-                      <ul className="text-sm text-gray-600 space-y-1">
-                        <li>
-                          A farm in Texas uses our pole barn to store hay,
-                          protect livestock, and house farming equipment.
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+              
+              <div>
+                <img
+                  src={heroImage1}
+                  alt="Agricultural Pole Barn"
+                  className="w-full h-64 object-cover rounded-lg"
+                />
               </div>
             </div>
+          </div>
 
-            {/* Service 3 - Prefab Steel Garages */}
-            <div className="flex items-start space-x-8">
-              <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-white rounded-full border-2 border-gray-300 flex items-center justify-center">
-                  <span className="text-gray-600 font-semibold">03</span>
+          {/* Service 3 */}
+          <div className="bg-white rounded-lg p-8 shadow-sm border border-gray-200">
+            <div className="flex items-center mb-6">
+              <span className="text-3xl font-bold text-gray-400 mr-6">03</span>
+              <div className="h-px bg-gray-300 flex-1"></div>
+            </div>
+            
+            <h3 className="text-3xl font-bold text-gray-900 mb-4">
+              Prefab Steel Garages
+            </h3>
+            
+            <p className="text-gray-600 mb-8 leading-relaxed">
+              Protect your vehicles and equipment with a custom-built{" "}
+              <span className="text-orange-500">prefab steel garage</span>.
+              Available in single, double, or triple-car formats, our
+              garages feature reinforced walls, high-load roof panels, and
+              optional ventilation or insulation.
+            </p>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div className="space-y-6">
+                <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                  <h4 className="font-semibold text-gray-900 mb-3">
+                    Perfect for:
+                  </h4>
+                  <p className="text-gray-600 text-sm">
+                    Vehicle protection, workshop space, commercial storage
+                  </p>
+                </div>
+                
+                <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                  <h4 className="font-semibold text-gray-900 mb-3">
+                    Example use:
+                  </h4>
+                  <p className="text-gray-600 text-sm">
+                    In Great Barrington, MA, a two-car prefab garage now
+                    houses vintage motorcycles and gear.
+                  </p>
                 </div>
               </div>
-              <div className="flex-1 grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                    Prefab Steel Garages
-                  </h3>
-                  <p className="text-gray-600 mb-6">
-                    Protect your vehicles and equipment with a custom-built{" "}
-                    <span className="text-orange-500">prefab steel garage</span>
-                    . Available in single, double, or triple-car formats, our
-                    garages feature reinforced walls, high-load roof panels, and
-                    optional ventilation or insulation.
-                  </p>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                      <h4 className="font-semibold text-gray-900 mb-2">
-                        Perfect for:
-                      </h4>
-                      <ul className="text-sm text-gray-600 space-y-1">
-                        <li>
-                          Vehicle protection, workshop space, commercial storage
-                        </li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-900 mb-2">
-                        Example use:
-                      </h4>
-                      <ul className="text-sm text-gray-600 space-y-1">
-                        <li>
-                          In Great Barrington, MA, a two-car prefab garage now
-                          houses vintage motorcycles and gear.
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <img
-                    src={heroImage}
-                    alt="Prefab Steel Garage"
-                    className="w-full h-48 object-cover rounded-lg shadow-sm"
-                  />
-                </div>
+              
+              <div>
+                <img
+                  src={heroImage}
+                  alt="Prefab Steel Garage"
+                  className="w-full h-64 object-cover rounded-lg"
+                />
               </div>
             </div>
+          </div>
 
-            {/* Service 4 - Commercial Steel Buildings */}
-            <div className="flex items-start space-x-8">
-              <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-white rounded-full border-2 border-gray-300 flex items-center justify-center">
-                  <span className="text-gray-600 font-semibold">04</span>
+          {/* Service 4 */}
+          <div className="bg-white rounded-lg p-8 shadow-sm border border-gray-200">
+            <div className="flex items-center mb-6">
+              <span className="text-3xl font-bold text-gray-400 mr-6">04</span>
+              <div className="h-px bg-gray-300 flex-1"></div>
+            </div>
+            
+            <h3 className="text-3xl font-bold text-gray-900 mb-4">
+              Commercial Steel Buildings
+            </h3>
+            
+            <p className="text-gray-600 mb-8 leading-relaxed">
+              Designed for growth, our{" "}
+              <span className="text-orange-500">
+                Commercial steel buildings
+              </span>{" "}
+              are ideal for warehouses, workshops, and commercial storage.
+              Wide open design, multiple bay configurations, office space
+              integration, and loading dock compatibility.
+            </p>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div className="space-y-6">
+                <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                  <h4 className="font-semibold text-gray-900 mb-3">
+                    Perfect for:
+                  </h4>
+                  <p className="text-gray-600 text-sm">
+                    Warehouse operations, manufacturing facilities
+                  </p>
+                </div>
+                
+                <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                  <h4 className="font-semibold text-gray-900 mb-3">
+                    Example use:
+                  </h4>
+                  <p className="text-gray-600 text-sm">
+                    In <span className="text-orange-500">New York</span>, a
+                    contractor expanded their operation with a 30x60 prefab
+                    steel building for equipment and load.
+                  </p>
                 </div>
               </div>
-              <div className="flex-1 grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <div>
-                  <img
-                    src={heroImage3}
-                    alt="Commercial Steel Building"
-                    className="w-full h-48 object-cover rounded-lg shadow-sm"
-                  />
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                    Commercial Steel Buildings
-                  </h3>
-                  <p className="text-gray-600 mb-6">
-                    Designed for growth, our{" "}
-                    <span className="text-orange-500">
-                      Commercial steel buildings
-                    </span>
-                    that are ideal for warehouses, workshops, and commercial
-                    storage. Wide open design, multiple bay configurations,
-                    office space integration, and loading dock compatibility.
-                  </p>
-                  <div className="grid grid-cols-1 gap-6">
-                    <div>
-                      <h4 className="font-semibold text-gray-900 mb-2">
-                        Perfect for:
-                      </h4>
-                      <ul className="text-sm text-gray-600 space-y-1">
-                        <li>Warehouse operations, manufacturing facilities</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-900 mb-2">
-                        Example use:
-                      </h4>
-                      <ul className="text-sm text-gray-600 space-y-1">
-                        <li>
-                          In <span className="text-orange-500">New York</span>,
-                          a contractor expanded their operation with a 30x60
-                          prefab steel building for equipment and load.
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+              
+              <div>
+                <img
+                  src={heroImage3}
+                  alt="Commercial Steel Building"
+                  className="w-full h-64 object-cover rounded-lg"
+                />
               </div>
             </div>
           </div>
