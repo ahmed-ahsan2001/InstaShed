@@ -27,6 +27,8 @@ interface FormData {
   doorType: string;
   shelving: string[];
   workbench: string[];
+  preferredInstallationDate: string;
+  budget: string;
   howDidYouHear: string;
   workshopUse: string;
   otherUse: string;
@@ -53,6 +55,8 @@ export default function Quote() {
     doorType: "",
     shelving: [],
     workbench: [],
+    preferredInstallationDate: "",
+    budget: "",
     howDidYouHear: "",
     workshopUse: "",
     otherUse: "",
@@ -405,8 +409,8 @@ export default function Quote() {
                     <h4 className="font-semibold text-gray-900 mb-4">
                       Shelving
                     </h4>
-                    <div className="space-y-3">
-                      <label className="flex items-center cursor-pointer p-3 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors duration-200">
+                    <div className="flex space-x-4">
+                      <label className="flex items-center cursor-pointer bg-gray-100 px-4 py-2 rounded border">
                         <input
                           type="checkbox"
                           value="yes"
@@ -414,11 +418,11 @@ export default function Quote() {
                           onChange={(e) =>
                             handleCheckboxChange("shelving", e.target.value)
                           }
-                          className="mr-3 w-4 h-4 text-orange-500 border-gray-300 focus:ring-orange-500"
+                          className="mr-2 w-4 h-4"
                         />
-                        <span className="text-gray-700 font-medium">Yes</span>
+                        <span className="text-gray-700 text-sm">Yes</span>
                       </label>
-                      <label className="flex items-center cursor-pointer p-3 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors duration-200">
+                      <label className="flex items-center cursor-pointer bg-gray-100 px-4 py-2 rounded border">
                         <input
                           type="checkbox"
                           value="no"
@@ -426,9 +430,9 @@ export default function Quote() {
                           onChange={(e) =>
                             handleCheckboxChange("shelving", e.target.value)
                           }
-                          className="mr-3 w-4 h-4 text-orange-500 border-gray-300 focus:ring-orange-500"
+                          className="mr-2 w-4 h-4"
                         />
-                        <span className="text-gray-700 font-medium">No</span>
+                        <span className="text-gray-700 text-sm">No</span>
                       </label>
                     </div>
                   </div>
@@ -436,8 +440,8 @@ export default function Quote() {
                     <h4 className="font-semibold text-gray-900 mb-4">
                       Work Bench
                     </h4>
-                    <div className="space-y-3">
-                      <label className="flex items-center cursor-pointer p-3 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors duration-200">
+                    <div className="flex space-x-4">
+                      <label className="flex items-center cursor-pointer bg-gray-100 px-4 py-2 rounded border">
                         <input
                           type="checkbox"
                           value="yes"
@@ -445,11 +449,11 @@ export default function Quote() {
                           onChange={(e) =>
                             handleCheckboxChange("workbench", e.target.value)
                           }
-                          className="mr-3 w-4 h-4 text-orange-500 border-gray-300 focus:ring-orange-500"
+                          className="mr-2 w-4 h-4"
                         />
-                        <span className="text-gray-700 font-medium">Yes</span>
+                        <span className="text-gray-700 text-sm">Yes</span>
                       </label>
-                      <label className="flex items-center cursor-pointer p-3 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors duration-200">
+                      <label className="flex items-center cursor-pointer bg-gray-100 px-4 py-2 rounded border">
                         <input
                           type="checkbox"
                           value="no"
@@ -457,11 +461,42 @@ export default function Quote() {
                           onChange={(e) =>
                             handleCheckboxChange("workbench", e.target.value)
                           }
-                          className="mr-3 w-4 h-4 text-orange-500 border-gray-300 focus:ring-orange-500"
+                          className="mr-2 w-4 h-4"
                         />
-                        <span className="text-gray-700 font-medium">No</span>
+                        <span className="text-gray-700 text-sm">No</span>
                       </label>
                     </div>
+                  </div>
+                </div>
+
+                {/* Preferred Installation Date and Budget */}
+                <div className="grid grid-cols-2 gap-6">
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-4">
+                      Preferred Installation Date
+                    </h4>
+                    <input
+                      type="date"
+                      value={formData.preferredInstallationDate}
+                      onChange={(e) =>
+                        handleInputChange("preferredInstallationDate", e.target.value)
+                      }
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent"
+                    />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-4">
+                      Budget if Any
+                    </h4>
+                    <input
+                      type="text"
+                      placeholder="Enter budget"
+                      value={formData.budget}
+                      onChange={(e) =>
+                        handleInputChange("budget", e.target.value)
+                      }
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent"
+                    />
                   </div>
                 </div>
               </div>
