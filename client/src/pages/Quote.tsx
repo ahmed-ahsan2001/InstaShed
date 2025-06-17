@@ -25,8 +25,8 @@ interface FormData {
   sidingMaterial: string;
   windowType: string;
   doorType: string;
-  shelving: string;
-  workbench: string;
+  shelving: string[];
+  workbench: string[];
   howDidYouHear: string;
   workshopUse: string;
   otherUse: string;
@@ -51,8 +51,8 @@ export default function Quote() {
     sidingMaterial: "",
     windowType: "",
     doorType: "",
-    shelving: "",
-    workbench: "",
+    shelving: [],
+    workbench: [],
     howDidYouHear: "",
     workshopUse: "",
     otherUse: "",
@@ -406,29 +406,29 @@ export default function Quote() {
                       Shelving
                     </h4>
                     <div className="space-y-3">
-                      <label className="flex items-center cursor-pointer">
+                      <label className="flex items-center cursor-pointer p-3 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors duration-200">
                         <input
-                          type="radio"
-                          name="shelving"
+                          type="checkbox"
                           value="yes"
+                          checked={formData.shelving?.includes("yes")}
                           onChange={(e) =>
-                            handleInputChange("shelving", e.target.value)
+                            handleCheckboxChange("shelving", e.target.value)
                           }
                           className="mr-3 w-4 h-4 text-orange-500 border-gray-300 focus:ring-orange-500"
                         />
-                        <span className="text-gray-700">Yes</span>
+                        <span className="text-gray-700 font-medium">Yes</span>
                       </label>
-                      <label className="flex items-center cursor-pointer">
+                      <label className="flex items-center cursor-pointer p-3 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors duration-200">
                         <input
-                          type="radio"
-                          name="shelving"
+                          type="checkbox"
                           value="no"
+                          checked={formData.shelving?.includes("no")}
                           onChange={(e) =>
-                            handleInputChange("shelving", e.target.value)
+                            handleCheckboxChange("shelving", e.target.value)
                           }
                           className="mr-3 w-4 h-4 text-orange-500 border-gray-300 focus:ring-orange-500"
                         />
-                        <span className="text-gray-700">No</span>
+                        <span className="text-gray-700 font-medium">No</span>
                       </label>
                     </div>
                   </div>
@@ -437,29 +437,29 @@ export default function Quote() {
                       Work Bench
                     </h4>
                     <div className="space-y-3">
-                      <label className="flex items-center cursor-pointer">
+                      <label className="flex items-center cursor-pointer p-3 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors duration-200">
                         <input
-                          type="radio"
-                          name="workbench"
+                          type="checkbox"
                           value="yes"
+                          checked={formData.workbench?.includes("yes")}
                           onChange={(e) =>
-                            handleInputChange("workbench", e.target.value)
+                            handleCheckboxChange("workbench", e.target.value)
                           }
                           className="mr-3 w-4 h-4 text-orange-500 border-gray-300 focus:ring-orange-500"
                         />
-                        <span className="text-gray-700">Yes</span>
+                        <span className="text-gray-700 font-medium">Yes</span>
                       </label>
-                      <label className="flex items-center cursor-pointer">
+                      <label className="flex items-center cursor-pointer p-3 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors duration-200">
                         <input
-                          type="radio"
-                          name="workbench"
+                          type="checkbox"
                           value="no"
+                          checked={formData.workbench?.includes("no")}
                           onChange={(e) =>
-                            handleInputChange("workbench", e.target.value)
+                            handleCheckboxChange("workbench", e.target.value)
                           }
                           className="mr-3 w-4 h-4 text-orange-500 border-gray-300 focus:ring-orange-500"
                         />
-                        <span className="text-gray-700">No</span>
+                        <span className="text-gray-700 font-medium">No</span>
                       </label>
                     </div>
                   </div>
