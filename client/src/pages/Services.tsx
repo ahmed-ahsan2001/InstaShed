@@ -143,9 +143,9 @@ export default function Services() {
 
       {/* Services Timeline Section */}
       <section className="py-16 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
           {/* Service 1 */}
-          <div className="bg-white rounded-lg p-8 shadow-sm border border-gray-200">
+          <div>
             <div className="flex items-center mb-6">
               <span className="text-3xl font-bold text-gray-400 mr-6">01</span>
               <div className="h-px bg-gray-300 flex-1"></div>
@@ -200,7 +200,7 @@ export default function Services() {
           </div>
 
           {/* Service 2 */}
-          <div className="bg-white rounded-lg p-8 shadow-sm border border-gray-200">
+          <div>
             <div className="flex items-center mb-6">
               <span className="text-3xl font-bold text-gray-400 mr-6">02</span>
               <div className="h-px bg-gray-300 flex-1"></div>
@@ -251,7 +251,7 @@ export default function Services() {
           </div>
 
           {/* Service 3 */}
-          <div className="bg-white rounded-lg p-8 shadow-sm border border-gray-200">
+          <div>
             <div className="flex items-center mb-6">
               <span className="text-3xl font-bold text-gray-400 mr-6">03</span>
               <div className="h-px bg-gray-300 flex-1"></div>
@@ -302,7 +302,7 @@ export default function Services() {
           </div>
 
           {/* Service 4 */}
-          <div className="bg-white rounded-lg p-8 shadow-sm border border-gray-200">
+          <div>
             <div className="flex items-center mb-6">
               <span className="text-3xl font-bold text-gray-400 mr-6">04</span>
               <div className="h-px bg-gray-300 flex-1"></div>
