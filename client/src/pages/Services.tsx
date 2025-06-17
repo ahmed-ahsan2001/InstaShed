@@ -223,6 +223,14 @@ export default function Services() {
             </p>
 
             <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
+              <div className="lg:col-span-3">
+                <img
+                  src={heroImage1}
+                  alt="Agricultural Pole Barn"
+                  className="w-full h-64 object-cover rounded-lg"
+                />
+              </div>
+              
               <div className="lg:col-span-2 space-y-6">
                 <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
                   <h4 className="font-semibold text-gray-900 mb-3">
@@ -242,14 +250,6 @@ export default function Services() {
                     livestock, and house farming equipment.
                   </p>
                 </div>
-              </div>
-              
-              <div className="lg:col-span-3">
-                <img
-                  src={heroImage1}
-                  alt="Agricultural Pole Barn"
-                  className="w-full h-64 object-cover rounded-lg"
-                />
               </div>
             </div>
           </div>
@@ -331,6 +331,14 @@ export default function Services() {
             </p>
 
             <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
+              <div className="lg:col-span-3">
+                <img
+                  src={heroImage3}
+                  alt="Commercial Steel Building"
+                  className="w-full h-64 object-cover rounded-lg"
+                />
+              </div>
+              
               <div className="lg:col-span-2 space-y-6">
                 <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
                   <h4 className="font-semibold text-gray-900 mb-3">
@@ -351,14 +359,6 @@ export default function Services() {
                     steel building for equipment and load.
                   </p>
                 </div>
-              </div>
-              
-              <div className="lg:col-span-3">
-                <img
-                  src={heroImage3}
-                  alt="Commercial Steel Building"
-                  className="w-full h-64 object-cover rounded-lg"
-                />
               </div>
             </div>
           </div>
