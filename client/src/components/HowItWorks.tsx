@@ -3,12 +3,17 @@ import { Link } from "wouter";
 import heroImage from "../../../Image 2.png";
 import heroImage1 from "../../../Image 3.png";
 import heroImage2 from "../../../Image 4.png";
-
+import backgroundimg from "../../../howitsworkbg.png";
 export default function HowItWorks() {
   return (
     <section
       className="py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden"
-      style={{ backgroundColor: "#003D3D" }}
+      style={{ 
+        backgroundImage: `url(${backgroundimg})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
     >
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-start">
         {/* Left Side */}

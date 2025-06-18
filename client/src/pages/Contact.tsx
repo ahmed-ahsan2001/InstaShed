@@ -8,19 +8,37 @@ export default function Contact() {
     <div className="min-h-screen bg-white">
       <Header />
 
+      {/* Page Header */}
+      <section className="bg-white flex items-center justify-center" style={{height: '150px'}}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h1
+            className="text-5xl sm:text-6xl font-bold text-center"
+            style={{
+              background:
+                "linear-gradient(90deg, rgba(0, 55, 58, 1) 0%, rgba(0, 55, 58, 0.4) 100%)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              backgroundClip: "text",
+            }}
+          >
+            CONTACT US
+          </h1>
+        </div>
+      </section>
+
       {/* Hero Section */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Column - Content */}
             <div>
-              <h1 className="text-5xl sm:text-7xl font-bold text-gray-900 mb-8 leading-tight">
+              <h2 className="text-5xl sm:text-7xl font-bold text-gray-900 mb-8 leading-tight">
                 Let's <span className="text-orange-500">Talk</span> About
                 <br />
                 Your Next
                 <br />
                 Metal Building
-              </h1>
+              </h2>
               <p className="text-lg text-gray-600 leading-relaxed">
                 Looking to build a shed, garage, or barn? Submit your info and
                 our team will give you a call to discuss your project — no
