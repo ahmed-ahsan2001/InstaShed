@@ -59,9 +59,8 @@ export default function Services() {
       >
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
           <h1
-            className="font-bold text-center mt-12 mb-12 pt-6 pb-6 px-4"
+            className="font-bold text-center mt-12 mb-12 px-4 text-8xl sm:text-[150px]"
             style={{
-              fontSize: "150px",
               background:
                 "linear-gradient(90deg, rgba(0, 55, 58, 1) 0%, rgba(0, 55, 58, 0.4) 100%)",
               WebkitBackgroundClip: "text",

@@ -103,9 +103,8 @@ export default function Quote() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32">
           <h1
-            className="font-bold text-center"
+            className="font-bold text-center mt-12 mb-12 px-4 text-8xl sm:text-[150px]"
             style={{
-              fontSize: "130px",
               background:
                 "linear-gradient(90deg, rgba(0, 55, 58, 1) 0%, rgba(0, 55, 58, 0.4) 100%)",
               WebkitBackgroundClip: "text",
@@ -113,7 +112,7 @@ export default function Quote() {
               backgroundClip: "text",
             }}
           >
-            REQUEST QUOTE
+            Request Quote
           </h1>
         </div>
       </section>

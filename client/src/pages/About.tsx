@@ -19,9 +19,8 @@ export default function About() {
       >
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
           <h1
-            className="font-bold text-center"
+            className="font-bold text-center mt-12 mb-12 px-4 text-8xl sm:text-[150px]"
             style={{
-              fontSize: "150px",
               background:
                 "linear-gradient(90deg, rgba(0, 55, 58, 1) 0%, rgba(0, 55, 58, 0.4) 100%)",
               WebkitBackgroundClip: "text",
@@ -29,7 +28,7 @@ export default function About() {
               backgroundClip: "text",
             }}
           >
-            ABOUT US
+            About Us
           </h1>
         </div>
       </section>
@@ -179,8 +178,12 @@ export default function About() {
                 <div className="flex items-start">
                   <div className="relative">
                     <h2 className="text-8xl sm:text-6xl font-bold mb-4 flex items-center">
-                      <span className="text-orange-500 relative">Our</span>
-                      <span className="ml-2 text-gray-900">Founder</span>
+                      <span className="text-orange-500 relative text-5xl">
+                        Our
+                      </span>
+                      <span className="ml-2 text-gray-900 text-5xl">
+                        Founder
+                      </span>
                     </h2>
                     <div
                       className="absolute left-4 top-13 w-[4px] h-[120px]"
