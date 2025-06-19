@@ -74,10 +74,13 @@ export default function Gallery() {
       <Header />
 
       {/* Page Header */}
-      <section className="bg-white flex items-center justify-center" style={{height: '150px'}}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section
+        className="bg-white flex items-center justify-center"
+        style={{ height: "150px" }}
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
           <h1
-            className="text-6xl sm:text-7xl font-bold text-center"
+            className="font-bold text-center mt-12 mb-12 px-4 text-8xl sm:text-[150px]"
             style={{
               background:
                 "linear-gradient(90deg, rgba(0, 55, 58, 1) 0%, rgba(0, 55, 58, 0.4) 100%)",
@@ -86,13 +89,13 @@ export default function Gallery() {
               backgroundClip: "text",
             }}
           >
-            GALLERY
+            Gallery
           </h1>
         </div>
       </section>
 
       {/* Gallery Grid */}
-      <section className="py-8 bg-white">
+      <section className="py-8 bg-white pt-24">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-4">
             {/* Row 1 - Two equal images */}
