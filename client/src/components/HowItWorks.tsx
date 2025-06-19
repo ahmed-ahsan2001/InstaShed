@@ -8,11 +8,11 @@ export default function HowItWorks() {
   return (
     <section
       className="py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden"
-      style={{ 
+      style={{
         backgroundImage: `url(${backgroundimg})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
       }}
     >
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-start">
@@ -46,8 +46,8 @@ export default function HowItWorks() {
           </div>
 
           {/* Button */}
-          <div className="pt-4 flex justify-center mr-20 mt-20">
-            <Link href="/quote" className="">
+          <div className="pt-4 flex justify-center mr-20 mt-20 hidden sm:flex">
+            <Link href="/quote">
               <Button className="bg-brand-orange hover:bg-brand-orange-hover text-white px-6 py-3 text-base rounded-md font-semibold">
                 Get Free Consultation
               </Button>
@@ -56,7 +56,7 @@ export default function HowItWorks() {
         </div>
 
         {/* Right Side */}
-        <div className="flex flex-col space-y-14 items-end mr-auto">
+        <div className="flex flex-col space-y-14 items-end mr-auto mt-10">
           {/* Card 2 */}
           <div className="w-full max-w-md relative">
             <div className="rounded-2xl overflow-hidden shadow-lg">
@@ -97,6 +97,13 @@ export default function HowItWorks() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="pt-10 flex justify-center sm:hidden">
+        <Link href="/quote">
+          <Button className="bg-brand-orange hover:bg-brand-orange-hover text-white px-6 py-3 text-base rounded-md font-semibold">
+            Get Free Consultation
+          </Button>
+        </Link>
       </div>
     </section>
   );
