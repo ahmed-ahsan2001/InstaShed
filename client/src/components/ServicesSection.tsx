@@ -78,7 +78,7 @@ export default function ServicesSection() {
         {/* Right Side */}
         <div className="flex flex-col space-y-10 items-end md:items-end relative">
           {/* Button on top - reposition on mobile */}
-          <div className="absolute -top-16 sm:-top-20 right-0 z-10 hidden sm-flex">
+          <div className="absolute -top-16 sm:-top-20 right-0 z-10 hidden sm:flex">
             <Button
               variant="outline"
               className="px-4 py-2 border border-gray-300 text-sm font-medium bg-white hover:bg-gray-50"
