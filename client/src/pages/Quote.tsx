@@ -312,7 +312,7 @@ export default function Quote() {
                   <h4 className="font-semibold text-gray-900 mb-4">
                     Intended Use
                   </h4>
-                  <div className="grid grid-cols-3 gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                     <label className="flex items-center cursor-pointer p-4 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors duration-200">
                       <input
                         type="checkbox"
@@ -436,7 +436,7 @@ export default function Quote() {
                     <h4 className="font-semibold text-gray-900 mb-4">
                       Shelving
                     </h4>
-                    <div className="flex space-x-4">
+                    <div className="flex flex-wrap gap-4">
                       <label className="flex items-center cursor-pointer bg-gray-100 px-4 py-2 rounded border">
                         <input
                           type="checkbox"
@@ -467,7 +467,7 @@ export default function Quote() {
                     <h4 className="font-semibold text-gray-900 mb-4">
                       Work Bench
                     </h4>
-                    <div className="flex space-x-4">
+                    <div className="flex flex-wrap gap-4">
                       <label className="flex items-center cursor-pointer bg-gray-100 px-4 py-2 rounded border">
                         <input
                           type="checkbox"
