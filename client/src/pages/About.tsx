@@ -203,11 +203,10 @@ export default function About() {
                 </p>
                 {/* Overlapping Name Button */}
                 <div
-                  className="bg-orange-500 text-white px-6 py-3 inline-block font-medium text-center relative -mt-4 shadow-lg"
-                  style={{ marginLeft: "-200px" }}
-                >
-                  Jeremy Zimmerman – Founder & CEO
-                </div>
+  className="bg-orange-500 text-white px-6 py-3 inline-block font-medium text-center relative -mt-4 shadow-lg ml-0 md:ml-[-200px]"
+>
+  Jeremy Zimmerman – Founder & CEO
+</div>
               </div>
             </div>
           </div>
