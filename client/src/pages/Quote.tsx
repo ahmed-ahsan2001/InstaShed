@@ -83,9 +83,59 @@ export default function Quote() {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch('/api/quote', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        alert('Quote request submitted successfully! We will contact you soon.');
+        // Reset form
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          preferredContact: [],
+          serviceType: "",
+          length: "",
+          width: "",
+          height: "",
+          intendedUse: [],
+          sidingMaterial: [],
+          windowType: "",
+          doorType: "",
+          shelving: [],
+          workbench: [],
+          preferredInstallationDate: "",
+          budget: "",
+          howDidYouHear: "",
+          workshopUse: "",
+          otherUse: "",
+          numberOfWindows: "",
+          windowSize: "",
+        });
+      } else {
+        alert('Failed to submit quote request. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error submitting quote:', error);
+      alert('An error occurred. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (

@@ -18,10 +18,11 @@ import { useToast } from "@/hooks/use-toast";
 
 export default function ContactFormSection() {
   const [formData, setFormData] = useState({
-    fullName: "",
+    firstName: "",
+    lastName: "",
     email: "",
-    zipCode: "",
-    serviceType: "",
+    phone: "",
+    subject: "",
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -36,21 +37,39 @@ export default function ContactFormSection() {
     setIsSubmitting(true);
 
     try {
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-
-      toast({
-        title: "Message Sent!",
-        description: "We'll get back to you within 24 hours.",
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       });
 
-      setFormData({
-        fullName: "",
-        email: "",
-        zipCode: "",
-        serviceType: "",
-        message: "",
-      });
+      const result = await response.json();
+
+      if (result.success) {
+        toast({
+          title: "Message Sent!",
+          description: "We'll get back to you within 24 hours.",
+        });
+
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          subject: "",
+          message: "",
+        });
+      } else {
+        toast({
+          title: "Error",
+          description: result.error || "Failed to send message. Please try again.",
+          variant: "destructive",
+        });
+      }
     } catch (error) {
+      console.error('Error submitting contact form:', error);
       toast({
         title: "Error",
         description: "Failed to send message. Please try again.",
@@ -117,14 +136,27 @@ export default function ContactFormSection() {
               <div className="grid sm:grid-cols-2 gap-4">
                 <Input
                   type="text"
-                  placeholder="Full Name (Required)"
-                  value={formData.fullName}
+                  placeholder="First Name (Required)"
+                  value={formData.firstName}
                   onChange={(e) =>
-                    handleInputChange("fullName", e.target.value)
+                    handleInputChange("firstName", e.target.value)
                   }
                   required
                   className="bg-transparent border-0 border-b border-gray-500 border-opacity-50 text-white placeholder:text-gray-300 focus:border-brand-orange rounded-none"
                 />
+                <Input
+                  type="text"
+                  placeholder="Last Name (Required)"
+                  value={formData.lastName}
+                  onChange={(e) =>
+                    handleInputChange("lastName", e.target.value)
+                  }
+                  required
+                  className="bg-transparent border-0 border-b border-gray-500 border-opacity-50 text-white placeholder:text-gray-300 focus:border-brand-orange rounded-none"
+                />
+              </div>
+              
+              <div className="grid sm:grid-cols-2 gap-4">
                 <Input
                   type="email"
                   placeholder="Email (Required)"
