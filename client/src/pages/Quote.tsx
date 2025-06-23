@@ -22,7 +22,7 @@ interface FormData {
   width: string;
   height: string;
   intendedUse: string[];
-  sidingMaterial: string;
+  sidingMaterial: string[];
   windowType: string;
   doorType: string;
   shelving: string[];
@@ -32,8 +32,6 @@ interface FormData {
   howDidYouHear: string;
   workshopUse: string;
   otherUse: string;
-  galvanized: string;
-  painted: string;
   numberOfWindows: string;
   windowSize: string;
 }
@@ -50,7 +48,7 @@ export default function Quote() {
     width: "",
     height: "",
     intendedUse: [],
-    sidingMaterial: "",
+    sidingMaterial: [],
     windowType: "",
     doorType: "",
     shelving: [],
@@ -60,8 +58,6 @@ export default function Quote() {
     howDidYouHear: "",
     workshopUse: "",
     otherUse: "",
-    galvanized: "",
-    painted: "",
     numberOfWindows: "",
     windowSize: "",
   });
@@ -365,25 +361,31 @@ export default function Quote() {
                   <h4 className="font-semibold text-gray-900 mb-4">
                     Siding Material
                   </h4>
-                  <div className="grid grid-cols-2 gap-4">
-                    <input
-                      type="text"
-                      placeholder="Galvanized"
-                      value={formData.galvanized || ""}
-                      onChange={(e) =>
-                        handleInputChange("galvanized", e.target.value)
-                      }
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent"
-                    />
-                    <input
-                      type="text"
-                      placeholder="Painted"
-                      value={formData.painted || ""}
-                      onChange={(e) =>
-                        handleInputChange("painted", e.target.value)
-                      }
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-orange focus:border-transparent"
-                    />
+                  <div className="flex flex-wrap gap-3">
+                    <label className="flex items-center space-x-2 bg-gray-100 px-4 py-2 rounded-lg cursor-pointer">
+                      <input
+                        type="checkbox"
+                        value="galvanized"
+                        checked={formData.sidingMaterial?.includes("galvanized")}
+                        onChange={(e) =>
+                          handleCheckboxChange("sidingMaterial", e.target.value)
+                        }
+                        className="w-4 h-4 text-orange-500 border-gray-300 focus:ring-orange-500"
+                      />
+                      <span className="text-gray-700 text-sm">Galvanized</span>
+                    </label>
+                    <label className="flex items-center space-x-2 bg-gray-100 px-4 py-2 rounded-lg cursor-pointer">
+                      <input
+                        type="checkbox"
+                        value="painted"
+                        checked={formData.sidingMaterial?.includes("painted")}
+                        onChange={(e) =>
+                          handleCheckboxChange("sidingMaterial", e.target.value)
+                        }
+                        className="w-4 h-4 text-orange-500 border-gray-300 focus:ring-orange-500"
+                      />
+                      <span className="text-gray-700 text-sm">Painted</span>
+                    </label>
                   </div>
                 </div>
 
