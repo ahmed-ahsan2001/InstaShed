@@ -361,8 +361,8 @@ export default function Quote() {
                   <h4 className="font-semibold text-gray-900 mb-4">
                     Siding Material
                   </h4>
-                  <div className="flex flex-wrap gap-3">
-                    <label className="flex items-center space-x-2 bg-gray-100 px-4 py-2 rounded-lg cursor-pointer">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <label className="flex items-center cursor-pointer p-4 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors duration-200">
                       <input
                         type="checkbox"
                         value="galvanized"
@@ -370,11 +370,13 @@ export default function Quote() {
                         onChange={(e) =>
                           handleCheckboxChange("sidingMaterial", e.target.value)
                         }
-                        className="w-4 h-4 text-orange-500 border-gray-300 focus:ring-orange-500"
+                        className="mr-3 w-4 h-4 text-orange-500 border-gray-300 focus:ring-orange-500"
                       />
-                      <span className="text-gray-700 text-sm">Galvanized</span>
+                      <span className="text-gray-700 font-medium">
+                        Galvanized
+                      </span>
                     </label>
-                    <label className="flex items-center space-x-2 bg-gray-100 px-4 py-2 rounded-lg cursor-pointer">
+                    <label className="flex items-center cursor-pointer p-4 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors duration-200">
                       <input
                         type="checkbox"
                         value="painted"
@@ -382,9 +384,11 @@ export default function Quote() {
                         onChange={(e) =>
                           handleCheckboxChange("sidingMaterial", e.target.value)
                         }
-                        className="w-4 h-4 text-orange-500 border-gray-300 focus:ring-orange-500"
+                        className="mr-3 w-4 h-4 text-orange-500 border-gray-300 focus:ring-orange-500"
                       />
-                      <span className="text-gray-700 text-sm">Painted</span>
+                      <span className="text-gray-700 font-medium">
+                        Painted
+                      </span>
                     </label>
                   </div>
                 </div>
@@ -438,8 +442,8 @@ export default function Quote() {
                     <h4 className="font-semibold text-gray-900 mb-4">
                       Shelving
                     </h4>
-                    <div className="flex flex-wrap gap-4">
-                      <label className="flex items-center cursor-pointer bg-gray-100 px-4 py-2 rounded border">
+                    <div className="grid grid-cols-1 gap-4">
+                      <label className="flex items-center cursor-pointer p-4 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors duration-200">
                         <input
                           type="checkbox"
                           value="yes"
@@ -447,11 +451,11 @@ export default function Quote() {
                           onChange={(e) =>
                             handleCheckboxChange("shelving", e.target.value)
                           }
-                          className="mr-2 w-4 h-4"
+                          className="mr-3 w-4 h-4 text-orange-500 border-gray-300 focus:ring-orange-500"
                         />
-                        <span className="text-gray-700 text-sm">Yes</span>
+                        <span className="text-gray-700 font-medium">Yes</span>
                       </label>
-                      <label className="flex items-center cursor-pointer bg-gray-100 px-4 py-2 rounded border">
+                      <label className="flex items-center cursor-pointer p-4 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors duration-200">
                         <input
                           type="checkbox"
                           value="no"
@@ -459,9 +463,9 @@ export default function Quote() {
                           onChange={(e) =>
                             handleCheckboxChange("shelving", e.target.value)
                           }
-                          className="mr-2 w-4 h-4"
+                          className="mr-3 w-4 h-4 text-orange-500 border-gray-300 focus:ring-orange-500"
                         />
-                        <span className="text-gray-700 text-sm">No</span>
+                        <span className="text-gray-700 font-medium">No</span>
                       </label>
                     </div>
                   </div>
@@ -469,8 +473,8 @@ export default function Quote() {
                     <h4 className="font-semibold text-gray-900 mb-4">
                       Work Bench
                     </h4>
-                    <div className="flex flex-wrap gap-4">
-                      <label className="flex items-center cursor-pointer bg-gray-100 px-4 py-2 rounded border">
+                    <div className="grid grid-cols-1 gap-4">
+                      <label className="flex items-center cursor-pointer p-4 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors duration-200">
                         <input
                           type="checkbox"
                           value="yes"
@@ -478,11 +482,11 @@ export default function Quote() {
                           onChange={(e) =>
                             handleCheckboxChange("workbench", e.target.value)
                           }
-                          className="mr-2 w-4 h-4"
+                          className="mr-3 w-4 h-4 text-orange-500 border-gray-300 focus:ring-orange-500"
                         />
-                        <span className="text-gray-700 text-sm">Yes</span>
+                        <span className="text-gray-700 font-medium">Yes</span>
                       </label>
-                      <label className="flex items-center cursor-pointer bg-gray-100 px-4 py-2 rounded border">
+                      <label className="flex items-center cursor-pointer p-4 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors duration-200">
                         <input
                           type="checkbox"
                           value="no"
@@ -490,9 +494,9 @@ export default function Quote() {
                           onChange={(e) =>
                             handleCheckboxChange("workbench", e.target.value)
                           }
-                          className="mr-2 w-4 h-4"
+                          className="mr-3 w-4 h-4 text-orange-500 border-gray-300 focus:ring-orange-500"
                         />
-                        <span className="text-gray-700 text-sm">No</span>
+                        <span className="text-gray-700 font-medium">No</span>
                       </label>
                     </div>
                   </div>
