@@ -73,7 +73,7 @@ export default function ClientTestimonials() {
           <div className="flex justify-center">
             <img
               src={testimonialImage}
-              alt="Client"
+              alt="Happy customer with their completed metal building project"
               className="w-80 h-auto object-cover rounded-xl"
             />
           </div>
@@ -84,12 +84,12 @@ export default function ClientTestimonials() {
           <button onClick={handlePrev}>
             <img
               src={icon13}
-              alt="Previous"
+              alt="Previous testimonial button"
               className="w-10 h-10 cursor-pointer"
             />
           </button>
           <button onClick={handleNext}>
-            <img src={icon12} alt="Next" className="w-10 h-10 cursor-pointer" />
+            <img src={icon12} alt="Next testimonial button" className="w-10 h-10 cursor-pointer" />
           </button>
         </div>
       </div>

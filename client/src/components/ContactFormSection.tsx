@@ -96,11 +96,11 @@ export default function ContactFormSection() {
             <h3 className="text-3xl text-orange-500 mb-6">InstaShed HQ</h3>
             <div className="space-y-4">
               <div className="flex items-center gap-3">
-                <img src={icon7} alt="Email" className="w-5 h-5" />
+                <img src={icon7} alt="Email contact icon" className="w-5 h-5" />
                 <span className="text-lg">info@instashed.us</span>
               </div>
               <div className="flex items-center gap-3">
-                <img src={icon8} alt="Location" className="w-5 h-5" />
+                <img src={icon8} alt="Office location icon" className="w-5 h-5" />
                 <span className="text-lg">
                   107 West Main Street #681 Terre Hill, PA 17581 USA
                 </span>
@@ -110,17 +110,17 @@ export default function ContactFormSection() {
             <div className="flex gap-4 mt-8">
               <img
                 src={icon9}
-                alt="Instagram"
+                alt="Follow InstaShed on Instagram"
                 className="w-8 h-8 cursor-pointer"
               />
               <img
                 src={icon10}
-                alt="Facebook"
+                alt="Follow InstaShed on Facebook"
                 className="w-8 h-8 cursor-pointer"
               />
               <img
                 src={icon11}
-                alt="Twitter"
+                alt="Follow InstaShed on Twitter"
                 className="w-8 h-8 cursor-pointer"
               />
             </div>

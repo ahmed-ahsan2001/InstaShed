@@ -57,7 +57,7 @@ export default function TestimonialsSection() {
           <div className="w-full">
             <img
               src={buildingImage}
-              alt="Client Project"
+              alt="Completed InstaShed custom metal building project showcasing quality craftsmanship"
               className="w-full max-w-md mx-auto rounded-lg shadow-lg"
             />
           </div>

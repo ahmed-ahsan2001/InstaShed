@@ -14,7 +14,7 @@ export default function Hero() {
           {/* SVG as main background image */}
           <img
             src={svg1}
-            alt="Hero Background"
+            alt="InstaShed metal building construction site hero background"
             className="absolute inset-0 w-full h-full object-cover z-0"
           />
 

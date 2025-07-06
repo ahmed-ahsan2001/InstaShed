@@ -98,7 +98,7 @@ export default function HomePageFAQ() {
                 </h3>
                 <img
                   src={expandedFAQs.includes(index) ? icon7 : icon6}
-                  alt={expandedFAQs.includes(index) ? "Collapse" : "Expand"}
+                  alt={expandedFAQs.includes(index) ? "Collapse FAQ answer" : "Expand FAQ answer"}
                   className="w-5 h-5 flex-shrink-0"
                 />
               </button>

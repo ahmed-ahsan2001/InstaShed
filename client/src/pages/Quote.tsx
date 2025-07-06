@@ -188,7 +188,7 @@ export default function Quote() {
             <div>
               <img
                 src={heroImage1}
-                alt="Metal Building with People"
+                alt="Professional team discussing custom metal building project with clients"
                 className="w-full h-80 object-cover rounded-lg"
               />
             </div>

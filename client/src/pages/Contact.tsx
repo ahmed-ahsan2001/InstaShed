@@ -53,7 +53,7 @@ export default function Contact() {
             <div className="flex justify-center">
               <img
                 src={heroImage5}
-                alt="Customer Service Representative"
+                alt="Friendly InstaShed customer service representative ready to help with your metal building project"
                 className="w-80 h-96 object-cover rounded-lg"
               />
             </div>

@@ -55,7 +55,12 @@ export default function FeaturesPreview() {
               className="bg-white p-6 border border-gray-200 shadow-sm min-h-[320px]"
             >
               <div className="mb-4">
-                <img src={icon} alt="Feature Icon" className="w-12 h-12 mb-4" />
+                <img src={icon} alt={`${[
+                      "Fast Setup",
+                      "Customizable",
+                      "Value",
+                      "Trusted"
+                    ][i]} icon`} className="w-12 h-12 mb-4" />
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">
                   {
                     [

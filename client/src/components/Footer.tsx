@@ -12,7 +12,7 @@ export default function Footer() {
             <div className="mb-6">
               <img
                 src={instaShedLogo}
-                alt="InstaShed Logo"
+                alt="InstaShed - Premium Metal Buildings and Custom Storage Solutions"
                 className="h-16 w-auto mb-4"
               />
             </div>

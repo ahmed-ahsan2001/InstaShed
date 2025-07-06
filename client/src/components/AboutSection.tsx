@@ -37,7 +37,7 @@ export default function AboutSection() {
           <div className="w-32 h-32 md:w-40 md:h-40">
             <img
               src={aboutIcon1}
-              alt="About Icon"
+              alt="InstaShed company values and craftsmanship icon"
               className="w-full h-full object-contain"
             />
           </div>
